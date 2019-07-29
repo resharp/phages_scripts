@@ -45,6 +45,21 @@ function cat_fasta {
 	fi
 }
 
+function result_summary {
+
+	echo "number of Virsorter runs finished"
+	cat /home/richard/bin/run_vs_1_log.txt | grep Finished | wc -l
+	echo "---"
+
+	for i in {1..6}
+	do
+		category=$i
+		echo "number of phages of category "${category}
+		cat <(cat_fasta mutant14 $category) <(cat_fasta mutant31 $category) | wc -l
+	done
+}
+
+
 ####################################################################
 # functions for the runs on the concatenated files of 1000 genomes
 #
