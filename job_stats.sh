@@ -16,6 +16,41 @@ function vh {
 }
 
 
+####################################################################
+# functions for the single genome parallel runs
+#
+####################################################################
+
+# show non empty signal files
+# if all categories are 0 the size of the file is 1823. we don't want those
+function non_empty_signal_files {
+	mutant=$1
+
+	ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/[1-2]*/VIR*signal.csv | sort -k7 | awk '{if($5!="1823" && $5!="0")print $0}'
+
+}
+
+function cat_fasta {
+
+	mutant=$1
+	category=$2
+
+	if [[ "$category" =~ ^("1"|"2"|"3")$ ]]
+	then
+		ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/Predicted_viral_sequences/VIRSorter_cat-${category}.fasta |\
+			awk '{if($5!="0")print $0}'
+	else
+		ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/Predicted_viral_sequences/VIRSorter_prophages_cat-${category}.fasta |\
+			awk '{if($5!="0")print $0}'
+	fi
+}
+
+####################################################################
+# functions for the runs on the concatenated files of 1000 genomes
+#
+####################################################################
+
+
 #view ready
 function vr {
 	view_ready ~/virsorter_admin/virsorter_scheduler.txt
@@ -27,7 +62,6 @@ function view_size {
 
 	printf %s" size of : "%s"\n" $size $1
 }
-
 
 
 #view the size of all output directories on the different mutants
@@ -42,7 +76,7 @@ function view_all_vs_out {
 
 }
 
-#view last ready 
+#view last ready of the 1000-batches
 function vlr {
 	cat ~/virsorter_admin/virsorter_scheduler.txt | grep READY | cut -f1,3 | awk '{ print "/hosts/linuxhome/"$2"/tmp/richard/virsorter_output/"$1 }'| \
 	tr "\." "_" | cut -f2 | while read line; do ll "$line/VIRSorter_global-phage-signal.csv"; done | sort -k 7,8
