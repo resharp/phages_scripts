@@ -45,17 +45,37 @@ function cat_fasta {
 	fi
 }
 
+
+#TODO: differ between complete phages and prophages
+function nr_of_phages {
+
+	mutant=$1
+	category=$2
+	grep -v "^#" /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/VIRSorter_global-phage-signal.csv | cut -d ',' -f5 | grep -c "$2"
+}
+
+
 function result_summary {
 
-	echo "number of Virsorter runs finished"
-	cat /home/richard/bin/run_vs_1_log.txt | grep Finished | wc -l
-	echo "---"
+	nr_jobs=$(cat /home/richard/bin/run_vs_1_log.txt | grep Finished | wc -l)
 
-	for i in {1..6}
+	date_summary=$(date)
+	echo "summary of runs on PATRIC genomes ${date_summary}"
+	echo "----------------------------------"
+	printf "number of Virsorter runs finished: "%d"\n" $nr_jobs
+	echo "----------------------------------"
+
+	echo "number of (pro)phages ..."
+	for i in {1..3}
 	do
 		category=$i
-		echo "number of phages of category "${category}
-		cat <(cat_fasta mutant14 $category) <(cat_fasta mutant31 $category) | wc -l
+		nr_of_phages_14=$(nr_of_phages mutant14 $category)
+		nr_of_phages_31=$(nr_of_phages mutant31 $category)
+
+		#TODO: differ between complete phages and prophages
+		nr_of_phages=$((nr_of_phages_14 + nr_of_phages_31))
+
+		printf "of category "%s": "%d"\n" $category $nr_of_phages
 	done
 }
 
