@@ -44,12 +44,27 @@ function get_phage_samples_for_cat {
         fi
 }
 
+function get_phage_samples_for_cat_1_2_4_5 {
+
+	mutant=$1
+
+	#we cannot use a regex expression in the ll (=ls -altr) because of a to many arguments error of ls
+	cat <(ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/Predicted_viral_sequences/VIRSorter_*-1.fasta)\
+	    <(ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/Predicted_viral_sequences/VIRSorter_*-2.fasta)\
+	    <(ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/Predicted_viral_sequences/VIRSorter_*-4.fasta)\
+	    <(ll /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/*/Predicted_viral_sequences/VIRSorter_*-5.fasta) |\
+        	awk '{if($5!="0")print $9}' |\
+		cut -d "/" -f8 |\
+		sort | uniq
+}
+
+
 #temporary function
 function get_fasta_file {
 	cat_fasta mutant14 1 | head -1 | tr ' ' '|' | cut -d '|' -f11
 }
 
-function run_prodigal {
+function run_prodigal_just_for_testing {
 
 	fasta_file=$(get_fasta_file)
 
@@ -60,12 +75,26 @@ function run_prodigal {
 
 function run_prodigal_on_some_samples {
 
-	mutant=mutant14;samples=$(get_phage_samples_for_cat $mutant 1 | head -10)
+	mutant=mutant14;samples=$(get_phage_samples_for_cat_1_2_4_5 $mutant 1 | head -100)
 
 	#only category 1 and 2 (and 4 and 5)
 	for sample in $samples
-		do prodigal -i <(cat /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/1797198.3/Predicted_viral_sequences/VIRSorter_*-[1-2\|4-5].fasta)\
-			-o annotations/$sample.genes -a annotations/$sample.proteins.faa -p meta
+		do prodigal -i <(cat /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/$sample/Predicted_viral_sequences/VIRSorter_*-[1-2\|4-5].fasta)\
+			-o annotations/$sample.genes -a annotations/$sample.proteins.faa -p meta -q
 	done
 }
 
+## some functions to analyze the prodigal output
+function show_gene_lengths {
+
+	#gene lengths can be easily calculated from index-file of samtools:
+	#samtools faidx annotations/all.fna
+	cat annotations/all.faa.fai | cut -f1-2 | sort -k2 -r -n
+}
+
+function calculate_average_gc_content {
+
+	echo "Average GC content" 
+	cat annotations/all.faa | grep ">" | cut -d ";" -f6 | cut -d "=" -f2 | awk '{ total += $1; count++ } END { print total/count }'
+
+}
