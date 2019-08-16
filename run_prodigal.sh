@@ -75,7 +75,7 @@ function run_prodigal_just_for_testing {
 
 function run_prodigal_on_some_samples {
 
-	mutant=mutant14;samples=$(get_phage_samples_for_cat_1_2_4_5 $mutant 1 | head -100)
+	mutant=mutant14;samples=$(get_phage_samples_for_cat_1_2_4_5 $mutant | head -100)
 
 	#only category 1 and 2 (and 4 and 5)
 	for sample in $samples
@@ -83,6 +83,20 @@ function run_prodigal_on_some_samples {
 			-o annotations/$sample.genes -a annotations/$sample.proteins.faa -p meta -q
 	done
 }
+
+
+function run_prodigal_on_all_samples {
+
+	mutant=$1
+	samples=$(get_phage_samples_for_cat_1_2_4_5 $mutant)
+
+	#only category 1 and 2 (and 4 and 5)
+	for sample in $samples
+		do prodigal -i <(cat /hosts/linuxhome/$mutant/tmp/richard/virsorter_output/$sample/Predicted_viral_sequences/VIRSorter_*-[1-2\|4-5].fasta)\
+			-o patric/patric/phage_genes/$sample.genes -a patric/patric/phage_genes/$sample.proteins.faa -p meta -q
+	done
+}
+
 
 ## some functions to analyze the prodigal output
 function show_gene_lengths {
