@@ -9,12 +9,12 @@ function make_blastp_db {
 
 	#make translation file for translation of simple headers
 	cat annotations/gene_samples.fasta | sed -e 's/\s.*$//' |\
-		awk 'BEGIN { num=1} { if($0~">") {print "IG_"num"\t"$0;num=num+1 }}' |\
-		sed -e 's/>//g' > annotations/IG_translation.txt
+		awk 'BEGIN { num=1} { if($0~">") {print "IP_"num"\t"$0;num=num+1 }}' |\
+		sed -e 's/>//g' > annotations/IP_translation.txt
 
-	#translate headers into simple >IG_[number] format
+	#translate headers into simple >IP_[number] format
 	cat annotations/gene_samples.fasta | sed -e 's/\s.*$//' |\
-		awk 'BEGIN { num=1} { if($0~">") {print ">IG_"num;num=num+1} else print $0  }' > annotations/gene_samples_simple.fasta
+		awk 'BEGIN { num=1} { if($0~">") {print ">IP_"num;num=num+1} else print $0  }' > annotations/gene_samples_simple.fasta
 
 	#makeblastdb -in gene_samples.fasta -parse_seqids -blastdb_version 5 -title "Phage gene samples" -dbtype prot out -out my.database_name
 	makeblastdb -in annotations/gene_samples_simple.fasta -parse_seqids -title "Phage gene samples" -dbtype prot -out annotations/gene_samples_simple.faa
