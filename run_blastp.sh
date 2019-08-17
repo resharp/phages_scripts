@@ -45,7 +45,46 @@ function run_blastp {
 
 }
 
-#view top 10 genes within samples
-function view_top_10_genes {
+#view top 10 proteins within samples
+function view_top_10_proteins {
 	cat annotations/pairwise_blastout_filtered.txt | cut -f1 | sort | uniq -c | sort -k1 -n -r | head -10
 }
+
+
+function prepare_sif_for_cytoscape {
+
+	#http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
+	#sif format example:
+	#node1 typeA node2
+	#node2 typeB node3 node4 node5
+	cat annotations/pairwise_blastout_filtered.txt | awk '{print $1 " homolog " $2}' > annotations/pw_blastout_cytoscape.sif
+
+
+	#prepare format for mcl (without weight)
+	cat annotations/pairwise_blastout_filtered.txt | awk '{print $1 "\t" $2}' > annotations/pw_blastout_cytoscape.abc
+
+}
+
+function run_mcl {
+
+	#default inflation is 2.0. we run with 2.5 for comparing with cytoscape plug-in
+	#keep it simple run with all default options
+	#how 
+
+	#run with different inflations
+
+	samples="1.5 2.0 2.5 3.0"
+	for sample in $samples:
+	do
+		mcl annotations/pw_blastout_cytoscape.abc --abc -I ${sample} -te 4 --d
+	done
+
+	samples="I15 I20 I25 I30"
+
+	for sample in $samples
+		do echo "largest clusters for inflation: "$sample
+		cat annotations/out.pw_blastout_cytoscape.abc.$sample | awk '{print NF" proteins"}' | head -3
+	done
+
+}
+
