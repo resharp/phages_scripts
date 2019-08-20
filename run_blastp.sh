@@ -2,24 +2,42 @@
 #make blast database
 function make_blastp_db {
 
-	#sample of some protein files
-	p_files=$(find patric/patric/phage_genes/*.faa | head -100)
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
 
-	cat $p_files > annotations/gene_samples.fasta
+	#sample of some protein files
+	#TODO: change to all proteins
+	#----
+	p_files=$(find $gene_dir/*/*.faa | head -1000)
+
+	cat $p_files > $gene_dir/gene_samples.fasta
 
 	#make translation file for translation of simple headers
-	cat annotations/gene_samples.fasta | sed -e 's/\s.*$//' |\
+	cat $gene_dir/gene_samples.fasta | sed -e 's/\s.*$//' |\
 		awk 'BEGIN { num=1} { if($0~">") {print "IP_"num"\t"$0;num=num+1 }}' |\
-		sed -e 's/>//g' > annotations/IP_translation.txt
+		sed -e 's/>//g' > $gene_dir/IP_translation.txt
 
 	#translate headers into simple >IP_[number] format
-	cat annotations/gene_samples.fasta | sed -e 's/\s.*$//' |\
-		awk 'BEGIN { num=1} { if($0~">") {print ">IP_"num;num=num+1} else print $0  }' > annotations/gene_samples_simple.fasta
+	cat $gene_dir/gene_samples.fasta | sed -e 's/\s.*$//' |\
+		awk 'BEGIN { num=1} { if($0~">") {print ">IP_"num;num=num+1} else print $0  }' > $gene_dir/gene_samples_simple.fasta
 
 	#makeblastdb -in gene_samples.fasta -parse_seqids -blastdb_version 5 -title "Phage gene samples" -dbtype prot out -out my.database_name
-	makeblastdb -in annotations/gene_samples_simple.fasta -parse_seqids -title "Phage gene samples" -dbtype prot -out annotations/gene_samples_simple.faa
+	makeblastdb -in $gene_dir/gene_samples_simple.fasta -parse_seqids -title "Phage gene samples" -dbtype prot -out $gene_dir/gene_samples_simple.faa
 
 }
+
+function cleanup_blastp_db {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
+
+	rm -f $gene_dir/*.fasta
+
+	#remove fasta database
+	rm -f $gene_dir/*.faa.*
+
+	#remove pairwise blastp results
+	rm -f $gene_dir/*.txt
+}
+
 
 
 #run blast against a fasta file
@@ -27,23 +45,28 @@ function run_blastp {
 
 	evalue=$1
 
+	#TODO: check if evalue is filled!
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
+
 	#blastp -db  -outfmt '6 qaccver saccver pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen'
 
 	echo 'start running blastp'
-	blastp -query annotations/gene_samples_simple.fasta -db annotations/gene_samples_simple.faa\
+	blastp -query $gene_dir/gene_samples_simple.fasta -db $gene_dir/gene_samples_simple.faa\
 		-evalue $evalue\
-		-out annotations/pairwise_blastout.txt\
+		-out $gene_dir/pairwise_blastout.txt\
 		-num_threads 2\
 		 -outfmt '6 qaccver saccver pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen'
 	#-outfmt '7 qseqid sseqid length qlen qstart qend sstart send evalue'
 
 	echo 'filtering out protein comparisons against themselves'
-	cat annotations/pairwise_blastout.txt | awk '{if ($1!=$2) print $0}' > annotations/pairwise_blastout_filtered.txt
+	cat $gene_dir/pairwise_blastout.txt | awk '{if ($1!=$2) print $0}' > $gene_dir/pairwise_blastout_filtered.txt
 
 	echo 'number of hits:'
-	wc -l annotations/pairwise_blastout_filtered.txt
+	wc -l $gene_dir/pairwise_blastout_filtered.txt
 
 }
+
 
 #view top 10 proteins within samples
 function view_top_10_proteins {
