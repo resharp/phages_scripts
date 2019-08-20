@@ -123,14 +123,14 @@ function gene_part_from_proteins {
 		 sed -e 's/^[0-9]*_[0-9]*_//g' | sed -e 's/_;//' | cut -d ';' -f1
 }
 
-
 function contig_names_from_proteins {
 	translate_table | cut -d ';' -f1 | cut -f2 | sed -e 's/VIRSorter_//g'
 }
 
 #we have the separate parts that make a phage unique and can optionally concatenate them again with _ (not strictly necessary)
 function show_phage_names {
-	paste <(genomes_from_proteins) <(contig_names_from_proteins) <(gene_part_from_proteins) | awk '{print $1"_"$2"_"$3}'
+	#paste <(genomes_from_proteins) <(contig_names_from_proteins) <(gene_part_from_proteins) | awk '{print $1"_"$2"_"$3}'
+	cat annotations/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 | cut -f2
 }
 
 function show_phages_with_most_proteins {

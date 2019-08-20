@@ -92,8 +92,8 @@ function vr {
 }
 
 function view_size {
-	# printf "My name is \"%s\".\nIt's a pleasure to meet "%s"\n" "John" "Mary"
-	size=$(du -h $1 | cut -f1 | tail -1)
+
+	size=$(du -h $1 | tail -1 | cut -f1)
 
 	printf %s" size of : "%s"\n" $size $1
 }
