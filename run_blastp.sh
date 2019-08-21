@@ -4,10 +4,8 @@ function make_blastp_db {
 
 	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
 
-	#sample of some protein files
-	#TODO: change to all proteins
-	#----
-	p_files=$(find $gene_dir/*/*.faa | head -1000)
+	#concat all files!
+	p_files=$(find $gene_dir/*/*.faa)
 
 	cat $p_files > $gene_dir/gene_samples.fasta
 
@@ -36,6 +34,21 @@ function cleanup_blastp_db {
 
 	#remove pairwise blastp results
 	rm -f $gene_dir/*.txt
+}
+
+#this function moves the results of a subset of 1000 genomes to a new directory for analysis
+function move_blastp_results {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
+	to_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	mv -f $gene_dir/*.fasta $to_dir
+
+	#remove fasta database
+	mv -f $gene_dir/*.faa.* $to_dir
+
+	#remove pairwise blastp results
+	mv -f $gene_dir/*.txt $to_dir
 }
 
 
@@ -70,21 +83,47 @@ function run_blastp {
 
 #view top 10 proteins within samples
 function view_top_10_proteins {
-	cat annotations/pairwise_blastout_filtered.txt | cut -f1 | sort | uniq -c | sort -k1 -n -r | head -10
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
+
+	#cat $gene_dir/pairwise_blastout_filtered.txt | cut -f1 | sort | uniq -c | sort -k1 -n -r | head -10
+	cat $gene_dir/pairwise_blastout.txt | cut -f1 | sort | uniq -c | sort -k1 -n -r | head -10
 }
 
+function view_average_nr_blastp_hits {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
+
+	cat $gene_dir/pairwise_blastout.txt | cut -f1 | sort | uniq -c | sed -e 's/ IP_[0-9]*$/;\0/g' |\
+		 cut -d ';' -f1 | awk '{ total += $1; count++ } END { print total/count }'
+}
+
+function view_protein {
+	protein=$1
+
+	grep -E "$protein\b" -A100 patric/patric/phage_genes/gene_samples_simple.fasta | less
+}
 
 function prepare_sif_for_cytoscape {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
 
 	#http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
 	#sif format example:
 	#node1 typeA node2
 	#node2 typeB node3 node4 node5
-	cat annotations/pairwise_blastout_filtered.txt | awk '{print $1 " homolog " $2}' > annotations/pw_blastout_cytoscape.sif
+	cat $gene_dir/pairwise_blastout_filtered.txt | awk '{print $1 " homolog " $2}' > $gene_dir/pw_blastout_cytoscape.sif
+}
 
+function prepare_abc_for_mcl {
+
+
+	#TODO: change location, this one is only running on 1000 genomes
+	#---- * *  *     *               *
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
 
 	#prepare format for mcl (without weight)
-	cat annotations/pairwise_blastout_filtered.txt | awk '{print $1 "\t" $2}' > annotations/pw_blastout_cytoscape.abc
+	cat $gene_dir/pairwise_blastout_filtered.txt | awk '{print $1 "\t" $2}' > $gene_dir/pw_blastout_mcl.abc
 
 }
 
@@ -92,23 +131,66 @@ function run_mcl {
 
 	#default inflation is 2.0. we run with 2.5 for comparing with cytoscape plug-in
 	#keep it simple run with all default options
-	#how 
+
+	#TODO: change location, this one is only running on 1000 genomes
+	#---- * *  *     *               *
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
 
 	#run with different inflations
 
 	samples="1.5 2.0 2.5 3.0"
 	for sample in $samples:
 	do
-		mcl annotations/pw_blastout_cytoscape.abc --abc -I ${sample} -te 4 --d
+		mcl $gene_dir/pw_blastout_mcl.abc --abc -I ${sample} -te 4 --d
 	done
 
 	samples="I15 I20 I25 I30"
 
 	for sample in $samples
 		do echo "largest clusters for inflation: "$sample
-		cat annotations/out.pw_blastout_cytoscape.abc.$sample | awk '{print NF" proteins"}' | head -3
+		cat $gene_dir/out.pw_blastout_mcl.abc.$sample | awk '{print NF" proteins"}' | head -3
 	done
 
+}
+
+function split_mcl {
+
+	#samples denote runs for different mcl inflation factors
+	sample="I20"
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	mkdir $gene_dir/mcl.$sample
+
+	n=1
+	cat $gene_dir/out.pw_blastout_mcl.abc.$sample |\
+		while read line
+		do
+			for word in $line
+			do
+				echo $word >> $gene_dir/mcl.$sample/PC_$n.txt
+			done
+			n=$((n+1))
+		done
+}
+
+function split_fasta_according_to_mcl {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	sample="I20"
+
+	files=$(find $gene_dir/mcl.$sample/PC_*.txt)
+	for file in $files
+	do
+		#run your tool here
+		#https://github.com/lh3/seqtk
+
+		fasta_file=$(echo $file | sed -e 's/\.txt/\.fasta/g' )
+
+		echo "creating" $fasta_file
+		seqtk subseq $gene_dir/gene_samples_simple.fasta $file > $fasta_file
+	done
 }
 
 
