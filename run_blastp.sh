@@ -1,4 +1,3 @@
-
 #make blast database
 function make_blastp_db {
 
@@ -80,6 +79,19 @@ function run_blastp {
 
 }
 
+function filter_pairwise_blastp_hits_on_coverage {
+
+	#TODO: change to real gene_dir, not the 1000-sample
+	# * *  *   *    *
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	#now we want to filter on 75% pairwise query and 75% target coverage
+	#calculate (to-from+1)/(length) both for query and for target
+	cat $gene_dir/pairwise_blastout_filtered.txt |\
+		 awk '{ print $0"\t"($8-$7+1)/$13"\t"($10-$9+1)/$14}' |\
+		 awk '{if($15 > 0.75 && $16 > 0.75) print $0}' > $gene_dir/pairwise_blastout_filtered_75coverage.txt
+}
+
 
 #view top 10 proteins within samples
 function view_top_10_proteins {
@@ -101,152 +113,8 @@ function view_average_nr_blastp_hits {
 function view_protein {
 	protein=$1
 
-	grep -E "$protein\b" -A100 patric/patric/phage_genes/gene_samples_simple.fasta | less
-}
+	#grep -E "$protein\b" -A100 patric/patric/phage_genes/gene_samples_simple.fasta | less
 
-function prepare_sif_for_cytoscape {
-
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
-
-	#http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
-	#sif format example:
-	#node1 typeA node2
-	#node2 typeB node3 node4 node5
-	cat $gene_dir/pairwise_blastout_filtered.txt | awk '{print $1 " homolog " $2}' > $gene_dir/pw_blastout_cytoscape.sif
-}
-
-function prepare_abc_for_mcl {
-
-
-	#TODO: change location, this one is only running on 1000 genomes
-	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
-
-	#prepare format for mcl (without weight)
-	cat $gene_dir/pairwise_blastout_filtered.txt | awk '{print $1 "\t" $2}' > $gene_dir/pw_blastout_mcl.abc
-
-}
-
-function run_mcl {
-
-	#default inflation is 2.0. we run with 2.5 for comparing with cytoscape plug-in
-	#keep it simple run with all default options
-
-	#TODO: change location, this one is only running on 1000 genomes
-	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
-
-	#run with different inflations
-
-	samples="1.5 2.0 2.5 3.0"
-	for sample in $samples:
-	do
-		mcl $gene_dir/pw_blastout_mcl.abc --abc -I ${sample} -te 4 --d
-	done
-
-	samples="I15 I20 I25 I30"
-
-	for sample in $samples
-		do echo "largest clusters for inflation: "$sample
-		cat $gene_dir/out.pw_blastout_mcl.abc.$sample | awk '{print NF" proteins"}' | head -3
-	done
-
-}
-
-function split_mcl {
-
-	#samples denote runs for different mcl inflation factors
-	sample="I20"
-
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
-
-	mkdir $gene_dir/mcl.$sample
-
-	n=1
-	cat $gene_dir/out.pw_blastout_mcl.abc.$sample |\
-		while read line
-		do
-			for word in $line
-			do
-				echo $word >> $gene_dir/mcl.$sample/PC_$n.txt
-			done
-			n=$((n+1))
-		done
-}
-
-function split_fasta_according_to_mcl {
-
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
-
-	sample="I20"
-
-	files=$(find $gene_dir/mcl.$sample/PC_*.txt)
-	for file in $files
-	do
-		#run your tool here
-		#https://github.com/lh3/seqtk
-
-		fasta_file=$(echo $file | sed -e 's/\.txt/\.fasta/g' )
-
-		echo "creating" $fasta_file
-		seqtk subseq $gene_dir/gene_samples_simple.fasta $file > $fasta_file
-	done
-}
-
-
-#-----------------------
-# TODO: move the following stuff, it has nothing to do with running blast, but processing the results from [virsorter -> prodigal]
-#-----------------------
-
-#this is messy stuff, we have to clean it up
-#purpose: getting the genome_id, contig_id, unique phage_name back from the generated individual protein names
-#this is so messy because it is the result of the [virsorter -> prodigal] pipeline part
-function translate_table {
-
-	#cut off the category and put ; in front of genome_id
-	#cat annotations/IP_translation.txt | sed -e 's/-cat_[0-9]*_[0-9]*/;\0/' | sed -e 's/[0-9]*_[0-9]*_;/;\0/'
-
-	#this one is for the prophages (ontaining genes)
-	#cat annotations/IP_translation.txt | sed -e 's/-cat_[0-9]*_[0-9]*/;\0/' | sed -e 's/_gene_[0-9]*_gene_[0-9]*-[0-9]*-[0-9]*;/;\0/g'
-
-	#now do everything at the same time
-	#we put in some ";" delimiters in intermediary steps to help selecting parts later on
-	cat annotations/IP_translation.txt | sed -e 's/-cat_[0-9]*_[0-9]*/;\0/' | sed -e 's/[0-9]*_[0-9]*_;/;\0/' |\
-		sed -e 's/_gene_[0-9]*_gene_[0-9]*-[0-9]*-[0-9]*;/;\0/g' |\
-		sed -e 's/___\([0-9]*_[0-9]*_\);/;\1/' |\
-		sed -e 's/___\([0-9]*_[0-9]*_-circular\);/;\1/' |\
-		sed -s 's/circular-cat/circular;-cat/g'
-
-}
-
-function genomes_from_proteins {
-	translate_table | cut -d ';' -f2 | sed -e 's/_-circular$//g' | sed -e 's/__/_;_/g' | cut -d ';' -f1 | sed -e 's/_$//g'
-}
-
-function gene_part_from_proteins {
-	translate_table | cut -d ';' -f2 | sed -e 's/\(gene_[0-9]*_gene_[0-9]*\)/;\1;/g' |\
-		 sed -e 's/^[0-9]*_[0-9]*_//g' | sed -e 's/_;//' | cut -d ';' -f1
-}
-
-function contig_names_from_proteins {
-	translate_table | cut -d ';' -f1 | cut -f2 | sed -e 's/VIRSorter_//g'
-}
-
-#we have the separate parts that make a phage unique and can optionally concatenate them again with _ (not strictly necessary)
-function show_phage_names {
-	#paste <(genomes_from_proteins) <(contig_names_from_proteins) <(gene_part_from_proteins) | awk '{print $1"_"$2"_"$3}'
-	cat annotations/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 | cut -f2
-}
-
-function show_phages_with_most_proteins {
-	show_phage_names | sort | uniq -c | sort -k1 -n -r
-}
-
-function show_genomes_with_most_phages {
-	paste <(genomes_from_proteins) <(show_phage_names) | sort | uniq | cut -f1 | sort | uniq -c | sort -k1 -n -r
-}
-
-function show_phages_for_genome {
-	genome=$1
-	show_phage_names | grep $genome | sort | uniq
+	#seqtk is a module installed in the python37 conda env
+	seqtk subseq $gene_dir/gene_samples_simple.fasta <(echo $protein) | less
 }

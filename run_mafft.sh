@@ -1,4 +1,11 @@
-#running mafft
+
+
+#example workflow
+#	run_mafft PC_1			#multiple alignment, store in *_mafft.fasta file
+#	build_profile PC_1		#build hmm profile, store in *.hmm file
+#	search_with_profile PC_1	#search with profile, store in *hmm_results.txt file
+
+
 function run_mafft {
 
 	PC=$1
@@ -49,5 +56,40 @@ function calculate_gaps {
 	nr_total=$((nr_gaps+nr_alignments))
 
 	echo $nr_gaps $nr_total | awk '{print $1/$2}'
+
+}
+
+function build_profile {
+
+	PC=$1
+
+	sample="I20"
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	align_file=$gene_dir/mcl.$sample/${PC}_mafft.fasta
+	hmm_file=$gene_dir/mcl.$sample/${PC}_mafft.hmm
+
+	hmmbuild $hmm_file $align_file
+
+}
+
+
+function search_with_profile {
+
+	PC=$1
+
+	sample="I20"
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	fasta_file=$gene_dir/mcl.$sample/${PC}.fasta
+	hmm_file=$gene_dir/mcl.$sample/${PC}_mafft.hmm
+	out_file=$gene_dir/mcl.$sample/${PC}_mafft_hmm_results.txt
+
+	echo $fasta_file
+	echo $hmm_file
+
+	hmmsearch $hmm_file $fasta_file > $out_file
 
 }
