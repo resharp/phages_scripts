@@ -2,6 +2,8 @@
 # view_stats
 #
 # processing the results from [virsorter -> prodigal]
+#
+# also translating gene content into protein clusters of a specific clustering
 #-----------------------
 
 #this is messy stuff, we have to clean it up
@@ -40,14 +42,82 @@ function contig_names_from_proteins {
 	translate_table | cut -d ';' -f1 | cut -f2 | sed -e 's/VIRSorter_//g'
 }
 
-#we have the separate parts that make a phage unique and can optionally concatenate them again with _ (not strictly necessary)
 function show_phage_names {
 
 	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
 
+	#we have the separate parts that make a phage unique and can optionally concatenate them again with _ (not strictly necessary)
 	#paste <(genomes_from_proteins) <(contig_names_from_proteins) <(gene_part_from_proteins) | awk '{print $1"_"$2"_"$3}'
-	cat $gene_dir/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 | cut -f2
+
+	cat $gene_dir/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 | cut -f1,2
 }
+
+
+# format: PH_Id, PH_Name
+# from prodigal gene predictions (not specific to any clustering)
+function show_phage_table {
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	#we have the separate parts that make a phage unique and can optionally concatenate them again with _ (not strictly necessary)
+	#paste <(genomes_from_proteins) <(contig_names_from_proteins) <(gene_part_from_proteins) | awk '{print $1"_"$2"_"$3}'
+
+	#sort on phage name and add a unique PH_Id number
+	cat $gene_dir/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 |\
+		cut -f2 | sort | uniq |\
+	 	awk 'BEGIN { num=1} { print "PH_"num"\t"$0;num=num+1 }'
+}
+
+# format: PH_Id, IP_Id, PH_Name
+function make_phage_ip_table {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	#join on phage_name (show_phage_table already sorted on phage name)
+	join -1 2 -2 2 -o2.1,1.1,0 <(cat $gene_dir/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 | sort -k2) <(show_phage_table)\
+		 > $gene_dir/phage_ip_table.txt
+}
+
+# This functions uses a specific clustering result
+# e.g. mcl_75.I20 (this means 75% query and target coverage threshold and inflation factor 2.0)
+#format: IP_Id, PC_Id
+function make_ip_pc_table {
+
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	pc_file=out.pw_blastout_mcl_75.abc.I20
+
+	ip_pc_table=$gene_dir/ip_pc_table.mcl_75.I20
+
+	#take for example
+	# out.pw_blastout_mcl_75.abc.I20
+
+	#then put PC_[nr] in front of each line
+
+	#then loop through lines
+	#loop through words
+	#first word is PC_Id
+	#for every other word
+	#write IP_Id, PC_Id
+
+	> $ip_pc_table
+	cat $gene_dir/$pc_file | awk 'BEGIN { num=1} { print "PC_"num"\t"$0;num=num+1 }' |\
+ 	        while read line
+                do
+			first=false
+			for word in $line
+                        do
+        	                if [ "$first" = "false" ]
+				then
+					pc=$word
+					first=true
+				else
+					echo $word $pc >> $ip_pc_table
+				fi
+                	 done
+		done
+
+}
+
 
 function show_phages_with_most_proteins {
 	show_phage_names | sort | uniq -c | sort -k1 -n -r
