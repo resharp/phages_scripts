@@ -12,7 +12,7 @@ function run_mcl_phages {
 
 	#run with different inflations
 
-	samples="1.5 2.0 2.5 3.0"
+	samples="1.5 2.0 2.5 3.0 5.0 8.0"
 	#samples="2.0"
 	for sample in $samples:
 	do
@@ -20,7 +20,7 @@ function run_mcl_phages {
 		mcl $gene_dir/$file_in_mcl --abc -I ${sample} -te 4 --d --expect-values
 	done
 
-	samples="I15 I20 I25 I30"
+	samples="I15 I20 I25 I30 I50 I80"
 	#samples="I20"
 
 	for sample in $samples

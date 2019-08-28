@@ -80,13 +80,17 @@ function make_phage_ip_table {
 # This functions uses a specific clustering result
 # e.g. mcl_75.I20 (this means 75% query and target coverage threshold and inflation factor 2.0)
 #format: IP_Id, PC_Id
+#example: make_ip_pc_table I20
 function make_ip_pc_table {
+
+	sample=$1
 
 	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
 
-	pc_file=out.pw_blastout_mcl_75.abc.I20
+	pc_file=out.pw_blastout_mcl_75.abc.$sample
 
-	ip_pc_table=$gene_dir/ip_pc_table.mcl_75.I20
+	ip_pc_table=$gene_dir/ip_pc_table.mcl_75.$sample
+	pc_table=$gene_dir/pc_table.mcl_75.$sample
 
 	#take for example
 	# out.pw_blastout_mcl_75.abc.I20
@@ -98,6 +102,9 @@ function make_ip_pc_table {
 	#first word is PC_Id
 	#for every other word
 	#write IP_Id, PC_Id
+
+	>$pc_table
+	cat $gene_dir/$pc_file | awk 'BEGIN { num=1} { print "PC_"num;num=num+1 }' > $pc_table
 
 	> $ip_pc_table
 	cat $gene_dir/$pc_file | awk 'BEGIN { num=1} { print "PC_"num"\t"$0;num=num+1 }' |\
