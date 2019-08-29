@@ -15,12 +15,15 @@ run_vs_1.sh uses the VirSorter Perl script and is set up in a Conda environment 
 See
 https://github.com/simroux/VirSorter
 
+job_puller, ana_iterations and show_virsorter_summary are old script files, for running on concatenated PATRIC genomes.
+
 
 ## gene annotation ##
 
 * We will use prodigal for prediction of genes
 * We do a pairwise blastp search of all genes against all genes with evalue cut-off 1e-3
 * We filter out all pairwise matches with a > 75% query and target coverage
+
 
 
 ## protein clustering ##
