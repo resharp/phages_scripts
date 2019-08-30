@@ -14,7 +14,7 @@ function prepare_abc_for_mcl {
 
 	#TODO: change location, this one is only running on 1000 genomes
 	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 
 	#prepare format for mcl (without weight)
 	cat $gene_dir/pairwise_blastout_filtered.txt | awk '{print $1 "\t" $2}' > $gene_dir/pw_blastout_mcl.abc
@@ -26,7 +26,7 @@ function prepare_abc_for_mcl75 {
 
 	#TODO: change location, this one is only running on 1000 genomes
 	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 
 	#prepare format for mcl (without weight)
 	cat $gene_dir/pairwise_blastout_filtered_75coverage.txt | awk '{print $1 "\t" $2}' > $gene_dir/pw_blastout_mcl_75.abc
@@ -41,18 +41,20 @@ function run_mcl {
 
 	#TODO: change location, this one is only running on 1000 genomes
 	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 
 	file_in_mcl=pw_blastout_mcl_75.abc
 	#run with different inflations
 
-	samples="1.5 2.0 2.5 3.0"
+	#samples="1.5 2.0 2.5 3.0"
+	samples="2.5"
 	for sample in $samples:
 	do
 		mcl $gene_dir/$file_in_mcl --abc -I ${sample} -te 4 --d
 	done
 
-	samples="I15 I20 I25 I30"
+	#samples="I15 I20 I25 I30"
+	samples="I25"
 
 	for sample in $samples
 		do echo "largest clusters for inflation: "$sample
@@ -67,7 +69,7 @@ function split_mcl {
 	#samples denote runs for different mcl inflation factors
 	sample=$1
 
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 
 	##NB processes 75 coverage file
 	# * *  *   *    *
@@ -90,20 +92,20 @@ function split_mcl {
 
 #uses seqtk in python37 conda env
 #example  split_fasta_according_to_mcl I25
+#
+# NB: dependence on pc_table.mcl_75.I25 or .$sample
 function split_fasta_according_to_mcl {
 
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 
 	sample=$1
 
-	files=$(find $gene_dir/mcl_75.$sample/PC_*.txt)
+	pcs=$(cat $gene_dir/pc_table.mcl_75.$sample)
 
-	for file in $files
+	for pc in $pcs
 	do
-		#run your tool here
-		#https://github.com/lh3/seqtk
-
-		fasta_file=$(echo $file | sed -e 's/\.txt/\.fasta/g' )
+		fasta_file=$gene_dir/mcl_75.$sample/$pc.fasta
+		file=$gene_dir/mcl_75.$sample/$pc.txt
 
 		echo "creating" $fasta_file
 		seqtk subseq $gene_dir/gene_samples_simple.fasta $file > $fasta_file

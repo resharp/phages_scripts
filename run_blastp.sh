@@ -83,7 +83,7 @@ function filter_pairwise_blastp_hits_on_coverage {
 
 	#TODO: change to real gene_dir, not the 1000-sample
 	# * *  *   *    *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 
 	#now we want to filter on 75% pairwise query and 75% target coverage
 	#calculate (to-from+1)/(length) both for query and for target

@@ -23,16 +23,16 @@ job_puller, ana_iterations and show_virsorter_summary are old script files, for 
 * We will use prodigal for prediction of genes
 * We do a pairwise blastp search of all genes against all genes with evalue cut-off 1e-3
 * We filter out all pairwise matches with a > 75% query and target coverage
-
+* we did _not_ filter on bitscore (compare vCONTact bitscore > 50)
 
 
 ## protein clustering ##
 * We use mcl for clustering the genes based on the filtered pairwise blastp matches without weight on the edges
 * mcl with inflation factor 2.0
 * we evaluate the protein clusters by building a hmm profile for every gene cluster and see how well it separates the proteins (todo: specify)
-** mafft for multiple alignment of proteins
-** hmmbuild for building hmm profile
-** hmmsearch
+* mafft for multiple alignment of proteins
+* hmmbuild for building hmm profile
+* hmmsearch
 
 ## clustering phages ##
 * we will cluster on shared gene content
