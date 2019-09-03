@@ -86,6 +86,7 @@ function show_phage_table {
 	 	awk 'BEGIN { num=1} { print "PH_"num"\t"$0;num=num+1 }'
 }
 
+
 # format: PH_Id, IP_Id, PH_Name
 function make_phage_ip_table {
 
@@ -95,6 +96,16 @@ function make_phage_ip_table {
 	join -1 2 -2 2 -o2.1,1.1,0 <(cat $gene_dir/IP_translation.txt | sed -e 's/_[0-9]*$/;\0/g' | cut -d ';' -f1 | sort -k2) <(show_phage_table $gene_dir)\
 		 > $gene_dir/phage_ip_table.txt
 }
+
+#format: PH_Id, PH_Name
+#depends on phage_ip_table
+function make_phage_table {
+
+	gene_dir=$1
+
+	cat $gene_dir/phage_ip_table.txt | awk '{ print $1"\t"$3}' | uniq > $gene_dir/phage_table.txt
+}
+
 
 # This functions uses a specific clustering result
 # e.g. mcl_75.I20 (this means 75% query and target coverage threshold and inflation factor 2.0)
@@ -131,7 +142,7 @@ function make_ip_pc_table {
                 do
 			first=false
 			for word in $line
-                        do
+			do
         	                if [ "$first" = "false" ]
 				then
 					pc=$word
@@ -144,6 +155,31 @@ function make_ip_pc_table {
 
 }
 
+#now we make a smaller ip_pc table for a specific clustering for pc that contain at least 100 ips
+#this is because we want to have a group of at least 100 phages, so e.g. 100 ips should be found at least for that pc
+#ip=individual protein
+#pc=protein cluster
+#example
+#make_filtered_ip_pc_table $gene_dir "mcl_75.I25" 100
+function make_filtered_ip_pc_table {
+
+	gene_dir=$1
+	extension=$2
+	min_nr_phages=$3
+
+	out_file=$gene_dir/ip_pc_table.$extension.filter_$min_nr_phages
+
+	#first determine the pcs that result from at least min_nr_phages ips
+	nr_pcs=$(cat $gene_dir/ip_pc_table.$extension | cut -d " " -f2 | uniq -c |\
+		 awk -v min_nr_phages=$min_nr_phages '{if ($1 > min_nr_phages-1 ) print $0}' | wc -l)
+
+	echo "Nr of PCs :"$nr_pcs
+
+	> $out_file
+	cat $gene_dir/ip_pc_table.$extension |\
+		awk -F_ '{print $3"\t"$0}'| awk -v nr_pcs=$nr_pcs '{ if ($1 < nr_pcs + 1 ) print $2"\t"$3}' > $out_file
+
+}
 
 function show_phages_with_most_proteins {
 	gene_dir=$1
