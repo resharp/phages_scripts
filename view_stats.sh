@@ -97,6 +97,14 @@ function make_phage_ip_table {
 		 > $gene_dir/phage_ip_table.txt
 }
 
+function make_phage_ip_table_short {
+
+	gene_dir=$1
+
+	cat $gene_dir/phage_ip_table.txt | cut -d " " -f1,2 > $gene_dir/phage_ip_table_short.txt
+}
+
+
 #format: PH_Id, PH_Name
 #depends on phage_ip_table
 function make_phage_table {
