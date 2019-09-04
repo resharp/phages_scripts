@@ -1,3 +1,21 @@
+#example workflow
+#depends on prodigal results (see run_prodigal.sh)
+function run_blastp_workflow {
+	
+	#TODO: split two kind of working directories
+	# one where the *.faa files are (original gene predictions from prodigal)
+	# and one to further process results
+	
+	#also builds the IP_translation.txt table that is heavily used in extracting relations in view_stats.sh
+	make_blastp_db
+	
+	run_blastp 1e-3
+
+	filter_pairwise_blastp_hits_on_coverage
+
+}
+
+
 #make blast database
 function make_blastp_db {
 

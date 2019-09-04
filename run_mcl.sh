@@ -1,3 +1,38 @@
+#example mcl workflow with preprocessing and postprocessing steps
+# depends on functions in view_stats.sh!
+function run_mcl_workflow {
+	
+	#TODO: change location, this one is running on ALL genomes
+	#---- * *  *     *               *	
+	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
+	#gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+
+	#depends on result op pairwise blastp
+	prepare_abc_for_mcl75 $gene_dir
+	
+	#note: change the required inflation factors  in script
+	run_mcl $gene_dir
+
+	#build files for evaluating mcl clustering with hmm profiles (depends on seqtk in conda env python37)
+	#resulting files are input for MclClusterEvaluation.py
+	conda deactivate
+	conda activate python37
+	
+	#NB: add extra lines for different evaluations I15, I20, I25, etc ..
+	split_mcl $gene_dir I25
+	split_fasta_according_to_mcl $gene_dir I25
+
+	#build files for calculating shared gene content (dependency on functions in view_stats.sh)
+	#resulting files are input for PhageSharedContent.py
+	make_phage_ip_table $gene_dir 
+	make_phage_ip_table_short $gene_dir
+	make_phage_table $gene_dir
+	
+	make_ip_pc_table $gene_dir I25
+	make_filtered_ip_pc_table $gene_dir "mcl_75.I25" 100
+	
+}
+
 function prepare_sif_for_cytoscape {
 
 	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes
@@ -11,10 +46,7 @@ function prepare_sif_for_cytoscape {
 
 function prepare_abc_for_mcl {
 
-
-	#TODO: change location, this one is only running on 1000 genomes
-	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
+	gene_dir=$1
 
 	#prepare format for mcl (without weight)
 	cat $gene_dir/pairwise_blastout_filtered.txt | awk '{print $1 "\t" $2}' > $gene_dir/pw_blastout_mcl.abc
@@ -24,9 +56,7 @@ function prepare_abc_for_mcl {
 function prepare_abc_for_mcl75 {
 
 
-	#TODO: change location, this one is only running on 1000 genomes
-	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
+	gene_dir=$1
 
 	#prepare format for mcl (without weight)
 	cat $gene_dir/pairwise_blastout_filtered_75coverage.txt | awk '{print $1 "\t" $2}' > $gene_dir/pw_blastout_mcl_75.abc
@@ -39,9 +69,9 @@ function run_mcl {
 	#default inflation is 2.0. we run with 2.5 for comparing with cytoscape plug-in
 	#keep it simple run with all default options
 
-	#TODO: change location, this one is only running on 1000 genomes
+	#TODO: change location, this one is running on all genomes
 	#---- * *  *     *               *
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
+	gene_dir=$1
 
 	file_in_mcl=pw_blastout_mcl_75.abc
 	#run with different inflations
@@ -63,13 +93,16 @@ function run_mcl {
 
 }
 
-#example split_mcl I25
+#example split_mcl $gene_dir I25
+# builds set of files in directory (file for each PC consisting of list of IPs)
+# this is used by split_fasta_according_to_mcl
+#	mcl_75.$sample/PC_$n.txt
 function split_mcl {
 
-	#samples denote runs for different mcl inflation factors
-	sample=$1
+	gene_dir=$1
 
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
+	#samples denote runs for different mcl inflation factors
+	sample=$2
 
 	##NB processes 75 coverage file
 	# * *  *   *    *
@@ -91,14 +124,16 @@ function split_mcl {
 }
 
 #uses seqtk in python37 conda env
-#example  split_fasta_according_to_mcl I25
+#example  split_fasta_according_to_mcl $gene_dir I25
 #
-# NB: dependence on pc_table.mcl_75.I25 or .$sample
+# depends on 
+#	pc_table.mcl_75.I25 or .$sample
+#	the PC_1.txt files etc in the  mcl_75.I25 directory, or mcl_75.$sample (built with split_mcl)
 function split_fasta_according_to_mcl {
 
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
+	gene_dir=$1
 
-	sample=$1
+	sample=$2
 
 	pcs=$(cat $gene_dir/pc_table.mcl_75.$sample)
 

@@ -2,6 +2,7 @@
 # view_stats
 #
 # processing the results from [virsorter -> prodigal]
+# but depends on IP_translation built in run_blastp.sh
 #
 # building tables for coupling of phage to IP (this could be moved to end of run_prodigal script)
 #
@@ -73,6 +74,7 @@ function show_phage_names {
 
 # format: PH_Id, PH_Name
 # from prodigal gene predictions (not specific to any clustering)
+# depends on IP_translation.txt built in run_blastp.sh
 function show_phage_table {
 
 	gene_dir=$1
@@ -118,12 +120,12 @@ function make_phage_table {
 # This functions uses a specific clustering result
 # e.g. mcl_75.I20 (this means 75% query and target coverage threshold and inflation factor 2.0)
 #format: IP_Id, PC_Id
-#example: make_ip_pc_table I20
+#example: make_ip_pc_table $gene_dir I20
 function make_ip_pc_table {
 
-	sample=$1
-
-	gene_dir=$2
+	gene_dir=$1
+	
+	sample=$2
 
 	pc_file=out.pw_blastout_mcl_75.abc.$sample
 
