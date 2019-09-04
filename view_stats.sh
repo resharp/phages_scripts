@@ -124,7 +124,7 @@ function make_phage_table {
 function make_ip_pc_table {
 
 	gene_dir=$1
-	
+
 	sample=$2
 
 	pc_file=out.pw_blastout_mcl_75.abc.$sample

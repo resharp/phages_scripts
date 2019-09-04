@@ -1,15 +1,15 @@
 #example mcl workflow with preprocessing and postprocessing steps
 # depends on functions in view_stats.sh!
 function run_mcl_workflow {
-	
+
 	#TODO: change location, this one is running on ALL genomes
-	#---- * *  *     *               *	
+	#---- * *  *     *               *
 	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_all
 	#gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
 
 	#depends on result op pairwise blastp
 	prepare_abc_for_mcl75 $gene_dir
-	
+
 	#note: change the required inflation factors  in script
 	run_mcl $gene_dir
 
@@ -17,7 +17,7 @@ function run_mcl_workflow {
 	#resulting files are input for MclClusterEvaluation.py
 	conda deactivate
 	conda activate python37
-	
+
 	#NB: add extra lines for different evaluations I15, I20, I25, etc ..
 	split_mcl $gene_dir I25
 	split_fasta_according_to_mcl $gene_dir I25
@@ -27,10 +27,10 @@ function run_mcl_workflow {
 	make_phage_ip_table $gene_dir 
 	make_phage_ip_table_short $gene_dir
 	make_phage_table $gene_dir
-	
+
 	make_ip_pc_table $gene_dir I25
 	make_filtered_ip_pc_table $gene_dir "mcl_75.I25" 100
-	
+
 }
 
 function prepare_sif_for_cytoscape {
