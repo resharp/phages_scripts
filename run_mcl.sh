@@ -10,6 +10,8 @@ function run_mcl_workflow {
 	#depends on result op pairwise blastp
 	prepare_abc_for_mcl75 $gene_dir
 
+	conda deactivate
+	conda activate virsorter
 	#note: change the required inflation factors  in script
 	run_mcl $gene_dir
 
@@ -24,10 +26,11 @@ function run_mcl_workflow {
 
 	#build files for calculating shared gene content (dependency on functions in view_stats.sh)
 	#resulting files are input for PhageSharedContent.py
-	make_phage_ip_table $gene_dir 
+	make_phage_ip_table $gene_dir
 	make_phage_ip_table_short $gene_dir
 	make_phage_table $gene_dir
 
+	#also builds pc_table
 	make_ip_pc_table $gene_dir I25
 	make_filtered_ip_pc_table $gene_dir "mcl_75.I25" 100
 

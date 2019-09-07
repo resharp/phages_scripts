@@ -178,6 +178,7 @@ function make_filtered_ip_pc_table {
 	min_nr_phages=$3
 
 	out_file=$gene_dir/ip_pc_table.$extension.filter_$min_nr_phages
+	out_file_pc=$gene_dir/pc_table.$extension.filter_$min_nr_phages
 
 	#first determine the pcs that result from at least min_nr_phages ips
 	nr_pcs=$(cat $gene_dir/ip_pc_table.$extension | cut -d " " -f2 | uniq -c |\
@@ -188,6 +189,10 @@ function make_filtered_ip_pc_table {
 	> $out_file
 	cat $gene_dir/ip_pc_table.$extension |\
 		awk -F_ '{print $3"\t"$0}'| awk -v nr_pcs=$nr_pcs '{ if ($1 < nr_pcs + 1 ) print $2"\t"$3}' > $out_file
+
+	> $out_file_pc
+	cat $gene_dir/pc_table.$extension |\
+		awk -F_ '{print $2"\t"$0}'| awk -v nr_pcs=$nr_pcs '{ if ($1 < nr_pcs + 1 ) print $2}' > $out_file_pc
 
 }
 
