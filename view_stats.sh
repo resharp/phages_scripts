@@ -29,7 +29,8 @@ function translate_table {
 		sed -e 's/_gene_[0-9]*_gene_[0-9]*-[0-9]*-[0-9]*;/;\0/g' |\
 		sed -e 's/___\([0-9]*_[0-9]*_\);/;\1/' |\
 		sed -e 's/___\([0-9]*_[0-9]*_-circular\);/;\1/' |\
-		sed -s 's/circular-cat/circular;-cat/g'
+		sed -s 's/circular-cat/circular;-cat/g' |\
+		sed -s 's/circular_gene/circular;_gene/g'
 
 }
 
@@ -114,6 +115,29 @@ function make_phage_table {
 	gene_dir=$1
 
 	cat $gene_dir/phage_ip_table.txt | awk '{ print $1"\t"$3}' | uniq > $gene_dir/phage_table.txt
+}
+
+function make_genome_phage_table {
+	gene_dir=$1
+
+	join -1 2 -2 2 -o1.1,2.1,2.2 <(paste <(genomes_from_proteins $gene_dir | tr "_" ".") <(show_phage_names $gene_dir) | uniq | sort -k2) <(cat $gene_dir/phage_table.txt) > $gene_dir/genome_phage_table.txt
+}
+
+function make_genome_phage_table_short {
+	gene_dir=$1
+	cut -d " " -f1,2 $gene_dir/genome_phage_table.txt > $gene_dir/genome_phage_table_short.txt
+}
+
+function make_genome_taxonomy_table {
+
+	gene_dir=$1
+	cat /hosts/linuxhome/mgx/DB/PATRIC/patric/metadata.20190620.tsv | tail -n +2 | awk -F '\t' '{print $1"\t"$4"\t"$6"\t"$9}' > $gene_dir/genome_taxonomy.txt
+}
+
+function view_top_phage_origins {
+
+	gene_dir=$1
+	cat $gene_dir/genome_phage_table.txt | cut -d " " -f1 | sort | uniq -c | sort -k1 -n -r
 }
 
 

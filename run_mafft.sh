@@ -129,11 +129,17 @@ function example_compare_hmm_hits {
 }
 
 
+# example
+#
+# run_alignment_evaluation_workflow $gene_dir "I25"
 function run_alignment_evaluation_workflow {
 
-	gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	#gene_dir=/hosts/linuxhome/mgx/DB/PATRIC/patric/phage_genes_1000
+	gene_dir=$1
 
-	sample="I20"
+	sample=$2
+
+	#todo: use pc table?
 	nr_pcs=$(wc -l $gene_dir/out.pw_blastout_mcl_75.abc.$sample | awk '{print $1}')
 
 	log_file=$gene_dir/log_evaluation.pw_blastout_mcl_75.abc.$sample.txt
