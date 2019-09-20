@@ -1,6 +1,9 @@
+#example: run_phage_clustering_workflow $gene_dir "0.5"
 function run_phage_clustering_workflow {
 
 	gene_dir=$1
+
+	cut_off=$2
 
 	#this one needs the output of PhageSharedContent.calc_shared_pc_measures()
 	# e.g. shared_pc_measures.mcl_75.I25.txt
@@ -9,15 +12,15 @@ function run_phage_clustering_workflow {
 
 	#abc is the simple label format for mcl (see https://micans.org/mcl/man/mcl.html#examples)
 	#this also uses a cut-off of a minimum of 0.1 Jaccard distance
-	make_abc_from_filtered_phage_measures $gene_dir
+	make_abc_from_filtered_phage_measures $gene_dir $cut_off
 
-	#run mcl with the Jaccard distance between 0.1 and 1 as weight
+	#run mcl with the Jaccard distance between 0.5 and 1 as weight
 	#and inflation 2.5
-	run_mcl_phages $gene_dir "8.0"
+	run_mcl_phages $gene_dir "2.5" $cut_off
 	#run_mcl_phages $gene_dir "1.5 2.0 2.5 3.0"
 
 	#make a table of { PHC_Id, PH_Id } coupling between phage clusters and phages
-	split_mcl_phages $gene_dir "8.0"
+	split_mcl_phages $gene_dir "2.5" $cut_off
 
 }
 
@@ -83,19 +86,30 @@ function make_sif_from_filtered_phage_measures {
 	cat ${gene_dir}/shared_pc_measures.mcl_75.I25.nr_pc_min_5.txt | awk ' BEGIN { FS=","} { if ($6 >= 0.5) print $1,"sharing_0_5",$2}' > $gene_dir/$out_name
 }
 
+#example: make_abc_from_filtered_phage_measures $gene_dir "0.5"
 function make_abc_from_filtered_phage_measures {
 
 	gene_dir=$1
+	cut_off=$2
 
-	out_name=shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_0_1.abc
+	cut_off_str=$(echo $cut_off | sed -e "s/\.//g")
+	out_name=shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_${cut_off_str}.abc
 
-	#we filter on Jaccard index >= 0.10
-	cat ${gene_dir}/shared_pc_measures.mcl_75.I25.nr_pc_min_5.txt | awk ' BEGIN { FS=","} { if ($6 >= 0.1) print $1,$2,$6}' > $gene_dir/$out_name
+	#we filter on Jaccard index >= cut_off
+	cat ${gene_dir}/shared_pc_measures.mcl_75.I25.nr_pc_min_5.txt | awk -v cut_off=$cut_off ' BEGIN { FS=","} { if ($6 >= cut_off) print $1,$2,$6}' > $gene_dir/$out_name
 }
 
+#example: view_abc_from_filtered_phage_measures $gene_dir "0.5"
+function view_abc_from_filtered_phage_measures {
+	gene_dir=$1
+	cut_off=$2
+
+	#we filter on Jaccard index >= cut_off
+	cat ${gene_dir}/shared_pc_measures.mcl_75.I25.nr_pc_min_5.txt | awk -v cut_off=$cut_off ' BEGIN { FS=","} { if ($6 >= cut_off) print $1,$2,$6}'
+}
 
 #example:
-# run_mcl_phages $gene_dir "1.5 2.0 2.5 3.0"
+# run_mcl_phages $gene_dir "1.5 2.0 2.5 3.0" "0.5"
 function run_mcl_phages {
 
 	gene_dir=$1
@@ -103,7 +117,10 @@ function run_mcl_phages {
         #samples="1.5 2.0 2.5 3.0 5.0 8.0"
 	samples=$2
 
-	file_in_mcl=shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_0_1.abc
+	cut_off=$3
+
+	cut_off_str=$(echo $cut_off | sed -e "s/\.//g")
+	file_in_mcl=shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_${cut_off_str}.abc
 
 	#out_name=$gene_dir/out.shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_0_1.abc
 
@@ -121,7 +138,7 @@ function run_mcl_phages {
         done
 }
 
-#example: split_mcl_phages $gene_dir I25
+#example: split_mcl_phages $gene_dir "2.5" "0.5"
 function split_mcl_phages {
 
         gene_dir=$1
@@ -130,8 +147,12 @@ function split_mcl_phages {
         sample=$2
 	sample_str=$(echo "I"$sample | sed -e "s/\.//g")
 
-        file_out_mcl=out.shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_0_1.abc.$sample_str
-        file_out_split=split.shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_0_1.abc.$sample_str
+
+	cut_off=$3
+	cut_off_str=$(echo $cut_off | sed -e "s/\.//g")
+
+        file_out_mcl=out.shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_${cut_off_str}.abc.$sample_str
+        file_out_split=split.shared_pc_measures.mcl_75.I25.nr_pc_min_5.sharing_${cut_off_str}.abc.$sample_str
 
         n=1
         cat $gene_dir/$file_out_mcl |\
