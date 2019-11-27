@@ -62,6 +62,34 @@ function select_samples {
 	echo $nr_selected
 }
 
+function select_crassphage {
+
+	samples=$(cat $sample_dir/MGXDB_samples.txt | awk '{print $9}')
+
+	> $sample_dir/MGXDB_crassphage.txt
+	nr_selected=0
+	for sample in $samples
+	do
+		nr_crass=0
+		meta_file=$source_dir/$sample/${sample}_metadata
+		if [[ -f "$meta_file" ]]; then
+			nr_crass=$(grep -c "crAssphage" $source_dir/$sample/${sample}_metadata)
+		fi
+		if [[ $nr_crass == "1" ]]; then
+			echo "'crAsshage' found in" $sample
+			gz_file=$source_dir/$sample/${sample}_filtered.fastq.gz
+			if [ -f "$gz_file" ];then
+				echo $gz_file
+				nr_selected=$((nr_selected+1))
+				#cp $gz_file $sample_dir/${sample}_filtered.fastq.gz
+				echo $sample >> $sample_dir/MGXDB_crassphage.txt
+			fi
+		fi
+	done
+	echo "Nr containing assembled crassPhage: "$nr_selected
+}
+
+
 
 #what is the size of the reads?
 #optional: downsample the samples, e.g. on 10,000 short reads
@@ -77,6 +105,7 @@ function run_alignment {
 	for sample in $samples; do
 
 		file=$sample_dir/${sample}_filtered
+
 
 		gunzip ${file}.fastq.gz
 
