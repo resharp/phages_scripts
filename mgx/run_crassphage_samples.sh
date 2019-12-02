@@ -4,9 +4,9 @@
 #---------------
 source_dir=/hosts/linuxhome/mgx/DB/MGXDB/MGXDB
 
-#TODO: replace and set at location on mutant
-sample_dir=/hosts/linuxhome/chaperone/tmp/richard/crassphage_samples
-
+#TODO: replace and set at right location on mutant
+sample_dir=/hosts/linuxhome/mutant31/tmp/richard/crassphage_samples
+#sample_dir=/hosts/linuxhome/chaperone/tmp/richard/crassphage_samples
 master_dir=/hosts/linuxhome/chaperone/tmp/richard/crassphage_samples
 
 function run_crassphage_samples {
