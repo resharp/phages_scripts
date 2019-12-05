@@ -1,17 +1,29 @@
 #DiversiTools
 #http://josephhughes.github.io/DiversiTools/tutorial.html
 
-sample=MGXDB008660
-sample_dir=/hosts/linuxhome/mutant31/tmp/richard/crassphage_samples/${sample}
+
+#sample=MGXDB008660
+sample=MGXDB009139
+#sample_dir=/hosts/linuxhome/mutant31/tmp/richard/crassphage_samples/${sample}
 
 function run_diversiutils {
 
 	sample=$1
 
-	tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${sample}_filtered.sorted.bam\
+	tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${sample}/${sample}_filtered.sorted.bam\
 		-ref $sample_dir/crassphage_refseq.fasta\
 		-orfs $sample_dir/codingregions_new.txt\
 		-stub $sample_dir/${sample}
+
+	#remove the "<NA>" strings
+	sed -e 's/<NA>//g' $sample_dir/${sample}/${sample}_AA.txt > $sample_dir/${sample}/${sample}_AA_clean.txt
+
+	conda deactivate
+	conda activate python37
+
+	#create measures (based on ${sample}_AA_clean.txt)
+	python bin/CalcDiversiMeasures.py
+
 }
 
 #cut -f3,5,11,12,13 $sample_dir/MGXDB008660_CDS_AA.txt | less
@@ -35,7 +47,7 @@ function convert_aa_file {
 	sample=$1
 
 	#remove the "<NA>" strings
-	sed -e 's/<NA>//g' $sample_dir/${sample}_AA.txt > $sample_dir/${sample}_AA_clean.txt
+	sed -e 's/<NA>//g' $sample_dir/${sample}/${sample}_AA.txt > $sample_dir/${sample}/${sample}_AA_clean.txt
 
 }
 
