@@ -127,7 +127,7 @@ function run_sample {
 
 		echo $gz_file
 
-		cp $gz_file $sample_dir/${sample}
+		rsync -av --force $gz_file $sample_dir/${sample}
 	fi
 
 	file=$sample_dir/${sample}/${sample}_filtered
@@ -157,7 +157,7 @@ function run_sample {
 	#TODO: if we integrate the diversitools post processing step, we can also remove the sorted.bam file
 
 	#copy to chaperone
-	rsync -av $sample_dir/MGXDB000864 $master_dir
+	rsync -av --force $sample_dir/${sample} $master_dir
 
 	#remove sorted.bam
 	rm -f ${file}.sorted.bam
