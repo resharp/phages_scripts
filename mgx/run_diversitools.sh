@@ -83,6 +83,19 @@ function run_calc_measures {
 }
 
 
+function rerun_all_calc_measures {
+
+	sample_dir = $1
+	samples=$(ls $sample_dir | grep MGXDB)
+	for sample in $samples
+	do
+		run_calc_measures $sample_dir $sample
+	done
+
+	python source/phages/MakeGenePlots.py -d $sample_dir
+}
+
+
 #cut -f3,5,11,12,13 $sample_dir/MGXDB008660_CDS_AA.txt | less
 
 # $ perl bin/diversiutils.pl -bam path/to/input.bam -ref path/to/reference.fasta -orfs CodingRegions.txt -stub out
