@@ -11,7 +11,7 @@ function run_adapter_removal_on_project {
 	# ERR525689
 
 	# to do: remove head -1 if you want to run all files
-	files_1=$(find $project_dir/*_1.fastq.gz | head -2)
+	files_1=$(find $project_dir/*_1.fastq.gz | head -4)
 
 	for file_1 in $files_1
 	do
@@ -31,7 +31,7 @@ function run_adapter_removal {
 	run=$2
 
 	file_1=${project_dir}/${run}_1.fastq.gz
-	file_2=${project_dir}/${ryn}_2.fastq.gz
+	file_2=${project_dir}/${run}_2.fastq.gz
 	basename=${project_dir}/${run}
 
 	echo "Starting to run AdapterRemoval for "$run" in "$project_dir
@@ -40,6 +40,6 @@ function run_adapter_removal {
 	#echo $basename
 	# e.g. basename=${project_dir}/ERR525689
 
-	AdapterRemoval --file1 $file_1 --file2 $file_2 --basename $basename --trimns --trimqualities --collapse --threads 2 --minquality 25 --gzip
+	AdapterRemoval --file1 $file_1 --file2 $file_2 --basename $basename --trimns --trimqualities --collapse --threads 16 --minquality 25 --gzip
 
 }
