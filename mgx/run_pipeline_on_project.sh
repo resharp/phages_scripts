@@ -25,20 +25,26 @@ function run_all_samples {
 
                 run=${base_file_1%_1.fastq.gz}
 
-		# TO DO: out comment this part
-		# run_trimming $source_dir $sample_dir $run
+		copy_and_run_trimming $source_dir $sample_dir $run
 
-		# run_mapping $sample_dir $run
+		run_mapping $sample_dir $run
 
-		# to do: only run diversiutils if we have mapped reads in $file.sorted.idstats.txt
-		run_diversiutils $sample_dir $run
+		nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
 
-		run_calc_measures $sample_dir $run
+		if [ $nr_mapped_reads -gt 0 ]
+		then
+			echo "Nr of reads mapped: "$nr_mapped_reads
+			run_diversiutils $sample_dir $run
+			run_calc_measures $sample_dir $run
+		else
+			echo "No reads mapped to reference genome!"
+		fi
+
         done
 
 }
 
-function run_trimming {
+function copy_and_run_trimming {
 	source_dir=$1
 	sample_dir=$2
 	run=$3
