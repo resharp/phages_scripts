@@ -132,6 +132,7 @@ function run_sample {
 
 	file=$sample_dir/${sample}/${sample}_filtered
 
+	# to do: no need to unzip for bwa mem
 	echo "unzip gz file"
 	gunzip ${file}.fastq.gz
 
@@ -142,7 +143,7 @@ function run_sample {
 	samtools view -@ 16 -S -b $file.sam > $file.bam
 
 	#sort bam
-	samtools sort -@ 16 -o $file.sorted.bam -@ 4 $file.bam
+	samtools sort -@ 16 -o $file.sorted.bam $file.bam
 
 	#index bam
 	samtools index $file.sorted.bam
