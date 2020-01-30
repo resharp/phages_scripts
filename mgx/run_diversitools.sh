@@ -20,9 +20,12 @@ function run_gene_samples {
 
 	# run 20 gene samples
 	#TODO: change to the number of samples you would like to use
-	samples=$(cat $admin_dir/taxon_1211417_counts_sorted.txt | awk '{if ($3>10000) print $1}' | head -20 | grep -v "sample")
+	# samples=$(cat $admin_dir/taxon_1211417_counts_sorted.txt | awk '{if ($3>10000) print $1}' | head -20 | grep -v "sample")
 
-	#samples=$(echo "MGXDB000864")
+
+	samples=$(grep NC_024711.1 $master_dir/MGXDB*/*.sorted.idstats.txt | sort -k 3 -n -r | awk '{if ($3 > 106000 && $3 < 170000) print $0}' | cut -f1 | cut -d "/" -f8)
+
+	#samples=$(echo "MGXDB011779")
 
 	for sample in $samples
 	do
