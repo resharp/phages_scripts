@@ -2,7 +2,7 @@
 
 # e.g. run_all_samples $source_dir $sample_dir 10
 source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
-sample_dir=/hosts/linuxhome/mutant23/tmp/richard/ERP005989
+sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
 
 # make list of samples
 
@@ -25,22 +25,55 @@ function run_all_samples {
 
                 run=${base_file_1%_1.fastq.gz}
 
-		copy_and_run_trimming $source_dir $sample_dir $run
-
-		run_mapping $sample_dir $run
-
-		nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
-
-		if [ $nr_mapped_reads -gt 0 ]
-		then
-			echo "Nr of reads mapped: "$nr_mapped_reads
-			run_diversiutils $sample_dir $run
-			run_calc_measures $sample_dir $run
-		else
-			echo "No reads mapped to reference genome!"
-		fi
-
+		run_sample $source_dir $sample_dir $run
         done
+
+}
+
+function run_sample {
+
+        source_dir=$1
+        sample_dir=$2
+        run=$3
+
+	copy_and_run_trimming $source_dir $sample_dir $run
+
+	run_mapping $sample_dir $run
+
+	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
+
+	if [ $nr_mapped_reads -gt 0 ]
+	then
+		echo "Nr of reads mapped: "$nr_mapped_reads
+		run_diversiutils $sample_dir $run
+		run_calc_measures $sample_dir $run
+	else
+		echo "No reads mapped to reference genome!"
+	fi
+}
+
+
+# ERR525691
+function debug_sample {
+
+        source_dir=$1
+        sample_dir=$2
+        run=$3
+
+	# copy_and_run_trimming $source_dir $sample_dir $run
+
+	# run_mapping $sample_dir $run
+
+	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
+
+	if [ $nr_mapped_reads -gt 0 ]
+	then
+		echo "Nr of reads mapped: "$nr_mapped_reads
+		# run_diversiutils $sample_dir $run
+		run_calc_measures $sample_dir $run
+	else
+		echo "No reads mapped to reference genome!"
+	fi
 
 }
 
@@ -92,15 +125,16 @@ function run_mapping {
 	# bwa mem should work on .gz files
         bwa mem -t 16 ${ref_seq} ${file_1} ${file_2} > ${file}.sam
 
-	#bwa mem -t 24 /linuxhome/tmp/stijn/SILVA_HLA/SILVA_HLA.fasta /linuxhome/tmp/stijn/SRA_trimmed/PE/${base}.pair1.truncated.gz \
-	#	/linuxhome/tmp/stijn/SRA_trimmed/PE/${base}.pair2.truncated.gz
-
 	#TODO: check if you can pipe output directly to prevent space usage
         #convert sam to bam
         samtools view -@ 16 -S -b $file.sam > $file.bam
 
+	rm -f $file.sam
+
         #sort bam
         samtools sort -@ 16 -o $file.sorted.bam $file.bam
+
+	rm -f $file.bam
 
         #index bam
         samtools index $file.sorted.bam
@@ -123,6 +157,8 @@ function run_diversiutils {
 
         #remove the "<NA>" strings
         sed -e 's/<NA>//g' $sample_dir/${sample}/${sample}_AA.txt > $sample_dir/${sample}/${sample}_AA_clean.txt
+
+	rm -f $sample_dir/${sample}/${sample}_AA.txt
 }
 
 function run_calc_measures {
