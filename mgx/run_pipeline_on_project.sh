@@ -1,8 +1,14 @@
  # run complete pipeline on one SRA project
 
 # e.g. run_all_samples $source_dir $sample_dir 10
-source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
-sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
+# source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
+# sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
+
+
+# this contains one sample that definitily should have reads that are supposed to map against the CRassphage because it does
+# when processing the files from our MGXDB database earlier
+source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/PRJEB11532
+sample_dir=/hosts/linuxhome/mutant26/tmp/richard/PRJEB11532
 
 # make list of samples
 
@@ -53,16 +59,16 @@ function run_sample {
 }
 
 
-# ERR525691
+# ERR1136746
 function debug_sample {
 
         source_dir=$1
         sample_dir=$2
         run=$3
 
-	# copy_and_run_trimming $source_dir $sample_dir $run
+	copy_and_run_trimming $source_dir $sample_dir $run
 
-	# run_mapping $sample_dir $run
+	run_mapping $sample_dir $run
 
 	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
 
@@ -89,19 +95,23 @@ function copy_and_run_trimming {
         file_1=${source_dir}/${run}_1.fastq.gz
         file_2=${source_dir}/${run}_2.fastq.gz
 
+	mkdir $sample_dir/${run}
 	# cp $file_1 $sample_dir/${basename}_1.fastq.gz
-	/bin/cp -rfv $file_1 $sample_dir/
-	/bin/cp -rfv $file_2 $sample_dir/
+	/bin/cp -rfv $file_1 $sample_dir/${run}/
+	/bin/cp -rfv $file_2 $sample_dir/${run}/
 
 	# redefine filenames, refer to sample_dir
-        file_1=${sample_dir}/${run}_1.fastq.gz
-        file_2=${sample_dir}/${run}_2.fastq.gz
-	basename=${sample_dir}/${run}
+        file_1=${sample_dir}/${run}/${run}_1.fastq.gz
+        file_2=${sample_dir}/${run}/${run}_2.fastq.gz
+	basename=${sample_dir}/${run}/${run}
 
 	conda deactivate
 	conda activate mgx
 
 	AdapterRemoval --file1 $file_1 --file2 $file_2 --basename $basename --trimns --trimqualities --collapse --threads 16 --minquality 25 --gzip
+
+	rm -f $file_1
+	rm -f $file_2
 
 }
 
@@ -109,14 +119,13 @@ function run_mapping {
 
 	sample_dir=$1
 	run=$2
-	file_1=${sample_dir}/${run}.pair1.truncated.gz
-	file_2=${sample_dir}/${run}.pair1.truncated.gz
+	file_1=${sample_dir}/${run}/${run}.pair1.truncated.gz
+	file_2=${sample_dir}/${run}/${run}.pair1.truncated.gz
 
 	ll $file_1
 	ll $file_2
 
 	#base for all other bam/same/etc files
-	mkdir $sample_dir/${run}
 	file=$sample_dir/${run}/${run}
 
 	ref_seq=scripts/mgx/ref_seqs/crassphage_refseq.fasta
