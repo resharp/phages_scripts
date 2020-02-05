@@ -1,14 +1,14 @@
  # run complete pipeline on one SRA project
 
 # e.g. run_all_samples $source_dir $sample_dir 10
-# source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
-# sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
+source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
+sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
 
 
 # this contains one sample that definitily should have reads that are supposed to map against the CRassphage because it does
 # when processing the files from our MGXDB database earlier
-source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/PRJEB11532
-sample_dir=/hosts/linuxhome/mutant26/tmp/richard/PRJEB11532
+#source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/PRJEB11532
+#sample_dir=/hosts/linuxhome/mutant26/tmp/richard/PRJEB11532
 
 # make list of samples
 
@@ -29,9 +29,20 @@ function run_all_samples {
                 base_file_1=$(basename "$file_1")
                 # e.g. run=ERR525689
 
+		#here we should check if the file already exists
+		# "*.pair1.truncated.gz"
+
                 run=${base_file_1%_1.fastq.gz}
 
-		run_sample $source_dir $sample_dir $run
+		file_1_sample_dir=$sample_dir/${run}/${run}.pair1.truncated.gz
+
+		if [ -f $file_1_sample_dir ]
+		then
+			echo $file_1_sample_dir "exists, no processing"
+		else
+			# echo $file_1_sample_dir "missing"
+			run_sample $source_dir $sample_dir $run
+		fi
         done
 
 }
