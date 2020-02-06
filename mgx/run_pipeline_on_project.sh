@@ -45,7 +45,24 @@ function run_all_samples {
 		fi
         done
 
+	sample_stats $sample_dir
 }
+
+function sample_stats {
+	paste	<(find $sample_dir/*/*idstats.txt |\
+		while read LINE
+		do
+			base=$(basename "$LINE")
+			sample=${base%.sorted.idstats.txt}
+			echo $sample; \
+		done) \
+		<(cat $sample_dir/*/*idstats.txt | awk 'NR%2==1 {print $3}') \
+		<(cat $sample_dir/*/*idstats.txt | awk 'NR%2==0 {print $4}') > $sample_dir/sample_stats.txt
+
+	cat $sample_dir/sample_stats.txt | sort -k2 -nr | awk '{print $0"\t"$2/$3}' > $sample_dir/sample_stats_sorted.txt
+
+}
+
 
 function run_sample {
 
