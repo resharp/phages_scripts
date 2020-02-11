@@ -90,3 +90,15 @@ function show_profile_hits {
 	cat $ref_dir/*/*_table.txt | grep -v "^#" | awk '{print $1"\t"$3"\t"$5"\t"$6"\t"$20"\t"$22"\t"($22-$20+1-3)/3}' | sort -k2,2 -k1,1 | uniq | less -x 30
 
 }
+
+function show_genes {
+
+	ref_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
+
+	# NB: cut -f8 gives the subdirectory name with the ref genome name
+	paste	<(grep ">" ${ref_dir}/*/*.proteins.faa | cut -f8 -d "/") \
+		<(grep ">" ${ref_dir}/*/*.proteins.faa | cut -f2 -d ">" | cut -f1 -d " ") \
+		<(grep ">" ${ref_dir}/*/*.proteins.faa | cut -d ">" -f2 | cut -d "#" -f2-)
+
+	# this result has been written to ref_genes.tsv
+}
