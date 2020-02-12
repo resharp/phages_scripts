@@ -102,3 +102,32 @@ function show_genes {
 
 	# this result has been written to ref_genes.tsv
 }
+
+# also run a blastp search of all proteins against all proteins
+# it may make it possible to link the proteins to annotated proteins of the p-crAssphage, for proteins not hit by a HMM profile
+function blastp_all_against_all {
+
+	ref_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
+
+	# use this for building the
+	cat ${ref_dir}/*/*.proteins.faa | awk '{ if($0~">") {print $1} else print $0  }' > ${ref_dir}/all_refs.proteins.faa
+
+	makeblastdb -in ${ref_dir}/all_refs.proteins.faa -parse_seqids -title "ref genomes genes" -dbtype prot -out ${ref_dir}/all_refs.proteins.db.faa
+
+	evalue=1e-3
+
+	echo 'start running blastp'
+	blastp -query $ref_dir/all_refs.proteins.faa -db $ref_dir/all_refs.proteins.db.faa\
+		-evalue $evalue\
+		-out $ref_dir/pairwise_blastout.txt\
+		-num_threads 12\
+		 -outfmt '6 qaccver saccver pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen'
+	#-outfmt '7 qseqid sseqid length qlen qstart qend sstart send evalue'
+
+	echo 'filtering out protein comparisons against themselves'
+	cat $ref_dir/pairwise_blastout.txt | awk '{if ($1!=$2) print $0}' > $ref_dir/pairwise_blastout_filtered.txt
+
+	echo 'number of hits:'
+	wc -l $ref_dir/pairwise_blastout_filtered.txt
+
+}
