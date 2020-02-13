@@ -1,8 +1,8 @@
  # run complete pipeline on one SRA project
 
 # e.g. run_all_samples $source_dir $sample_dir 10
-source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
-sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
+#source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
+#sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
 
 
 # this contains one sample that definitily should have reads that are supposed to map against the CRassphage because it does
@@ -90,6 +90,8 @@ function run_sample {
 # ERR1136746
 function debug_sample {
 
+	echo "start debug_sample"
+
         source_dir=$1
         sample_dir=$2
         run=$3
@@ -103,7 +105,7 @@ function debug_sample {
 	if [ $nr_mapped_reads -gt 0 ]
 	then
 		echo "Nr of reads mapped: "$nr_mapped_reads
-		# run_diversiutils $sample_dir $run
+		run_diversiutils $sample_dir $run
 		run_calc_measures $sample_dir $run
 	else
 		echo "No reads mapped to reference genome!"
@@ -125,8 +127,10 @@ function copy_and_run_trimming {
 
 	mkdir $sample_dir/${run}
 	# cp $file_1 $sample_dir/${basename}_1.fastq.gz
-	/bin/cp -rfv $file_1 $sample_dir/${run}/
-	/bin/cp -rfv $file_2 $sample_dir/${run}/
+
+	echo "start copying files from source dir"
+	time /bin/cp -rfv $file_1 $sample_dir/${run}/
+	time /bin/cp -rfv $file_2 $sample_dir/${run}/
 
 	# redefine filenames, refer to sample_dir
         file_1=${sample_dir}/${run}/${run}_1.fastq.gz
@@ -136,7 +140,8 @@ function copy_and_run_trimming {
 	conda deactivate
 	conda activate mgx
 
-	AdapterRemoval --file1 $file_1 --file2 $file_2 --basename $basename --trimns --trimqualities --collapse --threads 16 --minquality 25 --gzip
+	echo "start adapter removal"
+	time AdapterRemoval --file1 $file_1 --file2 $file_2 --basename $basename --trimns --trimqualities --collapse --threads 16 --minquality 25 --gzip
 
 	rm -f $file_1
 	rm -f $file_2
@@ -144,6 +149,10 @@ function copy_and_run_trimming {
 }
 
 function run_mapping {
+
+	#now make sure never to use the wrong version of bwa mem again
+	conda deactivate
+	conda activate mgx
 
 	sample_dir=$1
 	run=$2
@@ -160,24 +169,32 @@ function run_mapping {
 
         #TODO: check bwa mem options
 	# bwa mem should work on .gz files
-        bwa mem -t 16 ${ref_seq} ${file_1} ${file_2} > ${file}.sam
+	echo "start bwa mem" 
+
+        time bwa mem -t 16 ${ref_seq} ${file_1} ${file_2} > ${file}.sam
 
 	#TODO: check if you can pipe output directly to prevent space usage
         #convert sam to bam
-        samtools view -@ 16 -S -b $file.sam > $file.bam
+	echo "start convert to bam"
+
+        time samtools view -@ 16 -S -b $file.sam > $file.bam
 
 	rm -f $file.sam
 
+	echo "start sort bam"
         #sort bam
-        samtools sort -@ 16 -o $file.sorted.bam $file.bam
+        time samtools sort -@ 16 -o $file.sorted.bam $file.bam
 
 	rm -f $file.bam
 
-        #index bam
-        samtools index $file.sorted.bam
+	echo "start index sorted bam"
+	#index bam
+        time samtools index $file.sorted.bam
+
+	echo "start idxstats"
 
         #create stats for mapped reads
-        samtools idxstats $file.sorted.bam > $file.sorted.idstats.txt
+        time samtools idxstats $file.sorted.bam > $file.sorted.idstats.txt
 }
 
 function run_diversiutils {
@@ -187,18 +204,25 @@ function run_diversiutils {
 
 	ref_seq=scripts/mgx/ref_seqs/crassphage_refseq.fasta
 
-        tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${sample}/${sample}.sorted.bam\
+	echo "start DiversiTools"
+
+        time tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${sample}/${sample}.sorted.bam\
                 -ref ${ref_seq}\
                 -orfs scripts/mgx/crassphage_codingregions.txt\
                 -stub $sample_dir/${sample}/${sample}
 
+	echo "start cleaning up DiversiTools results"
+
         #remove the "<NA>" strings
-        sed -e 's/<NA>//g' $sample_dir/${sample}/${sample}_AA.txt > $sample_dir/${sample}/${sample}_AA_clean.txt
+        time sed -e 's/<NA>//g' $sample_dir/${sample}/${sample}_AA.txt > $sample_dir/${sample}/${sample}_AA_clean.txt
 
 	rm -f $sample_dir/${sample}/${sample}_AA.txt
 }
 
 function run_calc_measures {
+
+
+	echo "start calc_measures"
 
         sample_dir=$1
         sample=$2
@@ -209,5 +233,5 @@ function run_calc_measures {
 	/bin/cp -rfv source/phages/codon_syn_non_syn_probabilities.txt ${sample_dir}/
 
         #create measures (based on ${sample}_AA_clean.txt)
-        python source/phages/CalcDiversiMeasures.py -d $sample_dir -s $sample
+        time python source/phages/CalcDiversiMeasures.py -d $sample_dir -s $sample
 }
