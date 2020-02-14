@@ -12,10 +12,7 @@
 #source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/PRJEB11532
 #sample_dir=/hosts/linuxhome/mutant26/tmp/richard/PRJEB11532
 
-# make list of samples
-
 # run complete pipeline on those samples
-
 function run_all_samples {
 
 	source_dir=$1
@@ -72,7 +69,6 @@ function run_sample {
         run=$3
 	ref_file=$4
 
-	# to do: reactivate
 	copy_and_run_trimming $source_dir $sample_dir $run
 
 	refs=$(cat ${ref_file} | grep -v "#")
@@ -88,7 +84,7 @@ function run_sample {
 		then
 			echo "Nr of reads mapped: "$nr_mapped_reads
 			run_diversiutils $sample_dir $run $ref
-			# to do run_calc_measures should be adopted to run with a "$ref filter"
+
 			run_calc_measures $sample_dir $run $ref
 		else
 			echo "No reads mapped to reference genome!"
@@ -196,30 +192,20 @@ function run_mapping {
 	# bwa mem should work on .gz files
 	echo "start bwa mem"
 
-        time bwa mem -t 16 ${ref_seq} ${file_1} ${file_2} > ${file}.sam
+        time bwa mem -t 16 ${ref_seq} ${file_1} ${file_2} | samtools sort -@16 -o $file.sorted.bam -
 
-	#TODO: check if you can pipe output directly to prevent space usage
-        #convert sam to bam
-	echo "start convert to bam"
-
-        time samtools view -@ 16 -S -b $file.sam > $file.bam
-
-	rm -f $file.sam
-
-	echo "start sort bam"
-        #sort bam
-        time samtools sort -@ 16 -o $file.sorted.bam $file.bam
-
-	rm -f $file.bam
+	samtools view -b -F 4 $file.sorted.bam > $file.sorted.mapped.bam
 
 	echo "start index sorted bam"
 	#index bam
         time samtools index $file.sorted.bam
+	time samtools index $file.sorted.mapped.bam
 
 	echo "start idxstats"
 
         #create stats for mapped reads
         time samtools idxstats $file.sorted.bam > $file.sorted.idstats.txt
+        time samtools idxstats $file.sorted.mapped.bam > $file.sorted.mapped.idstats.txt
 }
 
 function run_diversiutils {
@@ -235,7 +221,7 @@ function run_diversiutils {
 
 	echo "start DiversiTools"
 
-        time tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${run}_${ref}/${run}.sorted.bam\
+        time tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${run}_${ref}/${run}.sorted.mapped.bam\
                 -ref ${ref_seq}\
                 -orfs ${coding_regions}\
                 -stub $sample_dir/${run}_${ref}/${run}
@@ -262,6 +248,6 @@ function run_calc_measures {
 
 	/bin/cp -rfv source/phages/codon_syn_non_syn_probabilities.txt ${sample_dir}/
 
-        #create measures (based on ${sample}_AA_clean.txt)
+        #create measures (based on ${run}_AA_clean.txt)
         time python source/phages/CalcDiversiMeasures.py -d $sample_dir -s $run -r $ref
 }
