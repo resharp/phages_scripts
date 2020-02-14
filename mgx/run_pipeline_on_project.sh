@@ -1,4 +1,4 @@
- # run complete pipeline on one SRA project
+# run complete pipeline on one SRA project
 
 # e.g. run_all_samples $source_dir $sample_dir 10
 #source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
@@ -21,6 +21,7 @@ function run_all_samples {
 	source_dir=$1
 	sample_dir=$2
 	nr_samples=$3
+	ref=$4
 
 	files_1=$(find $source_dir/*_1.fastq.gz | head -${nr_samples})
 
@@ -41,7 +42,7 @@ function run_all_samples {
 			echo $file_1_sample_dir "exists, no processing"
 		else
 			# echo $file_1_sample_dir "missing"
-			run_sample $source_dir $sample_dir $run
+			run_sample $source_dir $sample_dir $run $ref
 		fi
         done
 
@@ -69,25 +70,26 @@ function run_sample {
         source_dir=$1
         sample_dir=$2
         run=$3
+	ref=$4
 
 	copy_and_run_trimming $source_dir $sample_dir $run
 
-	run_mapping $sample_dir $run
+	run_mapping $sample_dir $run $ref
 
 	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
 
 	if [ $nr_mapped_reads -gt 0 ]
 	then
 		echo "Nr of reads mapped: "$nr_mapped_reads
-		run_diversiutils $sample_dir $run
+		run_diversiutils $sample_dir $run $ref
 		run_calc_measures $sample_dir $run
 	else
 		echo "No reads mapped to reference genome!"
 	fi
 }
 
-
-# ERR1136746
+# this was my earlier sample to check for different results with untrimmed files: ERR1136746
+# now I want to use ERR525804
 function debug_sample {
 
 	echo "start debug_sample"
@@ -95,17 +97,19 @@ function debug_sample {
         source_dir=$1
         sample_dir=$2
         run=$3
+	ref=$4
 
+	# to do: reactivate
 	copy_and_run_trimming $source_dir $sample_dir $run
 
-	run_mapping $sample_dir $run
+	run_mapping $sample_dir $run $ref
 
 	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
 
 	if [ $nr_mapped_reads -gt 0 ]
 	then
 		echo "Nr of reads mapped: "$nr_mapped_reads
-		run_diversiutils $sample_dir $run
+		run_diversiutils $sample_dir $run $ref
 		run_calc_measures $sample_dir $run
 	else
 		echo "No reads mapped to reference genome!"
@@ -156,8 +160,11 @@ function run_mapping {
 
 	sample_dir=$1
 	run=$2
+	ref=$3
+
+	#major fix: wrong second file!
 	file_1=${sample_dir}/${run}/${run}.pair1.truncated.gz
-	file_2=${sample_dir}/${run}/${run}.pair1.truncated.gz
+	file_2=${sample_dir}/${run}/${run}.pair2.truncated.gz
 
 	ll $file_1
 	ll $file_2
@@ -165,11 +172,11 @@ function run_mapping {
 	#base for all other bam/same/etc files
 	file=$sample_dir/${run}/${run}
 
-	ref_seq=scripts/mgx/ref_seqs/crassphage_refseq.fasta
+	ref_seq=scripts/mgx/ref_seqs/${ref}.fasta
 
         #TODO: check bwa mem options
 	# bwa mem should work on .gz files
-	echo "start bwa mem" 
+	echo "start bwa mem"
 
         time bwa mem -t 16 ${ref_seq} ${file_1} ${file_2} > ${file}.sam
 
@@ -202,13 +209,16 @@ function run_diversiutils {
         sample_dir=$1
         sample=$2
 
-	ref_seq=scripts/mgx/ref_seqs/crassphage_refseq.fasta
+	# to do: parametrize (and use naming convention to link both files)
+	#ref=crassphage_refseq
+	ref_seq=scripts/mgx/ref_seqs/${ref}.fasta
+	coding_regions=scripts/mgx/ref_seqs/${ref}_codingregions.txt
 
 	echo "start DiversiTools"
 
         time tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${sample}/${sample}.sorted.bam\
                 -ref ${ref_seq}\
-                -orfs scripts/mgx/crassphage_codingregions.txt\
+                -orfs ${coding_regions}\
                 -stub $sample_dir/${sample}/${sample}
 
 	echo "start cleaning up DiversiTools results"
