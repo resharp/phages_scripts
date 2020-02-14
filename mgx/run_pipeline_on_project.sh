@@ -1,4 +1,6 @@
 # run complete pipeline on one SRA project
+# for more than one reference genome
+# e.g.
 
 # e.g. run_all_samples $source_dir $sample_dir 10
 #source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
@@ -13,15 +15,12 @@
 # make list of samples
 
 # run complete pipeline on those samples
-# copy to sample_dir
-
 
 function run_all_samples {
 
 	source_dir=$1
 	sample_dir=$2
 	nr_samples=$3
-	ref=$4
 
 	files_1=$(find $source_dir/*_1.fastq.gz | head -${nr_samples})
 
@@ -42,7 +41,7 @@ function run_all_samples {
 			echo $file_1_sample_dir "exists, no processing"
 		else
 			# echo $file_1_sample_dir "missing"
-			run_sample $source_dir $sample_dir $run $ref
+			run_sample $source_dir $sample_dir $run
 		fi
         done
 
@@ -64,29 +63,39 @@ function sample_stats {
 
 }
 
-
 function run_sample {
+
+	echo "start rum_sample"
 
         source_dir=$1
         sample_dir=$2
         run=$3
-	ref=$4
+	ref_file=$4
 
+	# to do: reactivate
 	copy_and_run_trimming $source_dir $sample_dir $run
 
-	run_mapping $sample_dir $run $ref
+	refs=$(cat ${ref_file} | grep -v "#")
 
-	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
+	for ref in $refs
+	do
+		echo "Starting to map sample against "$ref
 
-	if [ $nr_mapped_reads -gt 0 ]
-	then
-		echo "Nr of reads mapped: "$nr_mapped_reads
-		run_diversiutils $sample_dir $run $ref
-		run_calc_measures $sample_dir $run
-	else
-		echo "No reads mapped to reference genome!"
-	fi
+		run_mapping $sample_dir $run $ref
+		nr_mapped_reads=$(head -1 ${sample_dir}/${run}_${ref}/${run}.sorted.idstats.txt | cut -f3)
+
+		if [ $nr_mapped_reads -gt 0 ]
+		then
+			echo "Nr of reads mapped: "$nr_mapped_reads
+			run_diversiutils $sample_dir $run $ref
+			# to do run_calc_measures should be adopted to run with a "$ref filter"
+			run_calc_measures $sample_dir $run $ref
+		else
+			echo "No reads mapped to reference genome!"
+		fi
+	done
 }
+
 
 # this was my earlier sample to check for different results with untrimmed files: ERR1136746
 # now I want to use ERR525804
@@ -97,24 +106,30 @@ function debug_sample {
         source_dir=$1
         sample_dir=$2
         run=$3
-	ref=$4
+	ref_file=$4
 
 	# to do: reactivate
-	copy_and_run_trimming $source_dir $sample_dir $run
+	#copy_and_run_trimming $source_dir $sample_dir $run
 
-	run_mapping $sample_dir $run $ref
+	refs=$(cat ${ref_file} | grep -v "#")
 
-	nr_mapped_reads=$(head -1 ${sample_dir}/${run}/${run}.sorted.idstats.txt | cut -f3)
+	for ref in $refs
+	do
+		echo "Starting to map sample against "$ref
 
-	if [ $nr_mapped_reads -gt 0 ]
-	then
-		echo "Nr of reads mapped: "$nr_mapped_reads
-		run_diversiutils $sample_dir $run $ref
-		run_calc_measures $sample_dir $run
-	else
-		echo "No reads mapped to reference genome!"
-	fi
+		run_mapping $sample_dir $run $ref
+		nr_mapped_reads=$(head -1 ${sample_dir}/${run}_${ref}/${run}.sorted.idstats.txt | cut -f3)
 
+		if [ $nr_mapped_reads -gt 0 ]
+		then
+			echo "Nr of reads mapped: "$nr_mapped_reads
+			run_diversiutils $sample_dir $run $ref
+
+			run_calc_measures $sample_dir $run $ref
+		else
+			echo "No reads mapped to reference genome!"
+		fi
+	done
 }
 
 function copy_and_run_trimming {
@@ -169,10 +184,13 @@ function run_mapping {
 	ll $file_1
 	ll $file_2
 
+
+	mkdir $sample_dir/${run}_${ref}
 	#base for all other bam/same/etc files
-	file=$sample_dir/${run}/${run}
+	file=$sample_dir/${run}_${ref}/${run}
 
 	ref_seq=scripts/mgx/ref_seqs/${ref}.fasta
+	bwa index $ref_seq
 
         #TODO: check bwa mem options
 	# bwa mem should work on .gz files
@@ -207,7 +225,8 @@ function run_mapping {
 function run_diversiutils {
 
         sample_dir=$1
-        sample=$2
+        run=$2
+	ref=$3
 
 	# to do: parametrize (and use naming convention to link both files)
 	#ref=crassphage_refseq
@@ -216,17 +235,17 @@ function run_diversiutils {
 
 	echo "start DiversiTools"
 
-        time tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${sample}/${sample}.sorted.bam\
+        time tools/DiversiTools/bin/diversiutils_linux -bam $sample_dir/${run}_${ref}/${run}.sorted.bam\
                 -ref ${ref_seq}\
                 -orfs ${coding_regions}\
-                -stub $sample_dir/${sample}/${sample}
+                -stub $sample_dir/${run}_${ref}/${run}
 
 	echo "start cleaning up DiversiTools results"
 
         #remove the "<NA>" strings
-        time sed -e 's/<NA>//g' $sample_dir/${sample}/${sample}_AA.txt > $sample_dir/${sample}/${sample}_AA_clean.txt
+        time sed -e 's/<NA>//g' $sample_dir/${run}_${ref}/${run}_AA.txt > $sample_dir/${run}_${ref}/${run}_AA_clean.txt
 
-	rm -f $sample_dir/${sample}/${sample}_AA.txt
+	rm -f $sample_dir/${run}_${ref}/${run}_AA.txt
 }
 
 function run_calc_measures {
@@ -235,7 +254,8 @@ function run_calc_measures {
 	echo "start calc_measures"
 
         sample_dir=$1
-        sample=$2
+        run=$2
+	ref=$3
 
         conda deactivate
         conda activate python37
@@ -243,5 +263,5 @@ function run_calc_measures {
 	/bin/cp -rfv source/phages/codon_syn_non_syn_probabilities.txt ${sample_dir}/
 
         #create measures (based on ${sample}_AA_clean.txt)
-        time python source/phages/CalcDiversiMeasures.py -d $sample_dir -s $sample
+        time python source/phages/CalcDiversiMeasures.py -d $sample_dir -s $run -r $ref
 }
