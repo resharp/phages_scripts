@@ -18,6 +18,7 @@ function run_all_samples {
 	source_dir=$1
 	sample_dir=$2
 	nr_samples=$3
+	ref_file=$4
 
 	files_1=$(find $source_dir/*_1.fastq.gz | head -${nr_samples})
 
@@ -38,7 +39,7 @@ function run_all_samples {
 			echo $file_1_sample_dir "exists, no processing"
 		else
 			# echo $file_1_sample_dir "missing"
-			run_sample $source_dir $sample_dir $run
+			run_sample $source_dir $sample_dir $run $ref_file
 		fi
         done
 
