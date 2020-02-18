@@ -1,0 +1,103 @@
+gene	gene_annot
+err844030_ms_1_1	unknown function
+err844030_ms_1_2	SF1 helicase
+err844030_ms_1_3	unknown function
+err844030_ms_1_4	unknown function
+err844030_ms_1_5	Tail stabilization protein (P22 gp10-like)
+err844030_ms_1_6	Tail tubular protein (P22 gp4-like)
+err844030_ms_1_7	unknown function
+err844030_ms_1_8	IHF subunit
+err844030_ms_1_9	unknown function
+err844030_ms_1_10	unknown function
+err844030_ms_1_11	unknown function
+err844030_ms_1_12	unknown function
+err844030_ms_1_13	unknown function
+err844030_ms_1_14	unknown function
+err844030_ms_1_15	unknown function
+err844030_ms_1_16	unknown function
+err844030_ms_1_17	unknown function
+err844030_ms_1_18	unknown function
+err844030_ms_1_19	unknown function
+err844030_ms_1_20	unknown function
+err844030_ms_1_21	unknown function
+err844030_ms_1_22	unknown function
+err844030_ms_1_23	unknown function
+err844030_ms_1_24	unknown function
+err844030_ms_1_25	unknown function
+err844030_ms_1_26	unknown function
+err844030_ms_1_27	putative structural protein
+err844030_ms_1_28	unknown function
+err844030_ms_1_29	putative structural protein
+err844030_ms_1_30	putative structural protein
+err844030_ms_1_31	MCP
+err844030_ms_1_32	putative structural protein
+err844030_ms_1_33	unknown function
+err844030_ms_1_34	unknown function
+err844030_ms_1_35	Portal
+err844030_ms_1_36	Terminase
+err844030_ms_1_37	unknown function
+err844030_ms_1_38	unknown function
+err844030_ms_1_39	unknown function
+err844030_ms_1_40	unknown function
+err844030_ms_1_41	unknown function
+err844030_ms_1_42	unknown function
+err844030_ms_1_43	unknown function
+err844030_ms_1_44	unknown function
+err844030_ms_1_45	unknown function
+err844030_ms_1_46	unknown function
+err844030_ms_1_47	unknown function
+err844030_ms_1_48	unknown function
+err844030_ms_1_49	unknown function
+err844030_ms_1_50	unknown function
+err844030_ms_1_51	unknown function
+err844030_ms_1_52	unknown function
+err844030_ms_1_53	unknown function
+err844030_ms_1_54	unknown function
+err844030_ms_1_55	unknown function
+err844030_ms_1_56	unknown function
+err844030_ms_1_57	unknown function
+err844030_ms_1_58	unknown function
+err844030_ms_1_59	unknown function
+err844030_ms_1_60	unknown function
+err844030_ms_1_61	unknown function
+err844030_ms_1_62	unknown function
+err844030_ms_1_63	unknown function
+err844030_ms_1_64	unknown function
+err844030_ms_1_65	unknown function
+err844030_ms_1_66	unknown function
+err844030_ms_1_67	unknown function
+err844030_ms_1_68	unknown function
+err844030_ms_1_69	unknown function
+err844030_ms_1_70	unknown function
+err844030_ms_1_71	unknown function
+err844030_ms_1_72	unknown function
+err844030_ms_1_73	unknown function
+err844030_ms_1_74	unknown function
+err844030_ms_1_75	unknown function
+err844030_ms_1_76	unknown function
+err844030_ms_1_77	unknown function
+err844030_ms_1_78	unknown function
+err844030_ms_1_79	unknown function
+err844030_ms_1_80	unknown function
+err844030_ms_1_81	unknown function
+err844030_ms_1_82	unknown function
+err844030_ms_1_83	unknown function
+err844030_ms_1_84	unknown function
+err844030_ms_1_85	PolB
+err844030_ms_1_86	Rep_Org , putative replisome organizer protein 
+err844030_ms_1_87	phage replicative helicase, DnaB family
+err844030_ms_1_88	unknown function
+err844030_ms_1_89	AAA domain ATPase
+err844030_ms_1_90	unknown function
+err844030_ms_1_91	DnaG family primase
+err844030_ms_1_92	unknown function
+err844030_ms_1_93	unknown function
+err844030_ms_1_94	unknown function
+err844030_ms_1_95	Uncharacterized protein 48b
+err844030_ms_1_96	unknown function
+err844030_ms_1_97	unknown function
+err844030_ms_1_98	unknown function
+err844030_ms_1_99	unknown function
+err844030_ms_1_100	PD-(D E)XK family nuclease
+err844030_ms_1_101	unknown function
+err844030_ms_1_102	unknown function
