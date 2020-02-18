@@ -1,0 +1,85 @@
+gene	gene_annot
+sib1_ms_5_1	unknown function
+sib1_ms_5_2	unknown function
+sib1_ms_5_3	unknown function
+sib1_ms_5_4	PD-(D E)XK family nuclease
+sib1_ms_5_5	unknown function
+sib1_ms_5_6	unknown function
+sib1_ms_5_7	unknown function
+sib1_ms_5_8	Uncharacterized protein
+sib1_ms_5_9	Terminase
+sib1_ms_5_10	Portal
+sib1_ms_5_11	putative structural protein
+sib1_ms_5_12	MCP
+sib1_ms_5_13	putative structural protein
+sib1_ms_5_14	putative structural protein
+sib1_ms_5_15	putative structural protein
+sib1_ms_5_16	unknown function
+sib1_ms_5_17	unknown function
+sib1_ms_5_18	unknown function
+sib1_ms_5_19	unknown function
+sib1_ms_5_20	unknown function
+sib1_ms_5_21	unknown function
+sib1_ms_5_22	unknown function
+sib1_ms_5_23	unknown function
+sib1_ms_5_24	unknown function
+sib1_ms_5_25	unknown function
+sib1_ms_5_26	unknown function
+sib1_ms_5_27	unknown function
+sib1_ms_5_28	unknown function
+sib1_ms_5_29	unknown function
+sib1_ms_5_30	unknown function
+sib1_ms_5_31	unknown function
+sib1_ms_5_32	unknown function
+sib1_ms_5_33	IHF subunit
+sib1_ms_5_34	IHF subunit
+sib1_ms_5_35	Tail tubular protein (P22 gp4-like)
+sib1_ms_5_36	Tail stabilization protein (P22 gp10-like)
+sib1_ms_5_37	Uncharacterized protein
+sib1_ms_5_38	unknown function
+sib1_ms_5_39	unknown function
+sib1_ms_5_40	unknown function
+sib1_ms_5_41	unknown function
+sib1_ms_5_42	unknown function
+sib1_ms_5_43	unknown function
+sib1_ms_5_44	unknown function
+sib1_ms_5_45	Uncharacterized protein
+sib1_ms_5_46	unknown function
+sib1_ms_5_47	Siphovirus Gp157 homolog
+sib1_ms_5_48	unknown function
+sib1_ms_5_49	unknown function
+sib1_ms_5_50	unknown function
+sib1_ms_5_51	unknown function
+sib1_ms_5_52	unknown function
+sib1_ms_5_53	unknown function
+sib1_ms_5_54	unknown function
+sib1_ms_5_55	Uncharacterized protein
+sib1_ms_5_56	DnaG family primase
+sib1_ms_5_57	ssb 
+sib1_ms_5_58	Uncharacterized protein
+sib1_ms_5_59	RecT
+sib1_ms_5_60	SNF2 helicase
+sib1_ms_5_61	unknown function
+sib1_ms_5_62	unknown function
+sib1_ms_5_63	PolB
+sib1_ms_5_64	UDG
+sib1_ms_5_65	SF1 helicase
+sib1_ms_5_66	unknown function
+sib1_ms_5_67	unknown function
+sib1_ms_5_68	unknown function
+sib1_ms_5_69	unknown function
+sib1_ms_5_70	unknown function
+sib1_ms_5_71	unknown function
+sib1_ms_5_72	unknown function
+sib1_ms_5_73	unknown function
+sib1_ms_5_74	unknown function
+sib1_ms_5_75	unknown function
+sib1_ms_5_76	unknown function
+sib1_ms_5_77	unknown function
+sib1_ms_5_78	unknown function
+sib1_ms_5_79	unknown function
+sib1_ms_5_80	unknown function
+sib1_ms_5_81	unknown function
+sib1_ms_5_82	unknown function
+sib1_ms_5_83	unknown function
+sib1_ms_5_84	unknown function
