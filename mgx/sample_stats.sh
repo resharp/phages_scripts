@@ -21,4 +21,24 @@ function sample_stats {
 }
 
 
+function show_top_10 {
+	sample_dir=$1
+	echo "top 10 abundances of ref genomes in samples"
+	echo "--"
+	cat $sample_dir/sample_stats.txt | sort -k3 -nr | head -10
+}
 
+function show_all {
+	sample_dir=$1
+	cat $sample_dir/sample_stats.txt | sort -k3 -nr
+}
+
+
+function total_processed {
+
+	sample_dir=/hosts/linuxhome/mutant6/tmp/richard/ERP005989
+
+	ll ${sample_dir}/*/*.sorted.idstats.txt | wc -l
+	sample_stats $sample_dir
+	show_top_10 $sample_dir
+}
