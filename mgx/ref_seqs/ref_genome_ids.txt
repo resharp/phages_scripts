@@ -1,0 +1,15 @@
+# ref genomes that are used by run_pipeline_on_project.sh
+# you can outcomment with #
+# this should be referenced as $ref_file before running pipeline
+# and this pipeline should also be adapted (because we added a second column)
+# we forgot genus_8 eld241-t0_s_1
+crassphage_refseq	genus_1
+cs_ms_21	genus_2
+err844030_ms_1	genus_10
+err975045_s_1	genus_9
+fferm_ms_11	genus_6
+hvcf_a6_ms_4	genus_3
+inf125_s_2	genus_7
+sib1_ms_5	genus_5
+srr4295175_ms_5	genus_4
+eld241-t0_s_1	genus_8
