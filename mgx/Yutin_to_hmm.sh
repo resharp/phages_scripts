@@ -1,6 +1,6 @@
 
-gene_dir=/hosts/linuxhome/chaperone/tmp/richard/yutin_data/msa
-ref_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
+#gene_dir=/hosts/linuxhome/chaperone/tmp/richard/yutin_data/msa
+#ref_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
 
 
 function download_alignments {
@@ -45,6 +45,8 @@ function build_profiles {
 
 function search_genomes {
 
+	conda deactivate
+	conda activate mgx
 
 	#now we want to search all ref genomes for all 
 	ref_dir=$1
@@ -89,6 +91,7 @@ function show_profile_hits {
 	# last column AA length calculation: diff between end and start pos of CDS, substract 3 (stop codon) and divide by 3 for AA length
 	cat $ref_dir/*/*_table.txt | grep -v "^#" | awk '{print $1"\t"$3"\t"$5"\t"$6"\t"$20"\t"$22"\t"($22-$20+1-3)/3}' | sort -k2,2 -k1,1 | uniq | less -x 30
 
+	# this result has been written to hmm_hits.tsv
 }
 
 function show_genes {
