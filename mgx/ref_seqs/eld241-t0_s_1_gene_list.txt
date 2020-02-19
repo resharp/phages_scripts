@@ -1,0 +1,166 @@
+gene	gene_annot
+eld241-t0_s_1_1	unknown function
+eld241-t0_s_1_2	unknown function
+eld241-t0_s_1_3	unknown function
+eld241-t0_s_1_4	unknown function
+eld241-t0_s_1_5	unknown function
+eld241-t0_s_1_6	unknown function
+eld241-t0_s_1_7	unknown function
+eld241-t0_s_1_8	unknown function
+eld241-t0_s_1_9	unknown function
+eld241-t0_s_1_10	unknown function
+eld241-t0_s_1_11	unknown function
+eld241-t0_s_1_12	unknown function
+eld241-t0_s_1_13	unknown function
+eld241-t0_s_1_14	unknown function
+eld241-t0_s_1_15	unknown function
+eld241-t0_s_1_16	unknown function
+eld241-t0_s_1_17	unknown function
+eld241-t0_s_1_18	unknown function
+eld241-t0_s_1_19	unknown function
+eld241-t0_s_1_20	unknown function
+eld241-t0_s_1_21	unknown function
+eld241-t0_s_1_22	unknown function
+eld241-t0_s_1_23	unknown function
+eld241-t0_s_1_24	unknown function
+eld241-t0_s_1_25	unknown function
+eld241-t0_s_1_26	unknown function
+eld241-t0_s_1_27	unknown function
+eld241-t0_s_1_28	unknown function
+eld241-t0_s_1_29	unknown function
+eld241-t0_s_1_30	unknown function
+eld241-t0_s_1_31	unknown function
+eld241-t0_s_1_32	unknown function
+eld241-t0_s_1_33	unknown function
+eld241-t0_s_1_34	unknown function
+eld241-t0_s_1_35	unknown function
+eld241-t0_s_1_36	unknown function
+eld241-t0_s_1_37	unknown function
+eld241-t0_s_1_38	unknown function
+eld241-t0_s_1_39	unknown function
+eld241-t0_s_1_40	unknown function
+eld241-t0_s_1_41	unknown function
+eld241-t0_s_1_42	unknown function
+eld241-t0_s_1_43	unknown function
+eld241-t0_s_1_44	unknown function
+eld241-t0_s_1_45	unknown function
+eld241-t0_s_1_46	unknown function
+eld241-t0_s_1_47	unknown function
+eld241-t0_s_1_48	unknown function
+eld241-t0_s_1_49	unknown function
+eld241-t0_s_1_50	unknown function
+eld241-t0_s_1_51	unknown function
+eld241-t0_s_1_52	unknown function
+eld241-t0_s_1_53	unknown function
+eld241-t0_s_1_54	unknown function
+eld241-t0_s_1_55	unknown function
+eld241-t0_s_1_56	unknown function
+eld241-t0_s_1_57	unknown function
+eld241-t0_s_1_58	unknown function
+eld241-t0_s_1_59	unknown function
+eld241-t0_s_1_60	unknown function
+eld241-t0_s_1_61	unknown function
+eld241-t0_s_1_62	unknown function
+eld241-t0_s_1_63	unknown function
+eld241-t0_s_1_64	unknown function
+eld241-t0_s_1_65	unknown function
+eld241-t0_s_1_66	unknown function
+eld241-t0_s_1_67	unknown function
+eld241-t0_s_1_68	unknown function
+eld241-t0_s_1_69	unknown function
+eld241-t0_s_1_70	putative structural protein
+eld241-t0_s_1_71	unknown function
+eld241-t0_s_1_72	unknown function
+eld241-t0_s_1_73	unknown function
+eld241-t0_s_1_74	unknown function
+eld241-t0_s_1_75	unknown function
+eld241-t0_s_1_76	unknown function
+eld241-t0_s_1_77	unknown function
+eld241-t0_s_1_78	putative structural protein
+eld241-t0_s_1_79	unknown function
+eld241-t0_s_1_80	MCP
+eld241-t0_s_1_81	putative structural protein
+eld241-t0_s_1_82	unknown function
+eld241-t0_s_1_83	unknown function
+eld241-t0_s_1_84	unknown function
+eld241-t0_s_1_85	unknown function
+eld241-t0_s_1_86	unknown function
+eld241-t0_s_1_87	Portal
+eld241-t0_s_1_88	unknown function
+eld241-t0_s_1_89	Portal
+eld241-t0_s_1_90	unknown function
+eld241-t0_s_1_91	Terminase
+eld241-t0_s_1_92	Terminase
+eld241-t0_s_1_93	unknown function
+eld241-t0_s_1_94	unknown function
+eld241-t0_s_1_95	unknown function
+eld241-t0_s_1_96	unknown function
+eld241-t0_s_1_97	unknown function
+eld241-t0_s_1_98	unknown function
+eld241-t0_s_1_99	unknown function
+eld241-t0_s_1_100	unknown function
+eld241-t0_s_1_101	unknown function
+eld241-t0_s_1_102	unknown function
+eld241-t0_s_1_103	unknown function
+eld241-t0_s_1_104	unknown function
+eld241-t0_s_1_105	unknown function
+eld241-t0_s_1_106	unknown function
+eld241-t0_s_1_107	unknown function
+eld241-t0_s_1_108	unknown function
+eld241-t0_s_1_109	unknown function
+eld241-t0_s_1_110	unknown function
+eld241-t0_s_1_111	unknown function
+eld241-t0_s_1_112	unknown function
+eld241-t0_s_1_113	unknown function
+eld241-t0_s_1_114	unknown function
+eld241-t0_s_1_115	unknown function
+eld241-t0_s_1_116	unknown function
+eld241-t0_s_1_117	unknown function
+eld241-t0_s_1_118	unknown function
+eld241-t0_s_1_119	unknown function
+eld241-t0_s_1_120	unknown function
+eld241-t0_s_1_121	unknown function
+eld241-t0_s_1_122	unknown function
+eld241-t0_s_1_123	unknown function
+eld241-t0_s_1_124	unknown function
+eld241-t0_s_1_125	unknown function
+eld241-t0_s_1_126	unknown function
+eld241-t0_s_1_127	unknown function
+eld241-t0_s_1_128	unknown function
+eld241-t0_s_1_129	unknown function
+eld241-t0_s_1_130	unknown function
+eld241-t0_s_1_131	unknown function
+eld241-t0_s_1_132	unknown function
+eld241-t0_s_1_133	unknown function
+eld241-t0_s_1_134	unknown function
+eld241-t0_s_1_135	unknown function
+eld241-t0_s_1_136	unknown function
+eld241-t0_s_1_137	unknown function
+eld241-t0_s_1_138	unknown function
+eld241-t0_s_1_139	unknown function
+eld241-t0_s_1_140	unknown function
+eld241-t0_s_1_141	unknown function
+eld241-t0_s_1_142	unknown function
+eld241-t0_s_1_143	PolB
+eld241-t0_s_1_144	Rep_Org , putative replisome organizer protein 
+eld241-t0_s_1_145	phage replicative helicase, DnaB family
+eld241-t0_s_1_146	unknown function
+eld241-t0_s_1_147	AAA domain ATPase
+eld241-t0_s_1_148	unknown function
+eld241-t0_s_1_149	DnaG family primase
+eld241-t0_s_1_150	unknown function
+eld241-t0_s_1_151	Uncharacterized protein 48b
+eld241-t0_s_1_152	unknown function
+eld241-t0_s_1_153	PD-(D E)XK family nuclease
+eld241-t0_s_1_154	unknown function
+eld241-t0_s_1_155	unknown function
+eld241-t0_s_1_156	unknown function
+eld241-t0_s_1_157	unknown function
+eld241-t0_s_1_158	unknown function
+eld241-t0_s_1_159	unknown function
+eld241-t0_s_1_160	unknown function
+eld241-t0_s_1_161	unknown function
+eld241-t0_s_1_162	unknown function
+eld241-t0_s_1_163	unknown function
+eld241-t0_s_1_164	unknown function
+eld241-t0_s_1_165	unknown function
