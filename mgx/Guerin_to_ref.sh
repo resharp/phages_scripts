@@ -2,28 +2,37 @@
 # first cd to
 # /hosts/linuxhome/chaperone/tmp/richard/guerin_data
 # sample_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
+# ref_file=~/scripts/mgx/ref_seqs/ids_ref_genomes.txt
+
 # cd $sample_dir
 
 function split_fasta_by_ids {
 
-	conda deactivate
-	conda activate python37
-	#seqtk is in env python37
-	seqtk subseq Guerin.fna ids_ref_genomes.txt > Guerin_subset.fa
+	ref_file=$1
 
-	samples=$(grep ">" Guerin_subset.fa | cut -d " " -f1 | sed -e 's/>//g')
-	# for sample in $samples; do echo $sample; done
-	for sample in $samples
-		do
-			rm -f -r ${sample}
-			mkdir ${sample}
-			grep -A1 -w $sample Guerin_subset.fa > ${sample}/${sample}.fasta
-		done
+        if [ -z "$ref_file" ]
+        then
+                echo "please provide ref_file as argument (file with ref genome ids)"
+        else
+
+		conda deactivate
+		conda activate python37
+		#seqtk is in env python37
+		seqtk subseq Guerin.fna ${ref_file} > Guerin_subset.fa
+
+		samples=$(grep ">" Guerin_subset.fa | cut -d " " -f1 | sed -e 's/>//g')
+		# for sample in $samples; do echo $sample; done
+		for sample in $samples
+			do
+				rm -f -r ${sample}
+				mkdir ${sample}
+				grep -A1 -w $sample Guerin_subset.fa > ${sample}/${sample}.fasta
+			done
+	fi
 }
 
 
 function run_prodigal_on_ref {
-
 
 	conda deactivate
 	conda activate prodigal
