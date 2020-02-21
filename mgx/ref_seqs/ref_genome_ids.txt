@@ -4,6 +4,7 @@
 # and this pipeline should also be adapted (because we added a second column)
 # we forgot genus_8 eld241-t0_s_1
 crassphage_refseq	genus_1
+NC_024711.1	genus_1
 cs_ms_21	genus_2
 err844030_ms_1	genus_10
 err975045_s_1	genus_9
