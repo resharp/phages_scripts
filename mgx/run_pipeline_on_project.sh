@@ -207,6 +207,8 @@ function run_mapping {
         #create stats for mapped reads
         time samtools idxstats $file.sorted.bam > $file.sorted.idstats.txt
         time samtools idxstats $file.sorted.mapped.bam > $file.sorted.mapped.idstats.txt
+
+	rm -f $file.sorted.bam
 }
 
 function run_diversiutils {
