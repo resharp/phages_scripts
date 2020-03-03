@@ -93,7 +93,7 @@ function run_sample {
 
 	copy_and_run_trimming $source_dir $sample_dir $run
 
-	refs=$(cat ${ref_file} | grep -v "#")
+	refs=$(cat ${ref_file} | grep -v "#" | cut -f1 )
 
 	for ref in $refs
 	do
@@ -128,7 +128,7 @@ function run_sample_against_new_refs {
 	# you do not have to copy and run trimming when running against new refs
 	#copy_and_run_trimming $source_dir $sample_dir $run
 
-	refs=$(cat ${ref_file} | grep -v "#")
+	refs=$(cat ${ref_file} | grep -v "#" | cut -f1)
 
 	for ref in $refs
 	do
