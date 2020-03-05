@@ -1,3 +1,4 @@
+# to do: move this to mgx/data_analysis.sh
 function sample_stats {
 
 	sample_dir=$1

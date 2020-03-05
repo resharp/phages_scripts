@@ -46,6 +46,27 @@ function run_all_samples {
 	sample_stats $sample_dir
 }
 
+function run_all_samples_against_new_refs {
+
+	sample_dir=$1
+	nr_samples=$2
+	ref_file=$3
+
+	files_1=$(find $sample_dir/*/*pair1.truncated.gz | head -${nr_samples})
+
+        for file_1 in $files_1
+        do
+                base_file_1=$(basename "$file_1")
+                # e.g. run=ERR525689
+
+                run=${base_file_1%.pair1.truncated.gz}
+		#echo $run
+
+		run_sample_against_new_refs $sample_dir $run $ref_file
+	done
+
+}
+
 function sample_stats {
 	paste	<(find $sample_dir/*/*idstats.txt |\
 		while read LINE
@@ -57,7 +78,7 @@ function sample_stats {
 		<(cat $sample_dir/*/*idstats.txt | awk 'NR%2==1 {print $3}') \
 		<(cat $sample_dir/*/*idstats.txt | awk 'NR%2==0 {print $4}') > $sample_dir/sample_stats.txt
 
-	cat $sample_dir/sample_stats.txt | sort -k2 -nr | awk '{print $0"\t"$2/$3}' > $sample_dir/sample_stats_sorted.txt
+	# cat $sample_dir/sample_stats.txt | sort -k2 -nr | awk '{print $0"\t"$2/$3}' > $sample_dir/sample_stats_sorted.txt
 
 }
 
@@ -72,7 +93,7 @@ function run_sample {
 
 	copy_and_run_trimming $source_dir $sample_dir $run
 
-	refs=$(cat ${ref_file} | grep -v "#")
+	refs=$(cat ${ref_file} | grep -v "#" | cut -f1 )
 
 	for ref in $refs
 	do
@@ -96,19 +117,18 @@ function run_sample {
 
 # this was my earlier sample to check for different results with untrimmed files: ERR1136746
 # now I want to use ERR525804
-function debug_sample {
+function run_sample_against_new_refs {
 
 	echo "start debug_sample"
 
-        source_dir=$1
-        sample_dir=$2
-        run=$3
-	ref_file=$4
+        sample_dir=$1
+        run=$2
+	ref_file=$3
 
-	# to do: reactivate
+	# you do not have to copy and run trimming when running against new refs
 	#copy_and_run_trimming $source_dir $sample_dir $run
 
-	refs=$(cat ${ref_file} | grep -v "#")
+	refs=$(cat ${ref_file} | grep -v "#" | cut -f1)
 
 	for ref in $refs
 	do
