@@ -1,88 +1,88 @@
-gene	gene_annot
-hvcf_a6_ms_4_1	unknown function
-hvcf_a6_ms_4_2	Uncharacterized protein
-hvcf_a6_ms_4_3	unknown function
-hvcf_a6_ms_4_4	Tail stabilization protein (P22 gp10-like)
-hvcf_a6_ms_4_5	Tail tubular protein (P22 gp4-like)
-hvcf_a6_ms_4_6	unknown function
-hvcf_a6_ms_4_7	IHF subunit
-hvcf_a6_ms_4_8	unknown function
-hvcf_a6_ms_4_9	unknown function
-hvcf_a6_ms_4_10	unknown function
-hvcf_a6_ms_4_11	unknown function
-hvcf_a6_ms_4_12	unknown function
-hvcf_a6_ms_4_13	unknown function
-hvcf_a6_ms_4_14	unknown function
-hvcf_a6_ms_4_15	unknown function
-hvcf_a6_ms_4_16	unknown function
-hvcf_a6_ms_4_17	unknown function
-hvcf_a6_ms_4_18	unknown function
-hvcf_a6_ms_4_19	unknown function
-hvcf_a6_ms_4_20	unknown function
-hvcf_a6_ms_4_21	unknown function
-hvcf_a6_ms_4_22	unknown function
-hvcf_a6_ms_4_23	unknown function
-hvcf_a6_ms_4_24	putative structural protein
-hvcf_a6_ms_4_25	putative structural protein
-hvcf_a6_ms_4_26	putative structural protein
-hvcf_a6_ms_4_27	MCP
-hvcf_a6_ms_4_28	putative structural protein
-hvcf_a6_ms_4_29	Portal
-hvcf_a6_ms_4_30	Terminase
-hvcf_a6_ms_4_31	unknown function
-hvcf_a6_ms_4_32	unknown function
-hvcf_a6_ms_4_33	unknown function
-hvcf_a6_ms_4_34	unknown function
-hvcf_a6_ms_4_35	PD-(D E)XK family nuclease
-hvcf_a6_ms_4_36	unknown function
-hvcf_a6_ms_4_37	Uncharacterized protein
-hvcf_a6_ms_4_38	unknown function
-hvcf_a6_ms_4_39	unknown function
-hvcf_a6_ms_4_40	unknown function
-hvcf_a6_ms_4_41	unknown function
-hvcf_a6_ms_4_42	unknown function
-hvcf_a6_ms_4_43	unknown function
-hvcf_a6_ms_4_44	unknown function
-hvcf_a6_ms_4_45	unknown function
-hvcf_a6_ms_4_46	unknown function
-hvcf_a6_ms_4_47	unknown function
-hvcf_a6_ms_4_48	unknown function
-hvcf_a6_ms_4_49	unknown function
-hvcf_a6_ms_4_50	unknown function
-hvcf_a6_ms_4_51	unknown function
-hvcf_a6_ms_4_52	unknown function
-hvcf_a6_ms_4_53	unknown function
-hvcf_a6_ms_4_54	unknown function
-hvcf_a6_ms_4_55	unknown function
-hvcf_a6_ms_4_56	unknown function
-hvcf_a6_ms_4_57	SF1 helicase
-hvcf_a6_ms_4_58	unknown function
-hvcf_a6_ms_4_59	PolB
-hvcf_a6_ms_4_60	SNF2 helicase
-hvcf_a6_ms_4_61	RecT
-hvcf_a6_ms_4_62	Uncharacterized protein
-hvcf_a6_ms_4_63	ssb 
-hvcf_a6_ms_4_64	DnaG family primase
-hvcf_a6_ms_4_65	unknown function
-hvcf_a6_ms_4_66	unknown function
-hvcf_a6_ms_4_67	unknown function
-hvcf_a6_ms_4_68	unknown function
-hvcf_a6_ms_4_69	unknown function
-hvcf_a6_ms_4_70	unknown function
-hvcf_a6_ms_4_71	unknown function
-hvcf_a6_ms_4_72	unknown function
-hvcf_a6_ms_4_73	unknown function
-hvcf_a6_ms_4_74	unknown function
-hvcf_a6_ms_4_75	unknown function
-hvcf_a6_ms_4_76	unknown function
-hvcf_a6_ms_4_77	Siphovirus Gp157 homolog
-hvcf_a6_ms_4_78	unknown function
-hvcf_a6_ms_4_79	Uncharacterized protein
-hvcf_a6_ms_4_80	unknown function
-hvcf_a6_ms_4_81	unknown function
-hvcf_a6_ms_4_82	unknown function
-hvcf_a6_ms_4_83	unknown function
-hvcf_a6_ms_4_84	unknown function
-hvcf_a6_ms_4_85	unknown function
-hvcf_a6_ms_4_86	unknown function
-hvcf_a6_ms_4_87	unknown function
+gene	gene_fam	gene_annot
+hvcf_a6_ms_4_1		unknown function
+hvcf_a6_ms_4_2	gene49	Uncharacterized protein
+hvcf_a6_ms_4_3		unknown function
+hvcf_a6_ms_4_4	gene51	Tail stabilization protein (P22 gp10-like)
+hvcf_a6_ms_4_5	gene52	Tail tubular protein (P22 gp4-like)
+hvcf_a6_ms_4_6		unknown function
+hvcf_a6_ms_4_7	gene54	IHF subunit
+hvcf_a6_ms_4_8		unknown function
+hvcf_a6_ms_4_9		unknown function
+hvcf_a6_ms_4_10		unknown function
+hvcf_a6_ms_4_11		unknown function
+hvcf_a6_ms_4_12		unknown function
+hvcf_a6_ms_4_13		unknown function
+hvcf_a6_ms_4_14		unknown function
+hvcf_a6_ms_4_15		unknown function
+hvcf_a6_ms_4_16		unknown function
+hvcf_a6_ms_4_17		unknown function
+hvcf_a6_ms_4_18		unknown function
+hvcf_a6_ms_4_19		unknown function
+hvcf_a6_ms_4_20		unknown function
+hvcf_a6_ms_4_21		unknown function
+hvcf_a6_ms_4_22		unknown function
+hvcf_a6_ms_4_23		unknown function
+hvcf_a6_ms_4_24	gene73	putative structural protein
+hvcf_a6_ms_4_25	gene74	putative structural protein
+hvcf_a6_ms_4_26	gene75	putative structural protein
+hvcf_a6_ms_4_27	MCP	MCP
+hvcf_a6_ms_4_28	gene77	putative structural protein
+hvcf_a6_ms_4_29	portal	Portal
+hvcf_a6_ms_4_30	terminase	Terminase
+hvcf_a6_ms_4_31		unknown function
+hvcf_a6_ms_4_32		unknown function
+hvcf_a6_ms_4_33		unknown function
+hvcf_a6_ms_4_34		unknown function
+hvcf_a6_ms_4_35	gene85	PD-(D E)XK family nuclease
+hvcf_a6_ms_4_36		unknown function
+hvcf_a6_ms_4_37	gene86	Uncharacterized protein
+hvcf_a6_ms_4_38		unknown function
+hvcf_a6_ms_4_39		unknown function
+hvcf_a6_ms_4_40		unknown function
+hvcf_a6_ms_4_41		unknown function
+hvcf_a6_ms_4_42		unknown function
+hvcf_a6_ms_4_43		unknown function
+hvcf_a6_ms_4_44		unknown function
+hvcf_a6_ms_4_45		unknown function
+hvcf_a6_ms_4_46		unknown function
+hvcf_a6_ms_4_47		unknown function
+hvcf_a6_ms_4_48		unknown function
+hvcf_a6_ms_4_49		unknown function
+hvcf_a6_ms_4_50		unknown function
+hvcf_a6_ms_4_51		unknown function
+hvcf_a6_ms_4_52		unknown function
+hvcf_a6_ms_4_53		unknown function
+hvcf_a6_ms_4_54		unknown function
+hvcf_a6_ms_4_55		unknown function
+hvcf_a6_ms_4_56		unknown function
+hvcf_a6_ms_4_57	SF1_helicase15	SF1 helicase
+hvcf_a6_ms_4_58		unknown function
+hvcf_a6_ms_4_59	PolB	PolB
+hvcf_a6_ms_4_60	SNF2_helic18	SNF2 helicase
+hvcf_a6_ms_4_61	gene19	RecT
+hvcf_a6_ms_4_62	gene20	Uncharacterized protein
+hvcf_a6_ms_4_63	gene21	ssb 
+hvcf_a6_ms_4_64	primase	DnaG family primase
+hvcf_a6_ms_4_65		unknown function
+hvcf_a6_ms_4_66		unknown function
+hvcf_a6_ms_4_67		unknown function
+hvcf_a6_ms_4_68	ligase25	unknown function
+hvcf_a6_ms_4_69		unknown function
+hvcf_a6_ms_4_70		unknown function
+hvcf_a6_ms_4_71		unknown function
+hvcf_a6_ms_4_72		unknown function
+hvcf_a6_ms_4_73	ThyX	unknown function
+hvcf_a6_ms_4_74		unknown function
+hvcf_a6_ms_4_75		unknown function
+hvcf_a6_ms_4_76		unknown function
+hvcf_a6_ms_4_77	gene32	Siphovirus Gp157 homolog
+hvcf_a6_ms_4_78		unknown function
+hvcf_a6_ms_4_79	gene34	Uncharacterized protein
+hvcf_a6_ms_4_80	dUTP	unknown function
+hvcf_a6_ms_4_81		unknown function
+hvcf_a6_ms_4_82		unknown function
+hvcf_a6_ms_4_83		unknown function
+hvcf_a6_ms_4_84		unknown function
+hvcf_a6_ms_4_85		unknown function
+hvcf_a6_ms_4_86		unknown function
+hvcf_a6_ms_4_87		unknown function

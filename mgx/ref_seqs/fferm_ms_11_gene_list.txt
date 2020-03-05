@@ -1,111 +1,111 @@
-gene	gene_annot
-fferm_ms_11_1	unknown function
-fferm_ms_11_2	unknown function
-fferm_ms_11_3	unknown function
-fferm_ms_11_4	unknown function
-fferm_ms_11_5	unknown function
-fferm_ms_11_6	unknown function
-fferm_ms_11_7	unknown function
-fferm_ms_11_8	putative structural protein
-fferm_ms_11_9	putative structural protein
-fferm_ms_11_10	MCP
-fferm_ms_11_11	putative structural protein
-fferm_ms_11_12	unknown function
-fferm_ms_11_13	unknown function
-fferm_ms_11_14	unknown function
-fferm_ms_11_15	unknown function
-fferm_ms_11_16	unknown function
-fferm_ms_11_17	unknown function
-fferm_ms_11_18	unknown function
-fferm_ms_11_19	unknown function
-fferm_ms_11_20	unknown function
-fferm_ms_11_21	unknown function
-fferm_ms_11_22	unknown function
-fferm_ms_11_23	unknown function
-fferm_ms_11_24	unknown function
-fferm_ms_11_25	unknown function
-fferm_ms_11_26	Portal
-fferm_ms_11_27	Terminase
-fferm_ms_11_28	unknown function
-fferm_ms_11_29	Uncharacterized protein
-fferm_ms_11_30	unknown function
-fferm_ms_11_31	unknown function
-fferm_ms_11_32	unknown function
-fferm_ms_11_33	unknown function
-fferm_ms_11_34	unknown function
-fferm_ms_11_35	unknown function
-fferm_ms_11_36	unknown function
-fferm_ms_11_37	unknown function
-fferm_ms_11_38	unknown function
-fferm_ms_11_39	unknown function
-fferm_ms_11_40	unknown function
-fferm_ms_11_41	unknown function
-fferm_ms_11_42	unknown function
-fferm_ms_11_43	unknown function
-fferm_ms_11_44	unknown function
-fferm_ms_11_45	unknown function
-fferm_ms_11_46	unknown function
-fferm_ms_11_47	unknown function
-fferm_ms_11_48	unknown function
-fferm_ms_11_49	unknown function
-fferm_ms_11_50	unknown function
-fferm_ms_11_51	unknown function
-fferm_ms_11_52	unknown function
-fferm_ms_11_53	unknown function
-fferm_ms_11_54	unknown function
-fferm_ms_11_55	unknown function
-fferm_ms_11_56	unknown function
-fferm_ms_11_57	unknown function
-fferm_ms_11_58	unknown function
-fferm_ms_11_59	unknown function
-fferm_ms_11_60	unknown function
-fferm_ms_11_61	unknown function
-fferm_ms_11_62	unknown function
-fferm_ms_11_63	unknown function
-fferm_ms_11_64	SNF2 helicase
-fferm_ms_11_65	unknown function
-fferm_ms_11_66	unknown function
-fferm_ms_11_67	phage replicative helicase, DnaB family
-fferm_ms_11_68	unknown function
-fferm_ms_11_69	unknown function
-fferm_ms_11_70	unknown function
-fferm_ms_11_71	Uncharacterized protein 45b
-fferm_ms_11_72	unknown function
-fferm_ms_11_73	DnaG family primase
-fferm_ms_11_74	unknown function
-fferm_ms_11_75	unknown function
-fferm_ms_11_76	unknown function
-fferm_ms_11_77	unknown function
-fferm_ms_11_78	unknown function
-fferm_ms_11_79	UDG
-fferm_ms_11_80	unknown function
-fferm_ms_11_81	Uncharacterized protein 48b
-fferm_ms_11_82	unknown function
-fferm_ms_11_83	PD-(D E)XK family nuclease
-fferm_ms_11_84	unknown function
-fferm_ms_11_85	unknown function
-fferm_ms_11_86	unknown function
-fferm_ms_11_87	unknown function
-fferm_ms_11_88	unknown function
-fferm_ms_11_89	unknown function
-fferm_ms_11_90	unknown function
-fferm_ms_11_90	PolA
-fferm_ms_11_91	unknown function
-fferm_ms_11_92	unknown function
-fferm_ms_11_93	unknown function
-fferm_ms_11_94	unknown function
-fferm_ms_11_95	unknown function
-fferm_ms_11_96	unknown function
-fferm_ms_11_97	unknown function
-fferm_ms_11_98	unknown function
-fferm_ms_11_99	unknown function
-fferm_ms_11_100	unknown function
-fferm_ms_11_101	unknown function
-fferm_ms_11_102	unknown function
-fferm_ms_11_103	unknown function
-fferm_ms_11_104	unknown function
-fferm_ms_11_105	Uncharacterized protein
-fferm_ms_11_106	Tail stabilization protein (P22 gp10-like)
-fferm_ms_11_107	Tail tubular protein (P22 gp4-like)
-fferm_ms_11_108	unknown function
-fferm_ms_11_109	unknown function
+gene	gene_fam	gene_annot
+fferm_ms_11_1		unknown function
+fferm_ms_11_2		unknown function
+fferm_ms_11_3		unknown function
+fferm_ms_11_4		unknown function
+fferm_ms_11_5		unknown function
+fferm_ms_11_6		unknown function
+fferm_ms_11_7		unknown function
+fferm_ms_11_8	gene74	putative structural protein
+fferm_ms_11_9	gene75	putative structural protein
+fferm_ms_11_10	MCP	MCP
+fferm_ms_11_11	gene77	putative structural protein
+fferm_ms_11_12		unknown function
+fferm_ms_11_13		unknown function
+fferm_ms_11_14		unknown function
+fferm_ms_11_15		unknown function
+fferm_ms_11_16		unknown function
+fferm_ms_11_17		unknown function
+fferm_ms_11_18		unknown function
+fferm_ms_11_19		unknown function
+fferm_ms_11_20		unknown function
+fferm_ms_11_21		unknown function
+fferm_ms_11_22		unknown function
+fferm_ms_11_23		unknown function
+fferm_ms_11_24		unknown function
+fferm_ms_11_25		unknown function
+fferm_ms_11_26	portal	Portal
+fferm_ms_11_27	terminase	Terminase
+fferm_ms_11_28		unknown function
+fferm_ms_11_29	gene86	Uncharacterized protein
+fferm_ms_11_30		unknown function
+fferm_ms_11_31		unknown function
+fferm_ms_11_32		unknown function
+fferm_ms_11_33		unknown function
+fferm_ms_11_34		unknown function
+fferm_ms_11_35		unknown function
+fferm_ms_11_36		unknown function
+fferm_ms_11_37		unknown function
+fferm_ms_11_38		unknown function
+fferm_ms_11_39		unknown function
+fferm_ms_11_40		unknown function
+fferm_ms_11_41		unknown function
+fferm_ms_11_42		unknown function
+fferm_ms_11_43		unknown function
+fferm_ms_11_44		unknown function
+fferm_ms_11_45		unknown function
+fferm_ms_11_46		unknown function
+fferm_ms_11_47		unknown function
+fferm_ms_11_48		unknown function
+fferm_ms_11_49		unknown function
+fferm_ms_11_50		unknown function
+fferm_ms_11_51		unknown function
+fferm_ms_11_52		unknown function
+fferm_ms_11_53		unknown function
+fferm_ms_11_54		unknown function
+fferm_ms_11_55		unknown function
+fferm_ms_11_56		unknown function
+fferm_ms_11_57		unknown function
+fferm_ms_11_58		unknown function
+fferm_ms_11_59		unknown function
+fferm_ms_11_60		unknown function
+fferm_ms_11_61		unknown function
+fferm_ms_11_62		unknown function
+fferm_ms_11_63		unknown function
+fferm_ms_11_64	SNF2_helic18	SNF2 helicase
+fferm_ms_11_65		unknown function
+fferm_ms_11_66		unknown function
+fferm_ms_11_67	gene41b	phage replicative helicase, DnaB family
+fferm_ms_11_68		unknown function
+fferm_ms_11_69		unknown function
+fferm_ms_11_70		unknown function
+fferm_ms_11_71	gene45b	Uncharacterized protein 45b
+fferm_ms_11_72		unknown function
+fferm_ms_11_73	primase	DnaG family primase
+fferm_ms_11_74		unknown function
+fferm_ms_11_75		unknown function
+fferm_ms_11_76		unknown function
+fferm_ms_11_77		unknown function
+fferm_ms_11_78		unknown function
+fferm_ms_11_79	UDG	UDG
+fferm_ms_11_80		unknown function
+fferm_ms_11_81	gene48b	Uncharacterized protein 48b
+fferm_ms_11_82		unknown function
+fferm_ms_11_83	gene85	PD-(D E)XK family nuclease
+fferm_ms_11_84		unknown function
+fferm_ms_11_85		unknown function
+fferm_ms_11_86		unknown function
+fferm_ms_11_87		unknown function
+fferm_ms_11_88		unknown function
+fferm_ms_11_89		unknown function
+fferm_ms_11_90	gene9_BCSF01000238	unknown function
+fferm_ms_11_90	PolA	PolA
+fferm_ms_11_91		unknown function
+fferm_ms_11_92		unknown function
+fferm_ms_11_93		unknown function
+fferm_ms_11_94		unknown function
+fferm_ms_11_95		unknown function
+fferm_ms_11_96	ThyX	unknown function
+fferm_ms_11_97		unknown function
+fferm_ms_11_98		unknown function
+fferm_ms_11_99		unknown function
+fferm_ms_11_100		unknown function
+fferm_ms_11_101		unknown function
+fferm_ms_11_102		unknown function
+fferm_ms_11_103		unknown function
+fferm_ms_11_104		unknown function
+fferm_ms_11_105	gene49	Uncharacterized protein
+fferm_ms_11_106	gene51	Tail stabilization protein (P22 gp10-like)
+fferm_ms_11_107	gene52	Tail tubular protein (P22 gp4-like)
+fferm_ms_11_108		unknown function
+fferm_ms_11_109		unknown function

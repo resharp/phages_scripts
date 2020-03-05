@@ -1,89 +1,89 @@
-gene	gene_annot
-srr4295175_ms_5_1	Portal
-srr4295175_ms_5_2	putative structural protein
-srr4295175_ms_5_3	MCP
-srr4295175_ms_5_4	putative structural protein
-srr4295175_ms_5_5	putative structural protein
-srr4295175_ms_5_6	putative structural protein
-srr4295175_ms_5_7	unknown function
-srr4295175_ms_5_8	unknown function
-srr4295175_ms_5_9	unknown function
-srr4295175_ms_5_10	unknown function
-srr4295175_ms_5_11	unknown function
-srr4295175_ms_5_12	unknown function
-srr4295175_ms_5_13	unknown function
-srr4295175_ms_5_14	unknown function
-srr4295175_ms_5_15	unknown function
-srr4295175_ms_5_16	unknown function
-srr4295175_ms_5_17	unknown function
-srr4295175_ms_5_18	unknown function
-srr4295175_ms_5_19	unknown function
-srr4295175_ms_5_20	unknown function
-srr4295175_ms_5_21	unknown function
-srr4295175_ms_5_22	IHF subunit
-srr4295175_ms_5_23	unknown function
-srr4295175_ms_5_24	Tail tubular protein (P22 gp4-like)
-srr4295175_ms_5_25	Tail stabilization protein (P22 gp10-like)
-srr4295175_ms_5_26	Uncharacterized protein
-srr4295175_ms_5_27	unknown function
-srr4295175_ms_5_28	unknown function
-srr4295175_ms_5_29	unknown function
-srr4295175_ms_5_30	unknown function
-srr4295175_ms_5_31	unknown function
-srr4295175_ms_5_32	unknown function
-srr4295175_ms_5_33	unknown function
-srr4295175_ms_5_34	unknown function
-srr4295175_ms_5_35	unknown function
-srr4295175_ms_5_36	unknown function
-srr4295175_ms_5_37	unknown function
-srr4295175_ms_5_38	unknown function
-srr4295175_ms_5_39	unknown function
-srr4295175_ms_5_40	unknown function
-srr4295175_ms_5_41	unknown function
-srr4295175_ms_5_42	Uncharacterized protein
-srr4295175_ms_5_43	unknown function
-srr4295175_ms_5_44	Siphovirus Gp157 homolog
-srr4295175_ms_5_45	unknown function
-srr4295175_ms_5_46	unknown function
-srr4295175_ms_5_47	unknown function
-srr4295175_ms_5_48	unknown function
-srr4295175_ms_5_49	unknown function
-srr4295175_ms_5_50	unknown function
-srr4295175_ms_5_51	unknown function
-srr4295175_ms_5_52	unknown function
-srr4295175_ms_5_53	unknown function
-srr4295175_ms_5_54	Uncharacterized protein
-srr4295175_ms_5_55	DnaG family primase
-srr4295175_ms_5_56	ssb 
-srr4295175_ms_5_57	Uncharacterized protein
-srr4295175_ms_5_58	RecT
-srr4295175_ms_5_59	SNF2 helicase
-srr4295175_ms_5_60	unknown function
-srr4295175_ms_5_61	unknown function
-srr4295175_ms_5_62	PolB
-srr4295175_ms_5_63	SF1 helicase
-srr4295175_ms_5_64	unknown function
-srr4295175_ms_5_65	unknown function
-srr4295175_ms_5_66	unknown function
-srr4295175_ms_5_67	unknown function
-srr4295175_ms_5_68	unknown function
-srr4295175_ms_5_69	unknown function
-srr4295175_ms_5_70	unknown function
-srr4295175_ms_5_71	unknown function
-srr4295175_ms_5_72	unknown function
-srr4295175_ms_5_73	unknown function
-srr4295175_ms_5_74	unknown function
-srr4295175_ms_5_75	unknown function
-srr4295175_ms_5_76	unknown function
-srr4295175_ms_5_77	unknown function
-srr4295175_ms_5_78	unknown function
-srr4295175_ms_5_79	unknown function
-srr4295175_ms_5_80	unknown function
-srr4295175_ms_5_81	Uncharacterized protein
-srr4295175_ms_5_82	PD-(D E)XK family nuclease
-srr4295175_ms_5_83	unknown function
-srr4295175_ms_5_84	unknown function
-srr4295175_ms_5_85	unknown function
-srr4295175_ms_5_86	Terminase
-srr4295175_ms_5_87	unknown function
-srr4295175_ms_5_88	Portal
+gene	gene_fam	gene_annot
+srr4295175_ms_5_1	portal	Portal
+srr4295175_ms_5_2	gene77	putative structural protein
+srr4295175_ms_5_3	MCP	MCP
+srr4295175_ms_5_4	gene75	putative structural protein
+srr4295175_ms_5_5	gene74	putative structural protein
+srr4295175_ms_5_6	gene73	putative structural protein
+srr4295175_ms_5_7		unknown function
+srr4295175_ms_5_8		unknown function
+srr4295175_ms_5_9		unknown function
+srr4295175_ms_5_10		unknown function
+srr4295175_ms_5_11		unknown function
+srr4295175_ms_5_12		unknown function
+srr4295175_ms_5_13		unknown function
+srr4295175_ms_5_14		unknown function
+srr4295175_ms_5_15		unknown function
+srr4295175_ms_5_16		unknown function
+srr4295175_ms_5_17		unknown function
+srr4295175_ms_5_18		unknown function
+srr4295175_ms_5_19		unknown function
+srr4295175_ms_5_20		unknown function
+srr4295175_ms_5_21		unknown function
+srr4295175_ms_5_22	gene54	IHF subunit
+srr4295175_ms_5_23		unknown function
+srr4295175_ms_5_24	gene52	Tail tubular protein (P22 gp4-like)
+srr4295175_ms_5_25	gene51	Tail stabilization protein (P22 gp10-like)
+srr4295175_ms_5_26	gene49	Uncharacterized protein
+srr4295175_ms_5_27		unknown function
+srr4295175_ms_5_28		unknown function
+srr4295175_ms_5_29		unknown function
+srr4295175_ms_5_30		unknown function
+srr4295175_ms_5_31		unknown function
+srr4295175_ms_5_32		unknown function
+srr4295175_ms_5_33		unknown function
+srr4295175_ms_5_34		unknown function
+srr4295175_ms_5_35		unknown function
+srr4295175_ms_5_36		unknown function
+srr4295175_ms_5_37		unknown function
+srr4295175_ms_5_38	dUTP	unknown function
+srr4295175_ms_5_39		unknown function
+srr4295175_ms_5_40		unknown function
+srr4295175_ms_5_41		unknown function
+srr4295175_ms_5_42	gene34	Uncharacterized protein
+srr4295175_ms_5_43		unknown function
+srr4295175_ms_5_44	gene32	Siphovirus Gp157 homolog
+srr4295175_ms_5_45		unknown function
+srr4295175_ms_5_46		unknown function
+srr4295175_ms_5_47		unknown function
+srr4295175_ms_5_48		unknown function
+srr4295175_ms_5_49		unknown function
+srr4295175_ms_5_50		unknown function
+srr4295175_ms_5_51		unknown function
+srr4295175_ms_5_52	ligase25	unknown function
+srr4295175_ms_5_53		unknown function
+srr4295175_ms_5_54	gene23	Uncharacterized protein
+srr4295175_ms_5_55	primase	DnaG family primase
+srr4295175_ms_5_56	gene21	ssb 
+srr4295175_ms_5_57	gene20	Uncharacterized protein
+srr4295175_ms_5_58	gene19	RecT
+srr4295175_ms_5_59	SNF2_helic18	SNF2 helicase
+srr4295175_ms_5_60		unknown function
+srr4295175_ms_5_61		unknown function
+srr4295175_ms_5_62	PolB	PolB
+srr4295175_ms_5_63	SF1_helicase15	SF1 helicase
+srr4295175_ms_5_64		unknown function
+srr4295175_ms_5_65		unknown function
+srr4295175_ms_5_66		unknown function
+srr4295175_ms_5_67		unknown function
+srr4295175_ms_5_68		unknown function
+srr4295175_ms_5_69		unknown function
+srr4295175_ms_5_70		unknown function
+srr4295175_ms_5_71		unknown function
+srr4295175_ms_5_72		unknown function
+srr4295175_ms_5_73		unknown function
+srr4295175_ms_5_74		unknown function
+srr4295175_ms_5_75		unknown function
+srr4295175_ms_5_76		unknown function
+srr4295175_ms_5_77		unknown function
+srr4295175_ms_5_78		unknown function
+srr4295175_ms_5_79		unknown function
+srr4295175_ms_5_80		unknown function
+srr4295175_ms_5_81	gene86	Uncharacterized protein
+srr4295175_ms_5_82	gene85	PD-(D E)XK family nuclease
+srr4295175_ms_5_83		unknown function
+srr4295175_ms_5_84		unknown function
+srr4295175_ms_5_85		unknown function
+srr4295175_ms_5_86	terminase	Terminase
+srr4295175_ms_5_87		unknown function
+srr4295175_ms_5_88	portal	Portal

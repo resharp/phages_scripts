@@ -1,91 +1,91 @@
-gene	gene_annot
-cs_ms_21_1	unknown function
-cs_ms_21_2	unknown function
-cs_ms_21_3	putative structural protein
-cs_ms_21_4	putative structural protein
-cs_ms_21_5	putative structural protein
-cs_ms_21_6	MCP
-cs_ms_21_7	putative structural protein
-cs_ms_21_8	Portal
-cs_ms_21_9	Terminase
-cs_ms_21_10	Uncharacterized protein
-cs_ms_21_11	unknown function
-cs_ms_21_12	unknown function
-cs_ms_21_13	unknown function
-cs_ms_21_14	unknown function
-cs_ms_21_15	unknown function
-cs_ms_21_16	unknown function
-cs_ms_21_17	PD-(D E)XK family nuclease
-cs_ms_21_18	unknown function
-cs_ms_21_19	unknown function
-cs_ms_21_20	unknown function
-cs_ms_21_21	unknown function
-cs_ms_21_22	unknown function
-cs_ms_21_23	unknown function
-cs_ms_21_24	unknown function
-cs_ms_21_25	unknown function
-cs_ms_21_26	unknown function
-cs_ms_21_27	unknown function
-cs_ms_21_28	unknown function
-cs_ms_21_29	unknown function
-cs_ms_21_30	unknown function
-cs_ms_21_31	unknown function
-cs_ms_21_32	unknown function
-cs_ms_21_33	unknown function
-cs_ms_21_34	unknown function
-cs_ms_21_35	unknown function
-cs_ms_21_36	unknown function
-cs_ms_21_37	unknown function
-cs_ms_21_38	unknown function
-cs_ms_21_39	unknown function
-cs_ms_21_40	unknown function
-cs_ms_21_41	unknown function
-cs_ms_21_42	SF1 helicase
-cs_ms_21_43	unknown function
-cs_ms_21_44	unknown function
-cs_ms_21_45	unknown function
-cs_ms_21_46	unknown function
-cs_ms_21_47	UDG
-cs_ms_21_48	PolB
-cs_ms_21_49	unknown function
-cs_ms_21_50	PolB
-cs_ms_21_51	unknown function
-cs_ms_21_52	SNF2 helicase
-cs_ms_21_53	RecT
-cs_ms_21_54	Uncharacterized protein
-cs_ms_21_55	ssb 
-cs_ms_21_56	DnaG family primase
-cs_ms_21_57	Uncharacterized protein
-cs_ms_21_58	unknown function
-cs_ms_21_59	unknown function
-cs_ms_21_60	unknown function
-cs_ms_21_61	unknown function
-cs_ms_21_62	unknown function
-cs_ms_21_63	unknown function
-cs_ms_21_64	unknown function
-cs_ms_21_65	unknown function
-cs_ms_21_66	unknown function
-cs_ms_21_67	Siphovirus Gp157 homolog
-cs_ms_21_68	Uncharacterized protein
-cs_ms_21_69	unknown function
-cs_ms_21_70	unknown function
-cs_ms_21_71	unknown function
-cs_ms_21_72	unknown function
-cs_ms_21_73	Uncharacterized protein
-cs_ms_21_74	Tail stabilization protein (P22 gp10-like)
-cs_ms_21_75	Tail tubular protein (P22 gp4-like)
-cs_ms_21_76	IHF subunit
-cs_ms_21_77	unknown function
-cs_ms_21_78	unknown function
-cs_ms_21_79	IHF subunit
-cs_ms_21_80	unknown function
-cs_ms_21_81	unknown function
-cs_ms_21_82	unknown function
-cs_ms_21_83	unknown function
-cs_ms_21_84	unknown function
-cs_ms_21_85	unknown function
-cs_ms_21_86	unknown function
-cs_ms_21_87	unknown function
-cs_ms_21_88	unknown function
-cs_ms_21_89	unknown function
-cs_ms_21_90	unknown function
+gene	gene_fam	gene_annot
+cs_ms_21_1		unknown function
+cs_ms_21_2		unknown function
+cs_ms_21_3	gene73	putative structural protein
+cs_ms_21_4	gene74	putative structural protein
+cs_ms_21_5	gene75	putative structural protein
+cs_ms_21_6	MCP	MCP
+cs_ms_21_7	gene77	putative structural protein
+cs_ms_21_8	portal	Portal
+cs_ms_21_9	terminase	Terminase
+cs_ms_21_10	gene86	Uncharacterized protein
+cs_ms_21_11		unknown function
+cs_ms_21_12		unknown function
+cs_ms_21_13		unknown function
+cs_ms_21_14		unknown function
+cs_ms_21_15		unknown function
+cs_ms_21_16		unknown function
+cs_ms_21_17	gene85	PD-(D E)XK family nuclease
+cs_ms_21_18		unknown function
+cs_ms_21_19		unknown function
+cs_ms_21_20		unknown function
+cs_ms_21_21		unknown function
+cs_ms_21_22		unknown function
+cs_ms_21_23		unknown function
+cs_ms_21_24		unknown function
+cs_ms_21_25		unknown function
+cs_ms_21_26		unknown function
+cs_ms_21_27		unknown function
+cs_ms_21_28		unknown function
+cs_ms_21_29		unknown function
+cs_ms_21_30		unknown function
+cs_ms_21_31		unknown function
+cs_ms_21_32		unknown function
+cs_ms_21_33		unknown function
+cs_ms_21_34		unknown function
+cs_ms_21_35		unknown function
+cs_ms_21_36		unknown function
+cs_ms_21_37		unknown function
+cs_ms_21_38		unknown function
+cs_ms_21_39		unknown function
+cs_ms_21_40		unknown function
+cs_ms_21_41		unknown function
+cs_ms_21_42	SF1_helicase15	SF1 helicase
+cs_ms_21_43		unknown function
+cs_ms_21_44		unknown function
+cs_ms_21_45		unknown function
+cs_ms_21_46		unknown function
+cs_ms_21_47	UDG	UDG
+cs_ms_21_48	PolB	PolB
+cs_ms_21_49		unknown function
+cs_ms_21_50	PolB	PolB
+cs_ms_21_51		unknown function
+cs_ms_21_52	SNF2_helic18	SNF2 helicase
+cs_ms_21_53	gene19	RecT
+cs_ms_21_54	gene20	Uncharacterized protein
+cs_ms_21_55	gene21	ssb 
+cs_ms_21_56	primase	DnaG family primase
+cs_ms_21_57	gene23	Uncharacterized protein
+cs_ms_21_58	ligase25	unknown function
+cs_ms_21_59		unknown function
+cs_ms_21_60		unknown function
+cs_ms_21_61		unknown function
+cs_ms_21_62		unknown function
+cs_ms_21_63		unknown function
+cs_ms_21_64		unknown function
+cs_ms_21_65	ThyX	unknown function
+cs_ms_21_66		unknown function
+cs_ms_21_67	gene32	Siphovirus Gp157 homolog
+cs_ms_21_68	gene34	Uncharacterized protein
+cs_ms_21_69		unknown function
+cs_ms_21_70		unknown function
+cs_ms_21_71		unknown function
+cs_ms_21_72		unknown function
+cs_ms_21_73	gene49	Uncharacterized protein
+cs_ms_21_74	gene51	Tail stabilization protein (P22 gp10-like)
+cs_ms_21_75	gene52	Tail tubular protein (P22 gp4-like)
+cs_ms_21_76	gene53	IHF subunit
+cs_ms_21_77		unknown function
+cs_ms_21_78		unknown function
+cs_ms_21_79	gene54	IHF subunit
+cs_ms_21_80		unknown function
+cs_ms_21_81		unknown function
+cs_ms_21_82		unknown function
+cs_ms_21_83		unknown function
+cs_ms_21_84		unknown function
+cs_ms_21_85		unknown function
+cs_ms_21_86		unknown function
+cs_ms_21_87		unknown function
+cs_ms_21_88		unknown function
+cs_ms_21_89		unknown function
+cs_ms_21_90		unknown function

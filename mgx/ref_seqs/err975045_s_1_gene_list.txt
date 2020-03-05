@@ -1,103 +1,103 @@
-gene	gene_annot
-err975045_s_1_1	unknown function
-err975045_s_1_2	unknown function
-err975045_s_1_3	unknown function
-err975045_s_1_4	unknown function
-err975045_s_1_5	PD-(D E)XK family nuclease
-err975045_s_1_6	Uncharacterized protein
-err975045_s_1_7	unknown function
-err975045_s_1_8	unknown function
-err975045_s_1_9	unknown function
-err975045_s_1_10	unknown function
-err975045_s_1_11	unknown function
-err975045_s_1_12	unknown function
-err975045_s_1_13	unknown function
-err975045_s_1_14	unknown function
-err975045_s_1_15	unknown function
-err975045_s_1_16	unknown function
-err975045_s_1_17	unknown function
-err975045_s_1_18	unknown function
-err975045_s_1_19	unknown function
-err975045_s_1_20	unknown function
-err975045_s_1_21	unknown function
-err975045_s_1_22	unknown function
-err975045_s_1_23	unknown function
-err975045_s_1_24	unknown function
-err975045_s_1_25	unknown function
-err975045_s_1_26	unknown function
-err975045_s_1_27	unknown function
-err975045_s_1_28	unknown function
-err975045_s_1_29	unknown function
-err975045_s_1_30	unknown function
-err975045_s_1_31	unknown function
-err975045_s_1_32	unknown function
-err975045_s_1_33	unknown function
-err975045_s_1_34	unknown function
-err975045_s_1_35	SF1 helicase
-err975045_s_1_36	unknown function
-err975045_s_1_37	unknown function
-err975045_s_1_38	unknown function
-err975045_s_1_39	UDG
-err975045_s_1_40	PolB
-err975045_s_1_41	SNF2 helicase
-err975045_s_1_42	RecT
-err975045_s_1_43	Uncharacterized protein
-err975045_s_1_44	ssb 
-err975045_s_1_45	DnaG family primase
-err975045_s_1_46	Uncharacterized protein
-err975045_s_1_47	unknown function
-err975045_s_1_48	unknown function
-err975045_s_1_49	unknown function
-err975045_s_1_50	unknown function
-err975045_s_1_51	unknown function
-err975045_s_1_52	unknown function
-err975045_s_1_53	unknown function
-err975045_s_1_54	unknown function
-err975045_s_1_55	unknown function
-err975045_s_1_56	unknown function
-err975045_s_1_57	unknown function
-err975045_s_1_58	Siphovirus Gp157 homolog
-err975045_s_1_59	unknown function
-err975045_s_1_60	unknown function
-err975045_s_1_61	Uncharacterized protein
-err975045_s_1_62	unknown function
-err975045_s_1_63	unknown function
-err975045_s_1_64	unknown function
-err975045_s_1_65	unknown function
-err975045_s_1_66	unknown function
-err975045_s_1_67	unknown function
-err975045_s_1_68	unknown function
-err975045_s_1_69	unknown function
-err975045_s_1_70	unknown function
-err975045_s_1_71	Uncharacterized protein
-err975045_s_1_72	unknown function
-err975045_s_1_73	Tail stabilization protein (P22 gp10-like)
-err975045_s_1_74	Tail tubular protein (P22 gp4-like)
-err975045_s_1_75	IHF subunit
-err975045_s_1_76	IHF subunit
-err975045_s_1_77	unknown function
-err975045_s_1_78	unknown function
-err975045_s_1_79	unknown function
-err975045_s_1_80	unknown function
-err975045_s_1_81	unknown function
-err975045_s_1_82	unknown function
-err975045_s_1_83	unknown function
-err975045_s_1_84	unknown function
-err975045_s_1_85	unknown function
-err975045_s_1_86	unknown function
-err975045_s_1_87	unknown function
-err975045_s_1_88	unknown function
-err975045_s_1_89	unknown function
-err975045_s_1_90	unknown function
-err975045_s_1_91	unknown function
-err975045_s_1_92	unknown function
-err975045_s_1_93	unknown function
-err975045_s_1_94	unknown function
-err975045_s_1_95	putative structural protein
-err975045_s_1_96	putative structural protein
-err975045_s_1_97	MCP
-err975045_s_1_98	putative structural protein
-err975045_s_1_99	Portal
-err975045_s_1_100	Terminase
-err975045_s_1_101	unknown function
-err975045_s_1_102	unknown function
+gene	gene_fam	gene_annot
+err975045_s_1_1		unknown function
+err975045_s_1_2		unknown function
+err975045_s_1_3		unknown function
+err975045_s_1_4		unknown function
+err975045_s_1_5	gene85	PD-(D E)XK family nuclease
+err975045_s_1_6	gene86	Uncharacterized protein
+err975045_s_1_7		unknown function
+err975045_s_1_8		unknown function
+err975045_s_1_9		unknown function
+err975045_s_1_10		unknown function
+err975045_s_1_11		unknown function
+err975045_s_1_12		unknown function
+err975045_s_1_13		unknown function
+err975045_s_1_14		unknown function
+err975045_s_1_15		unknown function
+err975045_s_1_16		unknown function
+err975045_s_1_17		unknown function
+err975045_s_1_18		unknown function
+err975045_s_1_19		unknown function
+err975045_s_1_20		unknown function
+err975045_s_1_21		unknown function
+err975045_s_1_22		unknown function
+err975045_s_1_23		unknown function
+err975045_s_1_24		unknown function
+err975045_s_1_25		unknown function
+err975045_s_1_26		unknown function
+err975045_s_1_27		unknown function
+err975045_s_1_28		unknown function
+err975045_s_1_29		unknown function
+err975045_s_1_30		unknown function
+err975045_s_1_31		unknown function
+err975045_s_1_32		unknown function
+err975045_s_1_33		unknown function
+err975045_s_1_34		unknown function
+err975045_s_1_35	SF1_helicase15	SF1 helicase
+err975045_s_1_36		unknown function
+err975045_s_1_37		unknown function
+err975045_s_1_38		unknown function
+err975045_s_1_39	UDG	UDG
+err975045_s_1_40	PolB	PolB
+err975045_s_1_41	SNF2_helic18	SNF2 helicase
+err975045_s_1_42	gene19	RecT
+err975045_s_1_43	gene20	Uncharacterized protein
+err975045_s_1_44	gene21	ssb 
+err975045_s_1_45	primase	DnaG family primase
+err975045_s_1_46	gene23	Uncharacterized protein
+err975045_s_1_47		unknown function
+err975045_s_1_48	ligase25	unknown function
+err975045_s_1_49		unknown function
+err975045_s_1_50		unknown function
+err975045_s_1_51		unknown function
+err975045_s_1_52		unknown function
+err975045_s_1_53		unknown function
+err975045_s_1_54		unknown function
+err975045_s_1_55	ThyX	unknown function
+err975045_s_1_56		unknown function
+err975045_s_1_57		unknown function
+err975045_s_1_58	gene32	Siphovirus Gp157 homolog
+err975045_s_1_59		unknown function
+err975045_s_1_60		unknown function
+err975045_s_1_61	gene34	Uncharacterized protein
+err975045_s_1_62		unknown function
+err975045_s_1_63		unknown function
+err975045_s_1_64	dUTP	unknown function
+err975045_s_1_65		unknown function
+err975045_s_1_66		unknown function
+err975045_s_1_67		unknown function
+err975045_s_1_68		unknown function
+err975045_s_1_69		unknown function
+err975045_s_1_70		unknown function
+err975045_s_1_71	gene49	Uncharacterized protein
+err975045_s_1_72		unknown function
+err975045_s_1_73	gene51	Tail stabilization protein (P22 gp10-like)
+err975045_s_1_74	gene52	Tail tubular protein (P22 gp4-like)
+err975045_s_1_75	gene53	IHF subunit
+err975045_s_1_76	gene54	IHF subunit
+err975045_s_1_77		unknown function
+err975045_s_1_78		unknown function
+err975045_s_1_79		unknown function
+err975045_s_1_80		unknown function
+err975045_s_1_81		unknown function
+err975045_s_1_82		unknown function
+err975045_s_1_83		unknown function
+err975045_s_1_84		unknown function
+err975045_s_1_85		unknown function
+err975045_s_1_86		unknown function
+err975045_s_1_87		unknown function
+err975045_s_1_88		unknown function
+err975045_s_1_89		unknown function
+err975045_s_1_90		unknown function
+err975045_s_1_91		unknown function
+err975045_s_1_92		unknown function
+err975045_s_1_93		unknown function
+err975045_s_1_94		unknown function
+err975045_s_1_95	gene74	putative structural protein
+err975045_s_1_96	gene75	putative structural protein
+err975045_s_1_97	MCP	MCP
+err975045_s_1_98	gene77	putative structural protein
+err975045_s_1_99	portal	Portal
+err975045_s_1_100	terminase	Terminase
+err975045_s_1_101		unknown function
+err975045_s_1_102		unknown function
