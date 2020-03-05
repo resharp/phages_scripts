@@ -43,6 +43,29 @@ function build_profiles {
 }
 
 
+function convert_crassphage_to_proteins_faa {
+
+	ref=crassphage_refseq
+	script_dir=scripts/mgx/ref_seqs
+	seq_file=${script_dir}/${ref}.fasta
+
+	conda deactivate
+	conda activate python37
+
+	# to do parametrize python script, now it expects gbk file in /scripts/mgx/ref_seqs
+	python source/phages/create_proteins_from_gbk.py
+
+	# copy results to here
+	ref_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
+
+	#create directory for ref
+	mkdir ${ref_dir}/${ref}
+
+	cp $script_dir/${ref}.proteins.faa ${ref_dir}/${ref}/${ref}.proteins.faa
+
+	echo 'results in' ${ref_dir}/${ref}/${ref}.proteins.faa
+}
+
 function search_genomes {
 
 	conda deactivate
@@ -80,6 +103,10 @@ function search_genomes {
 			hmmsearch --cpu 12 --tblout $out_table $profile $fasta_file > $out_file
 		done
 	done
+
+	# results of hmm searches for further integration in AnnotateCrassGenomes.py:
+	show_genes > $ref_dir/ref_genes.tsv
+	show_profile_hits > $ref_dir/hmm_hits.tsv
 }
 
 
