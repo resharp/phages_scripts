@@ -1,89 +1,89 @@
-gene	gene_fam	gene_annot
-KP06_gp01		unknown function
-KP06_gp02		unknown function
-KP06_gp03		unknown function
-KP06_gp04		unknown function
-KP06_gp05		unknown function
-KP06_gp06		unknown function
-KP06_gp07		unknown function
-KP06_gp08		unknown function
-KP06_gp09		unknown function
-KP06_gp10		unknown function
-KP06_gp11		unknown function
-KP06_gp12		unknown function
-KP06_gp13		unknown function
-KP06_gp14	SF1_helicase15	SF1 helicase
-KP06_gp15	UDG	UDG
-KP06_gp16	PolB	PolB
-KP06_gp17	SNF2_helic18	SNF2 helicase
-KP06_gp18	gene19	RecT
-KP06_gp19	gene20	Uncharacterized protein
-KP06_gp20	gene21	ssb 
-KP06_gp21	primase	DnaG family primase
-KP06_gp22	gene23	Uncharacterized protein
-KP06_gp23		unknown function
-KP06_gp24	ligase25	unknown function
-KP06_gp25		unknown function
-KP06_gp26		unknown function
-KP06_gp27		unknown function
-KP06_gp28	ThyX	unknown function
-KP06_gp29		unknown function
-KP06_gp30		unknown function
-KP06_gp31	gene32	Siphovirus Gp157 homolog
-KP06_gp32		unknown function
-KP06_gp33	gene34	Uncharacterized protein
-KP06_gp34	dUTP	unknown function
-KP06_gp35		unknown function
-KP06_gp36		unknown function
-KP06_gp37		unknown function
-KP06_gp38		unknown function
-KP06_gp39		unknown function
-KP06_gp40		unknown function
-KP06_gp41		unknown function
-KP06_gp42		unknown function
-KP06_gp43		unknown function
-KP06_gp44		unknown function
-KP06_gp45		unknown function
-KP06_gp46		unknown function
-KP06_gp47	gene49	Uncharacterized protein
-KP06_gp48		unknown function
-KP06_gp49	gene51	Tail stabilization protein (P22 gp10-like)
-KP06_gp50	gene52	Tail tubular protein (P22 gp4-like)
-KP06_gp51	gene53	IHF subunit
-KP06_gp52	gene54	IHF subunit
-KP06_gp53		unknown function
-KP06_gp54		unknown function
-KP06_gp55		unknown function
-KP06_gp56		unknown function
-KP06_gp57		unknown function
-KP06_gp58		unknown function
-KP06_gp59		unknown function
-KP06_gp60		unknown function
-KP06_gp61		unknown function
-KP06_gp62		unknown function
-KP06_gp63		unknown function
-KP06_gp64		unknown function
-KP06_gp65		unknown function
-KP06_gp66		unknown function
-KP06_gp67		unknown function
-KP06_gp68		unknown function
-KP06_gp69		unknown function
-KP06_gp70		unknown function
-KP06_gp71	gene73	putative structural protein
-KP06_gp72	gene74	putative structural protein
-KP06_gp73	gene75	putative structural protein
-KP06_gp74	MCP	MCP
-KP06_gp75	gene77	putative structural protein
-KP06_gp76	portal	Portal
-KP06_gp77	terminase	Terminase
-KP06_gp78		unknown function
-KP06_gp79		unknown function
-KP06_gp80		unknown function
-KP06_gp81		unknown function
-KP06_gp82		unknown function
-KP06_gp83	gene85	PD-(D E)XK family nuclease
-KP06_gp84	gene86	Uncharacterized protein
-KP06_gp85		unknown function
-KP06_gp86		unknown function
-KP06_gp87		unknown function
-KP06_gp88		unknown function
+gene	gene_fam	region	gene_annot
+KP06_gp01			unknown function
+KP06_gp02			unknown function
+KP06_gp03			unknown function
+KP06_gp04			unknown function
+KP06_gp05			unknown function
+KP06_gp06			unknown function
+KP06_gp07			unknown function
+KP06_gp08			unknown function
+KP06_gp09			unknown function
+KP06_gp10			unknown function
+KP06_gp11			unknown function
+KP06_gp12			unknown function
+KP06_gp13			unknown function
+KP06_gp14	SF1_helicase15		SF1 helicase
+KP06_gp15	UDG	replication	UDG
+KP06_gp16	PolB	replication	PolB
+KP06_gp17	SNF2_helic18	replication	SNF2 helicase
+KP06_gp18	gene19	replication	RecT
+KP06_gp19	gene20	replication	Uncharacterized protein
+KP06_gp20	gene21	replication	ssb 
+KP06_gp21	primase	replication	DnaG family primase
+KP06_gp22	gene23	replication	Uncharacterized protein
+KP06_gp23		replication	unknown function
+KP06_gp24	ligase25	replication	unknown function
+KP06_gp25		replication	unknown function
+KP06_gp26		replication	unknown function
+KP06_gp27		replication	unknown function
+KP06_gp28	ThyX	replication	unknown function
+KP06_gp29		replication	unknown function
+KP06_gp30		replication	unknown function
+KP06_gp31	gene32	replication	Siphovirus Gp157 homolog
+KP06_gp32		replication	unknown function
+KP06_gp33	gene34	replication	Uncharacterized protein
+KP06_gp34	dUTP	replication	unknown function
+KP06_gp35		replication	unknown function
+KP06_gp36		replication	unknown function
+KP06_gp37		replication	unknown function
+KP06_gp38		replication	unknown function
+KP06_gp39		replication	unknown function
+KP06_gp40		replication	unknown function
+KP06_gp41		replication	unknown function
+KP06_gp42		replication	unknown function
+KP06_gp43		replication	unknown function
+KP06_gp44		transcription	unknown function
+KP06_gp45		transcription	unknown function
+KP06_gp46			unknown function
+KP06_gp47	gene49		Uncharacterized protein
+KP06_gp48			unknown function
+KP06_gp49	gene51	assembly	Tail stabilization protein (P22 gp10-like)
+KP06_gp50	gene52	assembly	Tail tubular protein (P22 gp4-like)
+KP06_gp51	gene53	assembly	IHF subunit
+KP06_gp52	gene54	assembly	IHF subunit
+KP06_gp53		assembly	unknown function
+KP06_gp54		assembly.tail	unknown function
+KP06_gp55		assembly.tail	unknown function
+KP06_gp56		assembly.tail	unknown function
+KP06_gp57		assembly.tail	unknown function
+KP06_gp58		assembly.tail	unknown function
+KP06_gp59		assembly.tail	unknown function
+KP06_gp60		assembly.tail	unknown function
+KP06_gp61		assembly.tail	unknown function
+KP06_gp62		assembly.tail	unknown function
+KP06_gp63		assembly.tail	unknown function
+KP06_gp64		assembly.tail	unknown function
+KP06_gp65		assembly.tail	unknown function
+KP06_gp66		assembly.tail	unknown function
+KP06_gp67		assembly.tail	unknown function
+KP06_gp68		assembly	unknown function
+KP06_gp69		assembly	unknown function
+KP06_gp70		assembly	unknown function
+KP06_gp71	gene73	assembly	putative structural protein
+KP06_gp72	gene74	assembly	putative structural protein
+KP06_gp73	gene75	assembly.capsid	putative structural protein
+KP06_gp74	MCP	assembly.capsid	MCP
+KP06_gp75	gene77	assembly.capsid	putative structural protein
+KP06_gp76	portal	assembly.capsid	Portal
+KP06_gp77	terminase	assembly.capsid	Terminase
+KP06_gp78			unknown function
+KP06_gp79			unknown function
+KP06_gp80			unknown function
+KP06_gp81			unknown function
+KP06_gp82			unknown function
+KP06_gp83	gene85		PD-(D E)XK family nuclease
+KP06_gp84	gene86		Uncharacterized protein
+KP06_gp85			unknown function
+KP06_gp86			unknown function
+KP06_gp87			unknown function
+KP06_gp88			unknown function
