@@ -74,5 +74,21 @@ function run_gene_plots_for_ref {
 
 	# depth=10
 	# breadth=0.20
-	time python source/phages/MakeGenePlots.py -d $sample_dir -rd $ref_seqs -r $ref -td $depth -tb $breadth
+	time python source/phages/MakeGenePlots.py -d $sample_dir -rd $ref_seqs -r $ref -td $depth -tb $breadth -ns 2
+}
+
+function run_family_gene_plots {
+
+	sample_dir=$1
+	breadth=$2
+
+	ref_seqs=scripts/mgx/ref_seqs
+
+	conda deactivate
+	conda activate python37
+
+	# depth=10
+	# breadth=0.20
+	time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 1 -tb $breadth
+	time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 10 -tb $breadth
 }
