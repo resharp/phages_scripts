@@ -92,3 +92,21 @@ function run_family_gene_plots {
 	time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 1 -tb $breadth
 	time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 10 -tb $breadth
 }
+
+
+function run_all_codon_measures {
+
+	sample_dir=$1
+	ref_file=$2
+
+	refs=$(cat ${ref_file} | grep -v "#" | cut -f1)
+
+        conda deactivate
+        conda activate python37
+
+	for ref in $refs
+	do
+		python source/phages/CalcCodonMeasures.py -d $sample_dir -r $ref
+	done
+
+}
