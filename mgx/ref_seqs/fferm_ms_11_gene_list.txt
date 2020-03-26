@@ -1,4 +1,4 @@
-gene	gene_fam	region	gene_annot
+gene	gene_fam	region	annotation
 fferm_ms_11_1			unknown function
 fferm_ms_11_2			unknown function
 fferm_ms_11_3			unknown function
@@ -6,10 +6,10 @@ fferm_ms_11_4			unknown function
 fferm_ms_11_5			unknown function
 fferm_ms_11_6			unknown function
 fferm_ms_11_7			unknown function
-fferm_ms_11_8	gene74	assembly	putative structural protein
-fferm_ms_11_9	gene75	assembly.capsid	putative structural protein
-fferm_ms_11_10	MCP	assembly.capsid	MCP
-fferm_ms_11_11	gene77	assembly.capsid	putative structural protein
+fferm_ms_11_8	gene74	assembly	hypothetical protein
+fferm_ms_11_9	gene75	assembly.capsid	hypothetical protein
+fferm_ms_11_10	MCP	assembly.capsid	putative Major capsid protein
+fferm_ms_11_11	gene77	assembly.capsid	hypothetical protein
 fferm_ms_11_12			unknown function
 fferm_ms_11_13			unknown function
 fferm_ms_11_14			unknown function
@@ -24,10 +24,10 @@ fferm_ms_11_22			unknown function
 fferm_ms_11_23			unknown function
 fferm_ms_11_24			unknown function
 fferm_ms_11_25			unknown function
-fferm_ms_11_26	portal	assembly.capsid	Portal
-fferm_ms_11_27	terminase	assembly.capsid	Terminase
+fferm_ms_11_26	portal	assembly.capsid	putative Portal protein
+fferm_ms_11_27	terminase	assembly.capsid	putative Terminase large subunit
 fferm_ms_11_28			unknown function
-fferm_ms_11_29	gene86		Uncharacterized protein
+fferm_ms_11_29	gene86		hypothetical protein
 fferm_ms_11_30			unknown function
 fferm_ms_11_31			unknown function
 fferm_ms_11_32			unknown function
@@ -62,26 +62,26 @@ fferm_ms_11_60			unknown function
 fferm_ms_11_61			unknown function
 fferm_ms_11_62			unknown function
 fferm_ms_11_63			unknown function
-fferm_ms_11_64	SNF2_helic18	replication	SNF2 helicase
+fferm_ms_11_64	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
 fferm_ms_11_65			unknown function
 fferm_ms_11_66			unknown function
-fferm_ms_11_67	gene41b		phage replicative helicase, DnaB family
+fferm_ms_11_67	gene41b		unknown function
 fferm_ms_11_68			unknown function
 fferm_ms_11_69			unknown function
 fferm_ms_11_70			unknown function
-fferm_ms_11_71	gene45b		Uncharacterized protein 45b
+fferm_ms_11_71	gene45b		unknown function
 fferm_ms_11_72			unknown function
-fferm_ms_11_73	primase	replication	DnaG family primase
+fferm_ms_11_73	primase	replication	putative DnaG family primase
 fferm_ms_11_74			unknown function
 fferm_ms_11_75			unknown function
 fferm_ms_11_76			unknown function
 fferm_ms_11_77			unknown function
 fferm_ms_11_78			unknown function
-fferm_ms_11_79	UDG	replication	UDG
+fferm_ms_11_79	UDG	replication	putative Uracyl-DNA glycosylase
 fferm_ms_11_80			unknown function
-fferm_ms_11_81	gene48b		Uncharacterized protein 48b
+fferm_ms_11_81	gene48b		unknown function
 fferm_ms_11_82			unknown function
-fferm_ms_11_83	gene85		PD-(D E)XK family nuclease
+fferm_ms_11_83	gene85		putative PD-(D/E)XK superfamily nuclease
 fferm_ms_11_84			unknown function
 fferm_ms_11_85			unknown function
 fferm_ms_11_86			unknown function
@@ -89,7 +89,7 @@ fferm_ms_11_87			unknown function
 fferm_ms_11_88			unknown function
 fferm_ms_11_89			unknown function
 fferm_ms_11_90	gene9_BCSF01000238		unknown function
-fferm_ms_11_90	PolA		PolA
+fferm_ms_11_90	PolA		unknown function
 fferm_ms_11_91			unknown function
 fferm_ms_11_92			unknown function
 fferm_ms_11_93			unknown function
@@ -104,8 +104,8 @@ fferm_ms_11_101			unknown function
 fferm_ms_11_102			unknown function
 fferm_ms_11_103			unknown function
 fferm_ms_11_104			unknown function
-fferm_ms_11_105	gene49		Uncharacterized protein
-fferm_ms_11_106	gene51	assembly	Tail stabilization protein (P22 gp10-like)
-fferm_ms_11_107	gene52	assembly	Tail tubular protein (P22 gp4-like)
+fferm_ms_11_105	gene49		hypothetical protein
+fferm_ms_11_106	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+fferm_ms_11_107	gene52	assembly	putative Tail tubular protein, P22_gp4
 fferm_ms_11_108			unknown function
 fferm_ms_11_109			unknown function

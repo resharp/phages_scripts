@@ -1,89 +1,89 @@
-gene	gene_fam	region	gene_annot
-KP06_gp01			unknown function
-KP06_gp02			unknown function
-KP06_gp03			unknown function
-KP06_gp04			unknown function
-KP06_gp05			unknown function
-KP06_gp06			unknown function
-KP06_gp07			unknown function
-KP06_gp08			unknown function
-KP06_gp09			unknown function
-KP06_gp10			unknown function
-KP06_gp11			unknown function
-KP06_gp12			unknown function
-KP06_gp13			unknown function
-KP06_gp14	SF1_helicase15		SF1 helicase
-KP06_gp15	UDG	replication	UDG
-KP06_gp16	PolB	replication	PolB
-KP06_gp17	SNF2_helic18	replication	SNF2 helicase
-KP06_gp18	gene19	replication	RecT
-KP06_gp19	gene20	replication	Uncharacterized protein
-KP06_gp20	gene21	replication	ssb 
-KP06_gp21	primase	replication	DnaG family primase
-KP06_gp22	gene23	replication	Uncharacterized protein
-KP06_gp23		replication	unknown function
-KP06_gp24	ligase25	replication	unknown function
-KP06_gp25		replication	unknown function
-KP06_gp26		replication	unknown function
-KP06_gp27		replication	unknown function
-KP06_gp28	ThyX	replication	unknown function
-KP06_gp29		replication	unknown function
-KP06_gp30		replication	unknown function
-KP06_gp31	gene32	replication	Siphovirus Gp157 homolog
-KP06_gp32		replication	unknown function
-KP06_gp33	gene34	replication	Uncharacterized protein
-KP06_gp34	dUTP	replication	unknown function
-KP06_gp35		replication	unknown function
-KP06_gp36		replication	unknown function
-KP06_gp37		replication	unknown function
-KP06_gp38		replication	unknown function
-KP06_gp39		replication	unknown function
-KP06_gp40		replication	unknown function
-KP06_gp41		replication	unknown function
-KP06_gp42		replication	unknown function
-KP06_gp43		replication	unknown function
-KP06_gp44		transcription	unknown function
-KP06_gp45		transcription	unknown function
-KP06_gp46			unknown function
-KP06_gp47	gene49		Uncharacterized protein
-KP06_gp48			unknown function
-KP06_gp49	gene51	assembly	Tail stabilization protein (P22 gp10-like)
-KP06_gp50	gene52	assembly	Tail tubular protein (P22 gp4-like)
-KP06_gp51	gene53	assembly	IHF subunit
-KP06_gp52	gene54	assembly	IHF subunit
-KP06_gp53		assembly	unknown function
-KP06_gp54		assembly.tail	unknown function
-KP06_gp55		assembly.tail	unknown function
-KP06_gp56		assembly.tail	unknown function
-KP06_gp57		assembly.tail	unknown function
-KP06_gp58		assembly.tail	unknown function
-KP06_gp59		assembly.tail	unknown function
-KP06_gp60		assembly.tail	unknown function
-KP06_gp61		assembly.tail	unknown function
-KP06_gp62		assembly.tail	unknown function
-KP06_gp63		assembly.tail	unknown function
-KP06_gp64		assembly.tail	unknown function
-KP06_gp65		assembly.tail	unknown function
-KP06_gp66		assembly.tail	unknown function
-KP06_gp67		assembly.tail	unknown function
-KP06_gp68		assembly	unknown function
-KP06_gp69		assembly	unknown function
-KP06_gp70		assembly	unknown function
-KP06_gp71	gene73	assembly	putative structural protein
-KP06_gp72	gene74	assembly	putative structural protein
-KP06_gp73	gene75	assembly.capsid	putative structural protein
-KP06_gp74	MCP	assembly.capsid	MCP
-KP06_gp75	gene77	assembly.capsid	putative structural protein
-KP06_gp76	portal	assembly.capsid	Portal
-KP06_gp77	terminase	assembly.capsid	Terminase
-KP06_gp78			unknown function
-KP06_gp79			unknown function
-KP06_gp80			unknown function
-KP06_gp81			unknown function
-KP06_gp82			unknown function
-KP06_gp83	gene85		PD-(D E)XK family nuclease
-KP06_gp84	gene86		Uncharacterized protein
-KP06_gp85			unknown function
-KP06_gp86			unknown function
-KP06_gp87			unknown function
-KP06_gp88			unknown function
+gene	gene_fam	region	annotation
+KP06_gp01			hypothetical protein
+KP06_gp02			putative ssb single stranded DNA-binding protein
+KP06_gp03			hypothetical protein
+KP06_gp04			hypothetical protein
+KP06_gp05			hypothetical protein
+KP06_gp06			hypothetical protein
+KP06_gp07			hypothetical protein
+KP06_gp08			hypothetical protein
+KP06_gp09			hypothetical protein
+KP06_gp10			hypothetical protein
+KP06_gp11			hypothetical protein
+KP06_gp12			hypothetical protein
+KP06_gp13			hypothetical protein
+KP06_gp14	SF1_helicase15		putative SF1 helicase
+KP06_gp15	UDG	replication	putative Uracyl-DNA glycosylase
+KP06_gp16	PolB	replication	putative DNA polymerase family B
+KP06_gp17	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
+KP06_gp18	gene19	replication	putative RecT, phage RecT recombinase
+KP06_gp19	gene20	replication	hypothetical protein
+KP06_gp20	gene21	replication	putative ssb single stranded DNA-binding protein
+KP06_gp21	primase	replication	putative DnaG family primase
+KP06_gp22	gene23	replication	hypothetical protein
+KP06_gp23		replication	hypothetical protein
+KP06_gp24	ligase25	replication	putative ATP-dependent DNA ligase
+KP06_gp25		replication	hypothetical protein
+KP06_gp26		replication	putative Deoxynucleoside monophosphate kinase
+KP06_gp27		replication	putative C4-type zinc finger protein
+KP06_gp28	ThyX	replication	putative flavin-dependent thymidylate synthase
+KP06_gp29		replication	hypothetical protein
+KP06_gp30		replication	hypothetical protein
+KP06_gp31	gene32	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
+KP06_gp32		replication	hypothetical protein
+KP06_gp33	gene34	replication	putative Protein of unknown function (DUF932)
+KP06_gp34	dUTP	replication	putative Dut dUTPase (with intron insertion)
+KP06_gp35		replication	putative Intron-encoded HNH endonuclease
+KP06_gp36		replication	putative Uncharacterized DUF1653 family protein
+KP06_gp37		replication	putative Truncated thioredoxin
+KP06_gp38		replication	hypothetical protein
+KP06_gp39		replication	putative Thioredoxin
+KP06_gp40		replication	hypothetical protein
+KP06_gp41		replication	putative Phage protein of N4_gp49/Sf6_gp66 (pfam13876) family
+KP06_gp42		replication	membrane protein
+KP06_gp43		replication	putative Plasmid replication initiation protein RepL
+KP06_gp44		transcription	putative RNAP catalytic subunit fused to unknown RNAP subunit
+KP06_gp45		transcription	putative RNAP associated protein fused to zincin protease
+KP06_gp46			hypothetical protein
+KP06_gp47	gene49		hypothetical protein
+KP06_gp48			hypothetical protein
+KP06_gp49	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+KP06_gp50	gene52	assembly	putative Tail tubular protein, P22_gp4
+KP06_gp51	gene53	assembly	putative Integration host factor IHF subunit, histone-like protein
+KP06_gp52	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
+KP06_gp53		assembly	hypothetical protein
+KP06_gp54		assembly.tail	putative Phage tail-collar fibre protein (DUF3751)
+KP06_gp55		assembly.tail	putative Tail needle protein, P22_gp26-like
+KP06_gp56		assembly.tail	putative Zincin superfamily protease
+KP06_gp57		assembly.tail	membrane protein
+KP06_gp58		assembly.tail	hypothetical protein
+KP06_gp59		assembly.tail	hypothetical protein
+KP06_gp60		assembly.tail	hypothetical protein
+KP06_gp61		assembly.tail	putative tail protein
+KP06_gp62		assembly.tail	putative tail protein
+KP06_gp63		assembly.tail	putative tail protein, similar to UGP_077
+KP06_gp64		assembly.tail	putativeBacon (Bacteroidetes-Associated Carbohydrate-binding) domain containing protein
+KP06_gp65		assembly.tail	putative tail protein
+KP06_gp66		assembly.tail	putative Tail fiber protein
+KP06_gp67		assembly.tail	putative tail protein, similar to UGP_073
+KP06_gp68		assembly	hypothetical protein
+KP06_gp69		assembly	hypothetical protein
+KP06_gp70		assembly	hypothetical protein
+KP06_gp71	gene73	assembly	putative Tail sheath protein
+KP06_gp72	gene74	assembly	hypothetical protein
+KP06_gp73	gene75	assembly.capsid	hypothetical protein
+KP06_gp74	MCP	assembly.capsid	putative Major capsid protein
+KP06_gp75	gene77	assembly.capsid	hypothetical protein
+KP06_gp76	portal	assembly.capsid	putative Portal protein
+KP06_gp77	terminase	assembly.capsid	putative Terminase large subunit
+KP06_gp78			hypothetical protein
+KP06_gp79			hypothetical protein
+KP06_gp80			putative Lysozyme
+KP06_gp81			hypothetical protein
+KP06_gp82			putative Membrane protein, contains peptidoglycan-binding domain
+KP06_gp83	gene85		putative PD-(D/E)XK superfamily nuclease
+KP06_gp84	gene86		hypothetical protein
+KP06_gp85			hypothetical protein
+KP06_gp86			hypothetical protein
+KP06_gp87			hypothetical protein
+KP06_gp88			putative Plasmid replication initiation protein RepL

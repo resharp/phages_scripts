@@ -1,4 +1,4 @@
-gene	gene_fam	region	gene_annot
+gene	gene_fam	region	annotation
 eld241-t0_s_1_1			unknown function
 eld241-t0_s_1_2			unknown function
 eld241-t0_s_1_3			unknown function
@@ -68,7 +68,7 @@ eld241-t0_s_1_66			unknown function
 eld241-t0_s_1_67			unknown function
 eld241-t0_s_1_68			unknown function
 eld241-t0_s_1_69			unknown function
-eld241-t0_s_1_70	gene73	assembly	putative structural protein
+eld241-t0_s_1_70	gene73	assembly	putative Tail sheath protein
 eld241-t0_s_1_71			unknown function
 eld241-t0_s_1_72			unknown function
 eld241-t0_s_1_73			unknown function
@@ -76,21 +76,21 @@ eld241-t0_s_1_74			unknown function
 eld241-t0_s_1_75			unknown function
 eld241-t0_s_1_76			unknown function
 eld241-t0_s_1_77			unknown function
-eld241-t0_s_1_78	gene75	assembly.capsid	putative structural protein
+eld241-t0_s_1_78	gene75	assembly.capsid	hypothetical protein
 eld241-t0_s_1_79			unknown function
-eld241-t0_s_1_80	MCP	assembly.capsid	MCP
-eld241-t0_s_1_81	gene77	assembly.capsid	putative structural protein
+eld241-t0_s_1_80	MCP	assembly.capsid	putative Major capsid protein
+eld241-t0_s_1_81	gene77	assembly.capsid	hypothetical protein
 eld241-t0_s_1_82			unknown function
 eld241-t0_s_1_83			unknown function
 eld241-t0_s_1_84			unknown function
 eld241-t0_s_1_85			unknown function
 eld241-t0_s_1_86			unknown function
-eld241-t0_s_1_87	portal	assembly.capsid	Portal
+eld241-t0_s_1_87	portal	assembly.capsid	putative Portal protein
 eld241-t0_s_1_88			unknown function
-eld241-t0_s_1_89	portal	assembly.capsid	Portal
+eld241-t0_s_1_89	portal	assembly.capsid	putative Portal protein
 eld241-t0_s_1_90			unknown function
-eld241-t0_s_1_91	terminase	assembly.capsid	Terminase
-eld241-t0_s_1_92	terminase	assembly.capsid	Terminase
+eld241-t0_s_1_91	terminase	assembly.capsid	putative Terminase large subunit
+eld241-t0_s_1_92	terminase	assembly.capsid	putative Terminase large subunit
 eld241-t0_s_1_93			unknown function
 eld241-t0_s_1_94			unknown function
 eld241-t0_s_1_95			unknown function
@@ -141,17 +141,17 @@ eld241-t0_s_1_139			unknown function
 eld241-t0_s_1_140			unknown function
 eld241-t0_s_1_141			unknown function
 eld241-t0_s_1_142			unknown function
-eld241-t0_s_1_143	PolB	replication	PolB
-eld241-t0_s_1_144	gene40b		Rep_Org , putative replisome organizer protein 
-eld241-t0_s_1_145	gene41b		phage replicative helicase, DnaB family
+eld241-t0_s_1_143	PolB	replication	putative DNA polymerase family B
+eld241-t0_s_1_144	gene40b		unknown function
+eld241-t0_s_1_145	gene41b		unknown function
 eld241-t0_s_1_146			unknown function
-eld241-t0_s_1_147	gene43b		AAA domain ATPase
+eld241-t0_s_1_147	gene43b		unknown function
 eld241-t0_s_1_148			unknown function
-eld241-t0_s_1_149	primase	replication	DnaG family primase
+eld241-t0_s_1_149	primase	replication	putative DnaG family primase
 eld241-t0_s_1_150			unknown function
-eld241-t0_s_1_151	gene48b		Uncharacterized protein 48b
+eld241-t0_s_1_151	gene48b		unknown function
 eld241-t0_s_1_152			unknown function
-eld241-t0_s_1_153	gene85		PD-(D E)XK family nuclease
+eld241-t0_s_1_153	gene85		putative PD-(D/E)XK superfamily nuclease
 eld241-t0_s_1_154			unknown function
 eld241-t0_s_1_155			unknown function
 eld241-t0_s_1_156			unknown function

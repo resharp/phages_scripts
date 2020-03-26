@@ -1,19 +1,19 @@
-gene	gene_fam	region	gene_annot
+gene	gene_fam	region	annotation
 sib1_ms_5_1			unknown function
 sib1_ms_5_2			unknown function
 sib1_ms_5_3			unknown function
-sib1_ms_5_4	gene85		PD-(D E)XK family nuclease
+sib1_ms_5_4	gene85		putative PD-(D/E)XK superfamily nuclease
 sib1_ms_5_5			unknown function
 sib1_ms_5_6			unknown function
 sib1_ms_5_7			unknown function
-sib1_ms_5_8	gene86		Uncharacterized protein
-sib1_ms_5_9	terminase	assembly.capsid	Terminase
-sib1_ms_5_10	portal	assembly.capsid	Portal
-sib1_ms_5_11	gene77	assembly.capsid	putative structural protein
-sib1_ms_5_12	MCP	assembly.capsid	MCP
-sib1_ms_5_13	gene75	assembly.capsid	putative structural protein
-sib1_ms_5_14	gene74	assembly	putative structural protein
-sib1_ms_5_15	gene73	assembly	putative structural protein
+sib1_ms_5_8	gene86		hypothetical protein
+sib1_ms_5_9	terminase	assembly.capsid	putative Terminase large subunit
+sib1_ms_5_10	portal	assembly.capsid	putative Portal protein
+sib1_ms_5_11	gene77	assembly.capsid	hypothetical protein
+sib1_ms_5_12	MCP	assembly.capsid	putative Major capsid protein
+sib1_ms_5_13	gene75	assembly.capsid	hypothetical protein
+sib1_ms_5_14	gene74	assembly	hypothetical protein
+sib1_ms_5_15	gene73	assembly	putative Tail sheath protein
 sib1_ms_5_16			unknown function
 sib1_ms_5_17			unknown function
 sib1_ms_5_18			unknown function
@@ -31,11 +31,11 @@ sib1_ms_5_29			unknown function
 sib1_ms_5_30			unknown function
 sib1_ms_5_31			unknown function
 sib1_ms_5_32			unknown function
-sib1_ms_5_33	gene54	assembly	IHF subunit
-sib1_ms_5_34	gene53	assembly	IHF subunit
-sib1_ms_5_35	gene52	assembly	Tail tubular protein (P22 gp4-like)
-sib1_ms_5_36	gene51	assembly	Tail stabilization protein (P22 gp10-like)
-sib1_ms_5_37	gene49		Uncharacterized protein
+sib1_ms_5_33	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
+sib1_ms_5_34	gene53	assembly	putative Integration host factor IHF subunit, histone-like protein
+sib1_ms_5_35	gene52	assembly	putative Tail tubular protein, P22_gp4
+sib1_ms_5_36	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+sib1_ms_5_37	gene49		hypothetical protein
 sib1_ms_5_38			unknown function
 sib1_ms_5_39			unknown function
 sib1_ms_5_40			unknown function
@@ -43,9 +43,9 @@ sib1_ms_5_41			unknown function
 sib1_ms_5_42			unknown function
 sib1_ms_5_43	dUTP		unknown function
 sib1_ms_5_44			unknown function
-sib1_ms_5_45	gene34	replication	Uncharacterized protein
+sib1_ms_5_45	gene34	replication	putative Protein of unknown function (DUF932)
 sib1_ms_5_46			unknown function
-sib1_ms_5_47	gene32	replication	Siphovirus Gp157 homolog
+sib1_ms_5_47	gene32	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
 sib1_ms_5_48			unknown function
 sib1_ms_5_49			unknown function
 sib1_ms_5_50			unknown function
@@ -53,17 +53,17 @@ sib1_ms_5_51	ThyX		unknown function
 sib1_ms_5_52			unknown function
 sib1_ms_5_53			unknown function
 sib1_ms_5_54	ligase25		unknown function
-sib1_ms_5_55	gene23	replication	Uncharacterized protein
-sib1_ms_5_56	primase	replication	DnaG family primase
-sib1_ms_5_57	gene21	replication	ssb 
-sib1_ms_5_58	gene20	replication	Uncharacterized protein
-sib1_ms_5_59	gene19	replication	RecT
-sib1_ms_5_60	SNF2_helic18	replication	SNF2 helicase
+sib1_ms_5_55	gene23	replication	hypothetical protein
+sib1_ms_5_56	primase	replication	putative DnaG family primase
+sib1_ms_5_57	gene21	replication	putative ssb single stranded DNA-binding protein
+sib1_ms_5_58	gene20	replication	hypothetical protein
+sib1_ms_5_59	gene19	replication	putative RecT, phage RecT recombinase
+sib1_ms_5_60	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
 sib1_ms_5_61			unknown function
 sib1_ms_5_62			unknown function
-sib1_ms_5_63	PolB	replication	PolB
-sib1_ms_5_64	UDG	replication	UDG
-sib1_ms_5_65	SF1_helicase15		SF1 helicase
+sib1_ms_5_63	PolB	replication	putative DNA polymerase family B
+sib1_ms_5_64	UDG	replication	putative Uracyl-DNA glycosylase
+sib1_ms_5_65	SF1_helicase15		putative SF1 helicase
 sib1_ms_5_66			unknown function
 sib1_ms_5_67			unknown function
 sib1_ms_5_68			unknown function

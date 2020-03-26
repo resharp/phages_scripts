@@ -1,12 +1,12 @@
-gene	gene_fam	region	gene_annot
+gene	gene_fam	region	annotation
 err844030_ms_1_1			unknown function
-err844030_ms_1_2	SF1_helicase15		SF1 helicase
+err844030_ms_1_2	SF1_helicase15		putative SF1 helicase
 err844030_ms_1_3			unknown function
 err844030_ms_1_4			unknown function
-err844030_ms_1_5	gene51	assembly	Tail stabilization protein (P22 gp10-like)
-err844030_ms_1_6	gene52	assembly	Tail tubular protein (P22 gp4-like)
+err844030_ms_1_5	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+err844030_ms_1_6	gene52	assembly	putative Tail tubular protein, P22_gp4
 err844030_ms_1_7			unknown function
-err844030_ms_1_8	gene54	assembly	IHF subunit
+err844030_ms_1_8	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
 err844030_ms_1_9			unknown function
 err844030_ms_1_10			unknown function
 err844030_ms_1_11			unknown function
@@ -25,16 +25,16 @@ err844030_ms_1_23			unknown function
 err844030_ms_1_24			unknown function
 err844030_ms_1_25			unknown function
 err844030_ms_1_26			unknown function
-err844030_ms_1_27	gene74	assembly	putative structural protein
+err844030_ms_1_27	gene74	assembly	hypothetical protein
 err844030_ms_1_28			unknown function
-err844030_ms_1_29	gene74	assembly	putative structural protein
-err844030_ms_1_30	gene75	assembly.capsid	putative structural protein
-err844030_ms_1_31	MCP	assembly.capsid	MCP
-err844030_ms_1_32	gene77	assembly.capsid	putative structural protein
+err844030_ms_1_29	gene74	assembly	hypothetical protein
+err844030_ms_1_30	gene75	assembly.capsid	hypothetical protein
+err844030_ms_1_31	MCP	assembly.capsid	putative Major capsid protein
+err844030_ms_1_32	gene77	assembly.capsid	hypothetical protein
 err844030_ms_1_33			unknown function
 err844030_ms_1_34			unknown function
-err844030_ms_1_35	portal	assembly.capsid	Portal
-err844030_ms_1_36	terminase	assembly.capsid	Terminase
+err844030_ms_1_35	portal	assembly.capsid	putative Portal protein
+err844030_ms_1_36	terminase	assembly.capsid	putative Terminase large subunit
 err844030_ms_1_37			unknown function
 err844030_ms_1_38			unknown function
 err844030_ms_1_39			unknown function
@@ -83,21 +83,21 @@ err844030_ms_1_81			unknown function
 err844030_ms_1_82			unknown function
 err844030_ms_1_83			unknown function
 err844030_ms_1_84			unknown function
-err844030_ms_1_85	PolB	replication	PolB
-err844030_ms_1_86	gene40b		Rep_Org , putative replisome organizer protein 
-err844030_ms_1_87	gene41b		phage replicative helicase, DnaB family
+err844030_ms_1_85	PolB	replication	putative DNA polymerase family B
+err844030_ms_1_86	gene40b		unknown function
+err844030_ms_1_87	gene41b		unknown function
 err844030_ms_1_88			unknown function
-err844030_ms_1_89	gene43b		AAA domain ATPase
+err844030_ms_1_89	gene43b		unknown function
 err844030_ms_1_90			unknown function
-err844030_ms_1_91	primase	replication	DnaG family primase
+err844030_ms_1_91	primase	replication	putative DnaG family primase
 err844030_ms_1_92			unknown function
 err844030_ms_1_93			unknown function
 err844030_ms_1_94			unknown function
-err844030_ms_1_95	gene48b		Uncharacterized protein 48b
+err844030_ms_1_95	gene48b		unknown function
 err844030_ms_1_96			unknown function
 err844030_ms_1_97			unknown function
 err844030_ms_1_98			unknown function
 err844030_ms_1_99			unknown function
-err844030_ms_1_100	gene85		PD-(D E)XK family nuclease
+err844030_ms_1_100	gene85		putative PD-(D/E)XK superfamily nuclease
 err844030_ms_1_101			unknown function
 err844030_ms_1_102			unknown function

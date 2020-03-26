@@ -1,10 +1,10 @@
-gene	gene_fam	region	gene_annot
+gene	gene_fam	region	annotation
 err975045_s_1_1			unknown function
 err975045_s_1_2			unknown function
 err975045_s_1_3			unknown function
 err975045_s_1_4			unknown function
-err975045_s_1_5	gene85		PD-(D E)XK family nuclease
-err975045_s_1_6	gene86		Uncharacterized protein
+err975045_s_1_5	gene85		putative PD-(D/E)XK superfamily nuclease
+err975045_s_1_6	gene86		hypothetical protein
 err975045_s_1_7			unknown function
 err975045_s_1_8			unknown function
 err975045_s_1_9			unknown function
@@ -33,18 +33,18 @@ err975045_s_1_31			unknown function
 err975045_s_1_32			unknown function
 err975045_s_1_33			unknown function
 err975045_s_1_34			unknown function
-err975045_s_1_35	SF1_helicase15		SF1 helicase
+err975045_s_1_35	SF1_helicase15		putative SF1 helicase
 err975045_s_1_36			unknown function
 err975045_s_1_37			unknown function
 err975045_s_1_38			unknown function
-err975045_s_1_39	UDG	replication	UDG
-err975045_s_1_40	PolB	replication	PolB
-err975045_s_1_41	SNF2_helic18	replication	SNF2 helicase
-err975045_s_1_42	gene19	replication	RecT
-err975045_s_1_43	gene20	replication	Uncharacterized protein
-err975045_s_1_44	gene21	replication	ssb 
-err975045_s_1_45	primase	replication	DnaG family primase
-err975045_s_1_46	gene23	replication	Uncharacterized protein
+err975045_s_1_39	UDG	replication	putative Uracyl-DNA glycosylase
+err975045_s_1_40	PolB	replication	putative DNA polymerase family B
+err975045_s_1_41	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
+err975045_s_1_42	gene19	replication	putative RecT, phage RecT recombinase
+err975045_s_1_43	gene20	replication	hypothetical protein
+err975045_s_1_44	gene21	replication	putative ssb single stranded DNA-binding protein
+err975045_s_1_45	primase	replication	putative DnaG family primase
+err975045_s_1_46	gene23	replication	hypothetical protein
 err975045_s_1_47			unknown function
 err975045_s_1_48	ligase25		unknown function
 err975045_s_1_49			unknown function
@@ -56,10 +56,10 @@ err975045_s_1_54			unknown function
 err975045_s_1_55	ThyX		unknown function
 err975045_s_1_56			unknown function
 err975045_s_1_57			unknown function
-err975045_s_1_58	gene32	replication	Siphovirus Gp157 homolog
+err975045_s_1_58	gene32	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
 err975045_s_1_59			unknown function
 err975045_s_1_60			unknown function
-err975045_s_1_61	gene34	replication	Uncharacterized protein
+err975045_s_1_61	gene34	replication	putative Protein of unknown function (DUF932)
 err975045_s_1_62			unknown function
 err975045_s_1_63			unknown function
 err975045_s_1_64	dUTP		unknown function
@@ -69,12 +69,12 @@ err975045_s_1_67			unknown function
 err975045_s_1_68			unknown function
 err975045_s_1_69			unknown function
 err975045_s_1_70			unknown function
-err975045_s_1_71	gene49		Uncharacterized protein
+err975045_s_1_71	gene49		hypothetical protein
 err975045_s_1_72			unknown function
-err975045_s_1_73	gene51	assembly	Tail stabilization protein (P22 gp10-like)
-err975045_s_1_74	gene52	assembly	Tail tubular protein (P22 gp4-like)
-err975045_s_1_75	gene53	assembly	IHF subunit
-err975045_s_1_76	gene54	assembly	IHF subunit
+err975045_s_1_73	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+err975045_s_1_74	gene52	assembly	putative Tail tubular protein, P22_gp4
+err975045_s_1_75	gene53	assembly	putative Integration host factor IHF subunit, histone-like protein
+err975045_s_1_76	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
 err975045_s_1_77			unknown function
 err975045_s_1_78			unknown function
 err975045_s_1_79			unknown function
@@ -93,11 +93,11 @@ err975045_s_1_91			unknown function
 err975045_s_1_92			unknown function
 err975045_s_1_93			unknown function
 err975045_s_1_94			unknown function
-err975045_s_1_95	gene74	assembly	putative structural protein
-err975045_s_1_96	gene75	assembly.capsid	putative structural protein
-err975045_s_1_97	MCP	assembly.capsid	MCP
-err975045_s_1_98	gene77	assembly.capsid	putative structural protein
-err975045_s_1_99	portal	assembly.capsid	Portal
-err975045_s_1_100	terminase	assembly.capsid	Terminase
+err975045_s_1_95	gene74	assembly	hypothetical protein
+err975045_s_1_96	gene75	assembly.capsid	hypothetical protein
+err975045_s_1_97	MCP	assembly.capsid	putative Major capsid protein
+err975045_s_1_98	gene77	assembly.capsid	hypothetical protein
+err975045_s_1_99	portal	assembly.capsid	putative Portal protein
+err975045_s_1_100	terminase	assembly.capsid	putative Terminase large subunit
 err975045_s_1_101			unknown function
 err975045_s_1_102			unknown function

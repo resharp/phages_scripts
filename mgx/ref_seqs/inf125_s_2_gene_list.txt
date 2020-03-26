@@ -1,4 +1,4 @@
-gene	gene_fam	region	gene_annot
+gene	gene_fam	region	annotation
 inf125_s_2_1			unknown function
 inf125_s_2_2			unknown function
 inf125_s_2_3			unknown function
@@ -32,22 +32,22 @@ inf125_s_2_30			unknown function
 inf125_s_2_31			unknown function
 inf125_s_2_32			unknown function
 inf125_s_2_33			unknown function
-inf125_s_2_34	gene75	assembly.capsid	putative structural protein
+inf125_s_2_34	gene75	assembly.capsid	hypothetical protein
 inf125_s_2_35			unknown function
-inf125_s_2_36	MCP	assembly.capsid	MCP
+inf125_s_2_36	MCP	assembly.capsid	putative Major capsid protein
 inf125_s_2_37			unknown function
-inf125_s_2_38	gene77	assembly.capsid	putative structural protein
+inf125_s_2_38	gene77	assembly.capsid	hypothetical protein
 inf125_s_2_39			unknown function
 inf125_s_2_40			unknown function
 inf125_s_2_41			unknown function
 inf125_s_2_42			unknown function
 inf125_s_2_43			unknown function
-inf125_s_2_44	portal	assembly.capsid	Portal
-inf125_s_2_45	portal	assembly.capsid	Portal
-inf125_s_2_46	portal	assembly.capsid	Portal
+inf125_s_2_44	portal	assembly.capsid	putative Portal protein
+inf125_s_2_45	portal	assembly.capsid	putative Portal protein
+inf125_s_2_46	portal	assembly.capsid	putative Portal protein
 inf125_s_2_47			unknown function
 inf125_s_2_48			unknown function
-inf125_s_2_49	terminase	assembly.capsid	Terminase
+inf125_s_2_49	terminase	assembly.capsid	putative Terminase large subunit
 inf125_s_2_50			unknown function
 inf125_s_2_51			unknown function
 inf125_s_2_52			unknown function
@@ -92,19 +92,19 @@ inf125_s_2_90			unknown function
 inf125_s_2_91			unknown function
 inf125_s_2_92			unknown function
 inf125_s_2_93			unknown function
-inf125_s_2_94	PolB	replication	PolB
-inf125_s_2_95	gene40b		Rep_Org , putative replisome organizer protein 
-inf125_s_2_96	gene41b		phage replicative helicase, DnaB family
+inf125_s_2_94	PolB	replication	putative DNA polymerase family B
+inf125_s_2_95	gene40b		unknown function
+inf125_s_2_96	gene41b		unknown function
 inf125_s_2_97			unknown function
-inf125_s_2_98	gene43b		AAA domain ATPase
+inf125_s_2_98	gene43b		unknown function
 inf125_s_2_99			unknown function
 inf125_s_2_100			unknown function
 inf125_s_2_101			unknown function
-inf125_s_2_102	primase	replication	DnaG family primase
+inf125_s_2_102	primase	replication	putative DnaG family primase
 inf125_s_2_103			unknown function
 inf125_s_2_104			unknown function
 inf125_s_2_105			unknown function
-inf125_s_2_106	gene85		PD-(D E)XK family nuclease
+inf125_s_2_106	gene85		putative PD-(D/E)XK superfamily nuclease
 inf125_s_2_107			unknown function
 inf125_s_2_108			unknown function
 inf125_s_2_109			unknown function
