@@ -44,10 +44,22 @@ function run_prodigal_on_ref {
 		name=$(basename $file)
 		sample=$(echo $name | cut -f1 -d '.')
 
-		# echo $sample
-		# here we should run it on a single genomen (does it matter?)
-		prodigal -i $file -o ${sample}/${sample}.genes -a ${sample}/${sample}.proteins.faa -p meta
+		echo $sample
+
+		# two sequences (for candidate genus 7 and 8) use a different genetic code: genetic code 15
+		# use prodigal -g 15
+		# inf125_s_2
+		# eld241-t0_s_1
+		if [[ $sample == "inf125_s_2" || $sample == "eld241-t0_s_1" ]]; then
+			echo "use different genetic code 15"
+			# NB: Don't use meta mode if the translation table is provided! see:
+			# https://github.com/merenlab/anvio/issues/1074
+			prodigal -i $file -g 15 -o ${sample}/${sample}.genes -a ${sample}/${sample}.proteins.faa
+		else
+			echo "use default genetic code 11"
+			prodigal -i $file -o ${sample}/${sample}.genes -a ${sample}/${sample}.proteins.faa -p meta
+		fi
 
 	done
-	# prodigal -i $file -o annotations/my.genes -a annotations/my.proteins.faa -p meta
+
 }
