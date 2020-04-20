@@ -1,88 +1,88 @@
-gene	gene_fam	region	annotation
-hvcf_a6_ms_4_1			unknown function
-hvcf_a6_ms_4_2	gene49		hypothetical protein
-hvcf_a6_ms_4_3			unknown function
-hvcf_a6_ms_4_4	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
-hvcf_a6_ms_4_5	gene52	assembly	putative Tail tubular protein, P22_gp4
-hvcf_a6_ms_4_6			unknown function
-hvcf_a6_ms_4_7	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
-hvcf_a6_ms_4_8			unknown function
-hvcf_a6_ms_4_9			unknown function
-hvcf_a6_ms_4_10			unknown function
-hvcf_a6_ms_4_11			unknown function
-hvcf_a6_ms_4_12			unknown function
-hvcf_a6_ms_4_13			unknown function
-hvcf_a6_ms_4_14			unknown function
-hvcf_a6_ms_4_15			unknown function
-hvcf_a6_ms_4_16			unknown function
-hvcf_a6_ms_4_17			unknown function
-hvcf_a6_ms_4_18			unknown function
-hvcf_a6_ms_4_19			unknown function
-hvcf_a6_ms_4_20			unknown function
-hvcf_a6_ms_4_21			unknown function
-hvcf_a6_ms_4_22			unknown function
-hvcf_a6_ms_4_23			unknown function
-hvcf_a6_ms_4_24	gene73	assembly	putative Tail sheath protein
-hvcf_a6_ms_4_25	gene74	assembly	hypothetical protein
-hvcf_a6_ms_4_26	gene75	assembly.capsid	hypothetical protein
-hvcf_a6_ms_4_27	MCP	assembly.capsid	putative Major capsid protein
-hvcf_a6_ms_4_28	gene77	assembly.capsid	hypothetical protein
-hvcf_a6_ms_4_29	portal	assembly.capsid	putative Portal protein
-hvcf_a6_ms_4_30	terminase	assembly.capsid	putative Terminase large subunit
-hvcf_a6_ms_4_31			unknown function
-hvcf_a6_ms_4_32			unknown function
-hvcf_a6_ms_4_33			unknown function
-hvcf_a6_ms_4_34			unknown function
-hvcf_a6_ms_4_35	gene85		putative PD-(D/E)XK superfamily nuclease
-hvcf_a6_ms_4_36			unknown function
-hvcf_a6_ms_4_37	gene86		hypothetical protein
-hvcf_a6_ms_4_38			unknown function
-hvcf_a6_ms_4_39			unknown function
-hvcf_a6_ms_4_40			unknown function
-hvcf_a6_ms_4_41			unknown function
-hvcf_a6_ms_4_42			unknown function
-hvcf_a6_ms_4_43			unknown function
-hvcf_a6_ms_4_44			unknown function
-hvcf_a6_ms_4_45			unknown function
-hvcf_a6_ms_4_46			unknown function
-hvcf_a6_ms_4_47			unknown function
-hvcf_a6_ms_4_48			unknown function
-hvcf_a6_ms_4_49			unknown function
-hvcf_a6_ms_4_50			unknown function
-hvcf_a6_ms_4_51			unknown function
-hvcf_a6_ms_4_52			unknown function
-hvcf_a6_ms_4_53			unknown function
-hvcf_a6_ms_4_54			unknown function
-hvcf_a6_ms_4_55			unknown function
-hvcf_a6_ms_4_56			unknown function
-hvcf_a6_ms_4_57	SF1_helicase15		putative SF1 helicase
-hvcf_a6_ms_4_58			unknown function
-hvcf_a6_ms_4_59	PolB	replication	putative DNA polymerase family B
-hvcf_a6_ms_4_60	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
-hvcf_a6_ms_4_61	gene19	replication	putative RecT, phage RecT recombinase
-hvcf_a6_ms_4_62	gene20	replication	hypothetical protein
-hvcf_a6_ms_4_63	gene21	replication	putative ssb single stranded DNA-binding protein
-hvcf_a6_ms_4_64	primase	replication	putative DnaG family primase
-hvcf_a6_ms_4_65			unknown function
-hvcf_a6_ms_4_66			unknown function
-hvcf_a6_ms_4_67			unknown function
-hvcf_a6_ms_4_68	ligase25		unknown function
-hvcf_a6_ms_4_69			unknown function
-hvcf_a6_ms_4_70			unknown function
-hvcf_a6_ms_4_71			unknown function
-hvcf_a6_ms_4_72			unknown function
-hvcf_a6_ms_4_73	ThyX		unknown function
-hvcf_a6_ms_4_74			unknown function
-hvcf_a6_ms_4_75			unknown function
-hvcf_a6_ms_4_76			unknown function
-hvcf_a6_ms_4_77	gene32	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
-hvcf_a6_ms_4_78			unknown function
-hvcf_a6_ms_4_79	gene34	replication	putative Protein of unknown function (DUF932)
-hvcf_a6_ms_4_80	dUTP		unknown function
-hvcf_a6_ms_4_81			unknown function
-hvcf_a6_ms_4_82			unknown function
-hvcf_a6_ms_4_83			unknown function
-hvcf_a6_ms_4_84			unknown function
-hvcf_a6_ms_4_85			unknown function
-hvcf_a6_ms_4_86			unknown function
-hvcf_a6_ms_4_87			unknown function
+gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
+hvcf_a6_ms_4_1				unknown	VOG7458	0.0026	13.7	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_2	gene49	Uncharacterized protein		unknown						Y-Uncharacterized protein
+hvcf_a6_ms_4_3				unknown	VOG6076	0.0014	14.4	DNA pilot  VP2	DNA pilot protein VP2	P-DNA pilot  VP2
+hvcf_a6_ms_4_4	gene51	Tail stabilization protein (P22 gp10-like)	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog	VOG1677	0.001	15.2	unknown	hypothetical protein	G-putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+hvcf_a6_ms_4_5	gene52	Tail tubular protein (P22 gp4-like)	assembly	putative Tail tubular protein, P22_gp4						G-putative Tail tubular protein, P22_gp4
+hvcf_a6_ms_4_6				unknown						G-unknown
+hvcf_a6_ms_4_7	gene54	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein						G-putative Integration host factor IHF subunit, histone-like protein
+hvcf_a6_ms_4_8				unknown	VOG1726	0.00041	15.7	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_9				unknown						G-unknown
+hvcf_a6_ms_4_10				unknown	VOG6665	0.037000000000000005	10.4	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_11				unknown	VOG7245	0.0086	12.4	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_12				unknown	VOG5664	0.0023	13.9	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_13				unknown						G-unknown
+hvcf_a6_ms_4_14				unknown						G-unknown
+hvcf_a6_ms_4_15				unknown	VOG5504	9.1e-12	41.6	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_16				unknown	VOG4857	0.12	8.7	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_17				unknown						G-unknown
+hvcf_a6_ms_4_18				unknown						G-unknown
+hvcf_a6_ms_4_19				unknown	VOG6167	0.0027	14.1	complement inhibitor SCIN	complement inhibitor SCIN	P-complement inhibitor SCIN
+hvcf_a6_ms_4_20				unknown						G-unknown
+hvcf_a6_ms_4_21				unknown						G-unknown
+hvcf_a6_ms_4_22				unknown						G-unknown
+hvcf_a6_ms_4_23				unknown	VOG3531	0.0049	13.6	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_24	gene73	putative structural protein	assembly	putative Tail sheath protein	VOG9313	0.0034	13.7	unknown	hypothetical protein	G-putative Tail sheath protein
+hvcf_a6_ms_4_25	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
+hvcf_a6_ms_4_26	gene75	putative structural protein	assembly.capsid	unknown	VOG7962	0.0062	13.0	holin	putative holin	Y-putative structural protein
+hvcf_a6_ms_4_27	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+hvcf_a6_ms_4_28	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
+hvcf_a6_ms_4_29	portal	Portal	assembly.capsid	putative Portal protein						G-putative Portal protein
+hvcf_a6_ms_4_30	terminase	Terminase	assembly.capsid	putative Terminase large subunit						G-putative Terminase large subunit
+hvcf_a6_ms_4_31				unknown	VOG6204	0.0067	12.6	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_32				unknown	VOG10559	0.00011	18.2	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_33				unknown	VOG0992	3.7e-29	97.8	endolysin	putative endolysin	P-endolysin
+hvcf_a6_ms_4_34				unknown	VOG0992	5.3e-08	28.9	endolysin	putative endolysin	P-endolysin
+hvcf_a6_ms_4_35	gene85	PD-(D E)XK family nuclease		putative PD-(D/E)XK superfamily nuclease	VOG2848	1.7999999999999998e-68	227.0	AddA-like	AddA-like protein	G-putative PD-(D/E)XK superfamily nuclease
+hvcf_a6_ms_4_36				unknown	VOG5616	1.2e-13	47.1	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_37	gene86	Uncharacterized protein		unknown						Y-Uncharacterized protein
+hvcf_a6_ms_4_38				unknown						G-unknown
+hvcf_a6_ms_4_39				unknown						G-unknown
+hvcf_a6_ms_4_40				unknown	VOG5742	2.1e-05	21.0	regulatory	putative regulatory protein	P-regulatory
+hvcf_a6_ms_4_41				unknown	VOG5382	0.035	10.3	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_42				unknown	VOG6538	0.0036	13.9	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_43				unknown	VOG5969	0.0028	14.2	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_44				unknown						G-unknown
+hvcf_a6_ms_4_45				unknown						G-unknown
+hvcf_a6_ms_4_46				unknown						G-unknown
+hvcf_a6_ms_4_47				unknown						G-unknown
+hvcf_a6_ms_4_48				unknown						G-unknown
+hvcf_a6_ms_4_49				unknown	VOG4539	0.061	9.4	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_50				unknown						G-unknown
+hvcf_a6_ms_4_51				unknown						G-unknown
+hvcf_a6_ms_4_52				unknown						G-unknown
+hvcf_a6_ms_4_53				unknown						G-unknown
+hvcf_a6_ms_4_54				unknown	VOG10018	4.7e-05	19.4	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_55				unknown	VOG1456	6.9e-05	18.6	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_56				unknown	VOG6868	0.049	10.1	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_57	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	1.1999999999999998e-72	241.6	DNA helicase	DNA helicase	G-putative SF1 helicase
+hvcf_a6_ms_4_58				unknown						G-unknown
+hvcf_a6_ms_4_59	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	3.3e-34	114.8	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+hvcf_a6_ms_4_60	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif						G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
+hvcf_a6_ms_4_61	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	4.4000000000000004e-08	29.2	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+hvcf_a6_ms_4_62	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
+hvcf_a6_ms_4_63	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+hvcf_a6_ms_4_64	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
+hvcf_a6_ms_4_65				unknown	VOG7611	0.0014	14.8	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_66				unknown						G-unknown
+hvcf_a6_ms_4_67				unknown	VOG5329	0.098	9.4	unknown	TreB	P-unknown
+hvcf_a6_ms_4_68	ligase25			unknown	VOG0018	2.2e-31	105.5	DNA ligase	DNA ligase	P-DNA ligase
+hvcf_a6_ms_4_69				unknown						G-unknown
+hvcf_a6_ms_4_70				unknown						G-unknown
+hvcf_a6_ms_4_71				unknown	VOG0020	5.2e-32	107.7	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_72				unknown	VOG8207	2.0999999999999998e-09	33.5	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_73	ThyX			unknown	VOG4561	1.3e-21	73.6	thymidylate synthase	thymidylate synthase	P-thymidylate synthase
+hvcf_a6_ms_4_74				unknown						G-unknown
+hvcf_a6_ms_4_75				unknown						G-unknown
+hvcf_a6_ms_4_76				unknown	VOG2775	0.0086	12.0	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_77	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor	VOG0321	7.8e-14	48.0	unknown	hypothetical protein	G-putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
+hvcf_a6_ms_4_78				unknown	VOG5924	0.0061	13.0	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_79	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	2.5e-61	203.9	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)
+hvcf_a6_ms_4_80	dUTP			unknown	VOG0085	8.8e-31	103.0	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+hvcf_a6_ms_4_81				unknown	VOG3631	0.0094	12.3	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_82				unknown						G-unknown
+hvcf_a6_ms_4_83				unknown	VOG8753	0.00084	15.2	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_84				unknown						G-unknown
+hvcf_a6_ms_4_85				unknown						G-unknown
+hvcf_a6_ms_4_86				unknown	VOG8111	0.0069	12.8	unknown	hypothetical protein	P-unknown
+hvcf_a6_ms_4_87				unknown						G-unknown

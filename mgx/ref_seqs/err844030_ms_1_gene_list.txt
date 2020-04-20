@@ -1,103 +1,103 @@
-gene	gene_fam	region	annotation
-err844030_ms_1_1			unknown function
-err844030_ms_1_2	SF1_helicase15		putative SF1 helicase
-err844030_ms_1_3			unknown function
-err844030_ms_1_4			unknown function
-err844030_ms_1_5	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
-err844030_ms_1_6	gene52	assembly	putative Tail tubular protein, P22_gp4
-err844030_ms_1_7			unknown function
-err844030_ms_1_8	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
-err844030_ms_1_9			unknown function
-err844030_ms_1_10			unknown function
-err844030_ms_1_11			unknown function
-err844030_ms_1_12			unknown function
-err844030_ms_1_13			unknown function
-err844030_ms_1_14			unknown function
-err844030_ms_1_15			unknown function
-err844030_ms_1_16			unknown function
-err844030_ms_1_17			unknown function
-err844030_ms_1_18			unknown function
-err844030_ms_1_19			unknown function
-err844030_ms_1_20			unknown function
-err844030_ms_1_21			unknown function
-err844030_ms_1_22			unknown function
-err844030_ms_1_23			unknown function
-err844030_ms_1_24			unknown function
-err844030_ms_1_25			unknown function
-err844030_ms_1_26			unknown function
-err844030_ms_1_27	gene74	assembly	hypothetical protein
-err844030_ms_1_28			unknown function
-err844030_ms_1_29	gene74	assembly	hypothetical protein
-err844030_ms_1_30	gene75	assembly.capsid	hypothetical protein
-err844030_ms_1_31	MCP	assembly.capsid	putative Major capsid protein
-err844030_ms_1_32	gene77	assembly.capsid	hypothetical protein
-err844030_ms_1_33			unknown function
-err844030_ms_1_34			unknown function
-err844030_ms_1_35	portal	assembly.capsid	putative Portal protein
-err844030_ms_1_36	terminase	assembly.capsid	putative Terminase large subunit
-err844030_ms_1_37			unknown function
-err844030_ms_1_38			unknown function
-err844030_ms_1_39			unknown function
-err844030_ms_1_40			unknown function
-err844030_ms_1_41	dUTP		unknown function
-err844030_ms_1_42			unknown function
-err844030_ms_1_43			unknown function
-err844030_ms_1_44			unknown function
-err844030_ms_1_45			unknown function
-err844030_ms_1_46			unknown function
-err844030_ms_1_47			unknown function
-err844030_ms_1_48			unknown function
-err844030_ms_1_49			unknown function
-err844030_ms_1_50			unknown function
-err844030_ms_1_51			unknown function
-err844030_ms_1_52			unknown function
-err844030_ms_1_53			unknown function
-err844030_ms_1_54			unknown function
-err844030_ms_1_55			unknown function
-err844030_ms_1_56			unknown function
-err844030_ms_1_57			unknown function
-err844030_ms_1_58			unknown function
-err844030_ms_1_59			unknown function
-err844030_ms_1_60			unknown function
-err844030_ms_1_61			unknown function
-err844030_ms_1_62			unknown function
-err844030_ms_1_63			unknown function
-err844030_ms_1_64			unknown function
-err844030_ms_1_65			unknown function
-err844030_ms_1_66			unknown function
-err844030_ms_1_67			unknown function
-err844030_ms_1_68			unknown function
-err844030_ms_1_69			unknown function
-err844030_ms_1_70			unknown function
-err844030_ms_1_71			unknown function
-err844030_ms_1_72			unknown function
-err844030_ms_1_73			unknown function
-err844030_ms_1_74			unknown function
-err844030_ms_1_75			unknown function
-err844030_ms_1_76			unknown function
-err844030_ms_1_77			unknown function
-err844030_ms_1_78			unknown function
-err844030_ms_1_79			unknown function
-err844030_ms_1_80			unknown function
-err844030_ms_1_81			unknown function
-err844030_ms_1_82			unknown function
-err844030_ms_1_83			unknown function
-err844030_ms_1_84			unknown function
-err844030_ms_1_85	PolB	replication	putative DNA polymerase family B
-err844030_ms_1_86	gene40b		unknown function
-err844030_ms_1_87	gene41b		unknown function
-err844030_ms_1_88			unknown function
-err844030_ms_1_89	gene43b		unknown function
-err844030_ms_1_90			unknown function
-err844030_ms_1_91	primase	replication	putative DnaG family primase
-err844030_ms_1_92			unknown function
-err844030_ms_1_93			unknown function
-err844030_ms_1_94			unknown function
-err844030_ms_1_95	gene48b		unknown function
-err844030_ms_1_96			unknown function
-err844030_ms_1_97			unknown function
-err844030_ms_1_98			unknown function
-err844030_ms_1_99			unknown function
-err844030_ms_1_100	gene85		putative PD-(D/E)XK superfamily nuclease
-err844030_ms_1_101			unknown function
-err844030_ms_1_102			unknown function
+gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
+err844030_ms_1_1				unknown	VOG3129	0.00039	16.4	unknown	hypothetical protein	P-unknown
+err844030_ms_1_2	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	2.8999999999999994e-65	217.3	DNA helicase	DNA helicase	G-putative SF1 helicase
+err844030_ms_1_3				unknown						G-unknown
+err844030_ms_1_4				unknown	VOG9060	0.00023999999999999998	17.1	unknown	hypothetical protein	P-unknown
+err844030_ms_1_5	gene51	Tail stabilization protein (P22 gp10-like)	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog						G-putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+err844030_ms_1_6	gene52	Tail tubular protein (P22 gp4-like)	assembly	putative Tail tubular protein, P22_gp4						G-putative Tail tubular protein, P22_gp4
+err844030_ms_1_7				unknown	VOG5550	0.006	12.7	unknown	hypothetical protein	P-unknown
+err844030_ms_1_8	gene54	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein						G-putative Integration host factor IHF subunit, histone-like protein
+err844030_ms_1_9				unknown	VOG5787	1.9999999999999999e-22	75.3	unknown	hypothetical protein	P-unknown
+err844030_ms_1_10				unknown	VOG5763	0.03	10.9	unknown	hypothetical protein	P-unknown
+err844030_ms_1_11				unknown						G-unknown
+err844030_ms_1_12				unknown						G-unknown
+err844030_ms_1_13				unknown	VOG6476	0.00011	17.8	unknown	hypothetical protein	P-unknown
+err844030_ms_1_14				unknown	VOG11045	0.0037	13.3	unknown	hypothetical protein	P-unknown
+err844030_ms_1_15				unknown						G-unknown
+err844030_ms_1_16				unknown	VOG0641	2.6e-08	29.9	holin	holin	P-holin
+err844030_ms_1_17				unknown						G-unknown
+err844030_ms_1_18				unknown	VOG6540	1.6e-07	28.0	adsorption	putative adsorption protein	P-adsorption
+err844030_ms_1_19				unknown						G-unknown
+err844030_ms_1_20				unknown	VOG0979	4.499999999999999e-88	291.8	retron-type RNA-directed DNA polymerase	retron-type RNA-directed DNA polymerase	P-retron-type RNA-directed DNA polymerase
+err844030_ms_1_21				unknown	VOG9955	1.4e-22	76.4	unknown	hypothetical protein	P-unknown
+err844030_ms_1_22				unknown	VOG0980	3.6000000000000003e-06	23.7	unknown	hypothetical protein	P-unknown
+err844030_ms_1_23				unknown						G-unknown
+err844030_ms_1_24				unknown	VOG9875	0.002	14.6	unknown	hypothetical protein	P-unknown
+err844030_ms_1_25				unknown	VOG5483	0.0088	11.9	unknown	hypothetical protein	P-unknown
+err844030_ms_1_26				unknown	VOG2791	2.7000000000000002e-05	18.8	tail sheath	tail sheath protein	P-tail sheath
+err844030_ms_1_27	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
+err844030_ms_1_28				unknown						G-unknown
+err844030_ms_1_29	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
+err844030_ms_1_30	gene75	putative structural protein	assembly.capsid	unknown	VOG1080	0.0038	12.9	internal virion  B	hypothetical protein	Y-putative structural protein
+err844030_ms_1_31	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+err844030_ms_1_32	gene77	putative structural protein	assembly.capsid	unknown	VOG2379	0.17	4.5	virion RNA polymerase	virion RNA polymerase	Y-putative structural protein
+err844030_ms_1_33				unknown						G-unknown
+err844030_ms_1_34				unknown						G-unknown
+err844030_ms_1_35	portal	Portal	assembly.capsid	putative Portal protein						G-putative Portal protein
+err844030_ms_1_36	terminase	Terminase	assembly.capsid	putative Terminase large subunit	VOG4544	2.6e-06	23.7	terminase large subunit	terminase large subunit	G-putative Terminase large subunit
+err844030_ms_1_37				unknown	VOG2166	0.0017	14.3	unknown	hypothetical protein	P-unknown
+err844030_ms_1_38				unknown						G-unknown
+err844030_ms_1_39				unknown						G-unknown
+err844030_ms_1_40				unknown	VOG0281	0.0013	15.2	Abc2	Abc2 protein	P-Abc2
+err844030_ms_1_41	dUTP			unknown	VOG0085	3.8999999999999996e-32	107.4	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+err844030_ms_1_42				unknown	VOG1254	7.2e-25	83.5	unknown	hypothetical protein	P-unknown
+err844030_ms_1_43				unknown	VOG3488	2.3e-10	36.6	unknown	hypothetical protein	P-unknown
+err844030_ms_1_44				unknown						G-unknown
+err844030_ms_1_45				unknown						G-unknown
+err844030_ms_1_46				unknown	VOG0760	0.00022	18.0	unknown	unknown	P-unknown
+err844030_ms_1_47				unknown	VOG3586	0.00057	15.6	chromosome partitioning	putative chromosome partitioning protein	P-chromosome partitioning
+err844030_ms_1_48				unknown						G-unknown
+err844030_ms_1_49				unknown						G-unknown
+err844030_ms_1_50				unknown						G-unknown
+err844030_ms_1_51				unknown						G-unknown
+err844030_ms_1_52				unknown						G-unknown
+err844030_ms_1_53				unknown	VOG8956	2.4e-05	20.5	unknown	hypothetical protein	P-unknown
+err844030_ms_1_54				unknown						G-unknown
+err844030_ms_1_55				unknown						G-unknown
+err844030_ms_1_56				unknown						G-unknown
+err844030_ms_1_57				unknown	VOG11083	0.0083	12.6	unknown	hypothetical protein	P-unknown
+err844030_ms_1_58				unknown	VOG8823	0.0037	13.5	unknown	hypothetical protein	P-unknown
+err844030_ms_1_59				unknown	VOG10561	0.026000000000000002	10.8	unknown	hypothetical protein	P-unknown
+err844030_ms_1_60				unknown						G-unknown
+err844030_ms_1_61				unknown						G-unknown
+err844030_ms_1_62				unknown						G-unknown
+err844030_ms_1_63				unknown	VOG5142	2.9999999999999997e-05	20.6	unknown	hypothetical protein	P-unknown
+err844030_ms_1_64				unknown	VOG9078	0.0066	12.9	unknown	hypothetical protein	P-unknown
+err844030_ms_1_65				unknown	VOG4813	1.3e-08	30.8	HNH endonuclease	hypothetical protein	P-HNH endonuclease
+err844030_ms_1_66				unknown						G-unknown
+err844030_ms_1_67				unknown						G-unknown
+err844030_ms_1_68				unknown	VOG5250	0.0059	12.8	unknown	hypothetical protein	P-unknown
+err844030_ms_1_69				unknown						G-unknown
+err844030_ms_1_70				unknown	VOG10956	0.0018	14.2	unknown	hypothetical protein	P-unknown
+err844030_ms_1_71				unknown						G-unknown
+err844030_ms_1_72				unknown	VOG5409	0.00073	15.9	unknown	hypothetical protein	P-unknown
+err844030_ms_1_73				unknown						G-unknown
+err844030_ms_1_74				unknown						G-unknown
+err844030_ms_1_75				unknown						G-unknown
+err844030_ms_1_76				unknown						G-unknown
+err844030_ms_1_77				unknown	VOG8506	1.7000000000000002e-17	60.2	similar to RNA polymerase ECF-type sigma factor	similar to RNA polymerase ECF-type sigma factor	P-similar to RNA polymerase ECF-type sigma factor
+err844030_ms_1_78				unknown						G-unknown
+err844030_ms_1_79				unknown						G-unknown
+err844030_ms_1_80				unknown	VOG1871	0.0051	12.7	unknown	NudE nudix hydrolase	P-unknown
+err844030_ms_1_81				unknown						G-unknown
+err844030_ms_1_82				unknown	VOG9199	0.00016999999999999999	17.8	unknown	hypothetical protein	P-unknown
+err844030_ms_1_83				unknown	VOG5262	0.0025	14.2	unknown	hypothetical protein	P-unknown
+err844030_ms_1_84				unknown						G-unknown
+err844030_ms_1_85	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	3.9e-34	114.5	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+err844030_ms_1_86	gene40b	Rep_Org , putative replisome organizer protein 		unknown						Y-Rep_Org , putative replisome organizer protein 
+err844030_ms_1_87	gene41b	phage replicative helicase, DnaB family		unknown	VOG0025	5.4000000000000005e-18	62.2	DNA helicase	putative DNA helicase	Y-phage replicative helicase, DnaB family
+err844030_ms_1_88				unknown						G-unknown
+err844030_ms_1_89	gene43b	AAA domain ATPase		unknown	VOG0322	3.9e-24	82.1	unknown	hypothetical protein	Y-AAA domain ATPase
+err844030_ms_1_90				unknown	VOG0525	0.0009400000000000001	15.2	unknown	hypothetical protein	P-unknown
+err844030_ms_1_91	primase	DnaG family primase	replication	putative DnaG family primase	VOG4341	6.8e-05	17.1	DNA primase domain-containing	DNA primase domain-containing protein	G-putative DnaG family primase
+err844030_ms_1_92				unknown	VOG1573	0.00098	15.3	unknown	hypothetical protein	P-unknown
+err844030_ms_1_93				unknown	VOG0157	3.7999999999999996e-44	146.8	phosphoesterase	hypothetical protein	P-phosphoesterase
+err844030_ms_1_94				unknown						G-unknown
+err844030_ms_1_95	gene48b	Uncharacterized protein 48b		unknown	VOG0536	8.599999999999999e-14	48.0	unknown	hypothetical protein	Y-Uncharacterized protein 48b
+err844030_ms_1_96				unknown						G-unknown
+err844030_ms_1_97				unknown						G-unknown
+err844030_ms_1_98				unknown	VOG3241	6.1e-15	51.6	Ser/Thr  phosphatase family	Ser/Thr protein phosphatase family protein	P-Ser/Thr  phosphatase family
+err844030_ms_1_99				unknown						G-unknown
+err844030_ms_1_100	gene85	PD-(D E)XK family nuclease		putative PD-(D/E)XK superfamily nuclease	VOG4708	1.8000000000000002e-16	56.7	exodeoxyribonuclease VIII	RecE	G-putative PD-(D/E)XK superfamily nuclease
+err844030_ms_1_101				unknown	VOG1319	0.001	14.3	major head	major head protein	P-major head
+err844030_ms_1_102				unknown	VOG8408	0.00044	16.2	unknown	hypothetical protein	P-unknown

@@ -1,85 +1,85 @@
-gene	gene_fam	region	annotation
-sib1_ms_5_1			unknown function
-sib1_ms_5_2			unknown function
-sib1_ms_5_3			unknown function
-sib1_ms_5_4	gene85		putative PD-(D/E)XK superfamily nuclease
-sib1_ms_5_5			unknown function
-sib1_ms_5_6			unknown function
-sib1_ms_5_7			unknown function
-sib1_ms_5_8	gene86		hypothetical protein
-sib1_ms_5_9	terminase	assembly.capsid	putative Terminase large subunit
-sib1_ms_5_10	portal	assembly.capsid	putative Portal protein
-sib1_ms_5_11	gene77	assembly.capsid	hypothetical protein
-sib1_ms_5_12	MCP	assembly.capsid	putative Major capsid protein
-sib1_ms_5_13	gene75	assembly.capsid	hypothetical protein
-sib1_ms_5_14	gene74	assembly	hypothetical protein
-sib1_ms_5_15	gene73	assembly	putative Tail sheath protein
-sib1_ms_5_16			unknown function
-sib1_ms_5_17			unknown function
-sib1_ms_5_18			unknown function
-sib1_ms_5_19			unknown function
-sib1_ms_5_20			unknown function
-sib1_ms_5_21			unknown function
-sib1_ms_5_22			unknown function
-sib1_ms_5_23			unknown function
-sib1_ms_5_24			unknown function
-sib1_ms_5_25			unknown function
-sib1_ms_5_26			unknown function
-sib1_ms_5_27			unknown function
-sib1_ms_5_28			unknown function
-sib1_ms_5_29			unknown function
-sib1_ms_5_30			unknown function
-sib1_ms_5_31			unknown function
-sib1_ms_5_32			unknown function
-sib1_ms_5_33	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
-sib1_ms_5_34	gene53	assembly	putative Integration host factor IHF subunit, histone-like protein
-sib1_ms_5_35	gene52	assembly	putative Tail tubular protein, P22_gp4
-sib1_ms_5_36	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
-sib1_ms_5_37	gene49		hypothetical protein
-sib1_ms_5_38			unknown function
-sib1_ms_5_39			unknown function
-sib1_ms_5_40			unknown function
-sib1_ms_5_41			unknown function
-sib1_ms_5_42			unknown function
-sib1_ms_5_43	dUTP		unknown function
-sib1_ms_5_44			unknown function
-sib1_ms_5_45	gene34	replication	putative Protein of unknown function (DUF932)
-sib1_ms_5_46			unknown function
-sib1_ms_5_47	gene32	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
-sib1_ms_5_48			unknown function
-sib1_ms_5_49			unknown function
-sib1_ms_5_50			unknown function
-sib1_ms_5_51	ThyX		unknown function
-sib1_ms_5_52			unknown function
-sib1_ms_5_53			unknown function
-sib1_ms_5_54	ligase25		unknown function
-sib1_ms_5_55	gene23	replication	hypothetical protein
-sib1_ms_5_56	primase	replication	putative DnaG family primase
-sib1_ms_5_57	gene21	replication	putative ssb single stranded DNA-binding protein
-sib1_ms_5_58	gene20	replication	hypothetical protein
-sib1_ms_5_59	gene19	replication	putative RecT, phage RecT recombinase
-sib1_ms_5_60	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
-sib1_ms_5_61			unknown function
-sib1_ms_5_62			unknown function
-sib1_ms_5_63	PolB	replication	putative DNA polymerase family B
-sib1_ms_5_64	UDG	replication	putative Uracyl-DNA glycosylase
-sib1_ms_5_65	SF1_helicase15		putative SF1 helicase
-sib1_ms_5_66			unknown function
-sib1_ms_5_67			unknown function
-sib1_ms_5_68			unknown function
-sib1_ms_5_69			unknown function
-sib1_ms_5_70			unknown function
-sib1_ms_5_71			unknown function
-sib1_ms_5_72			unknown function
-sib1_ms_5_73			unknown function
-sib1_ms_5_74			unknown function
-sib1_ms_5_75			unknown function
-sib1_ms_5_76			unknown function
-sib1_ms_5_77			unknown function
-sib1_ms_5_78			unknown function
-sib1_ms_5_79			unknown function
-sib1_ms_5_80			unknown function
-sib1_ms_5_81			unknown function
-sib1_ms_5_82			unknown function
-sib1_ms_5_83			unknown function
-sib1_ms_5_84			unknown function
+gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
+sib1_ms_5_1				unknown						G-unknown
+sib1_ms_5_2				unknown	VOG8478	0.0049	13.1	unknown	hypothetical protein	P-unknown
+sib1_ms_5_3				unknown						G-unknown
+sib1_ms_5_4	gene85	PD-(D E)XK family nuclease		putative PD-(D/E)XK superfamily nuclease	VOG2848	3e-30	101.6	AddA-like	AddA-like protein	G-putative PD-(D/E)XK superfamily nuclease
+sib1_ms_5_5				unknown	VOG10334	8.6e-23	77.2	unknown	hypothetical protein	P-unknown
+sib1_ms_5_6				unknown	VOG1863	0.0022	14.5	unknown	hypothetical protein	P-unknown
+sib1_ms_5_7				unknown	VOG2859	0.0012	15.5	unknown	hypothetical protein	P-unknown
+sib1_ms_5_8	gene86	Uncharacterized protein		unknown	VOG7635	0.0018	14.6	unknown	unknown	P-unknown
+sib1_ms_5_9	terminase	Terminase	assembly.capsid	putative Terminase large subunit	VOG5203	2.7999999999999998e-36	121.1	HNH endonuclease domain	HNH endonuclease domain protein	G-putative Terminase large subunit
+sib1_ms_5_10	portal	Portal	assembly.capsid	putative Portal protein	VOG3129	0.025	10.5	unknown	hypothetical protein	G-putative Portal protein
+sib1_ms_5_11	gene77	putative structural protein	assembly.capsid	unknown	VOG9272	0.0059	13.1	unknown	hypothetical protein	Y-putative structural protein
+sib1_ms_5_12	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+sib1_ms_5_13	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
+sib1_ms_5_14	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
+sib1_ms_5_15	gene73	putative structural protein	assembly	putative Tail sheath protein						G-putative Tail sheath protein
+sib1_ms_5_16				unknown	VOG9841	0.0016	14.5	unknown	unknown	P-unknown
+sib1_ms_5_17				unknown	VOG7718	1.2e-13	46.2	YomR-like	YomR-like protein	P-YomR-like
+sib1_ms_5_18				unknown	VOG7906	1.8000000000000001e-06	24.3	unknown	hypothetical protein	P-unknown
+sib1_ms_5_19				unknown						G-unknown
+sib1_ms_5_20				unknown						G-unknown
+sib1_ms_5_21				unknown						G-unknown
+sib1_ms_5_22				unknown						G-unknown
+sib1_ms_5_23				unknown						G-unknown
+sib1_ms_5_24				unknown						G-unknown
+sib1_ms_5_25				unknown						G-unknown
+sib1_ms_5_26				unknown	VOG8489	0.00025	16.9	unknown	unknown	P-unknown
+sib1_ms_5_27				unknown	VOG11067	0.00093	15.1	unknown	hypothetical protein	P-unknown
+sib1_ms_5_28				unknown	VOG6476	0.0031	13.0	unknown	hypothetical protein	P-unknown
+sib1_ms_5_29				unknown	VOG9009	0.0048	13.6	unknown	hypothetical protein	P-unknown
+sib1_ms_5_30				unknown	VOG8995	0.0039	13.5	unknown	hypothetical protein	P-unknown
+sib1_ms_5_31				unknown	VOG1371	0.00075	15.5	unknown	hypothetical protein	P-unknown
+sib1_ms_5_32				unknown						G-unknown
+sib1_ms_5_33	gene54	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein	VOG1414	0.0015	15.1	unknown	hypothetical protein	G-putative Integration host factor IHF subunit, histone-like protein
+sib1_ms_5_34	gene53	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein						G-putative Integration host factor IHF subunit, histone-like protein
+sib1_ms_5_35	gene52	Tail tubular protein (P22 gp4-like)	assembly	putative Tail tubular protein, P22_gp4	VOG10689	0.0067	12.4	unknown	hypothetical protein	G-putative Tail tubular protein, P22_gp4
+sib1_ms_5_36	gene51	Tail stabilization protein (P22 gp10-like)	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog						G-putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+sib1_ms_5_37	gene49	Uncharacterized protein		unknown	VOG4565	4.8e-07	25.9	lysozyme	lysozyme	P-lysozyme
+sib1_ms_5_38				unknown						G-unknown
+sib1_ms_5_39				unknown	VOG6140	0.003	13.9	unknown	hypothetical protein	P-unknown
+sib1_ms_5_40				unknown						G-unknown
+sib1_ms_5_41				unknown	VOG1183	7.499999999999999e-06	22.9	unknown	hypothetical protein	P-unknown
+sib1_ms_5_42				unknown	VOG4731	2.9e-13	46.0	unknown	hypothetical protein	P-unknown
+sib1_ms_5_43	dUTP			unknown	VOG0085	9.099999999999999e-29	96.4	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+sib1_ms_5_44				unknown						G-unknown
+sib1_ms_5_45	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	5.4999999999999997e-45	150.1	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)
+sib1_ms_5_46				unknown						G-unknown
+sib1_ms_5_47	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor	VOG0321	6.4e-13	45.0	unknown	hypothetical protein	G-putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
+sib1_ms_5_48				unknown	VOG0020	1.3e-16	57.4	unknown	hypothetical protein	P-unknown
+sib1_ms_5_49				unknown						G-unknown
+sib1_ms_5_50				unknown						G-unknown
+sib1_ms_5_51	ThyX			unknown	VOG4561	6.6e-19	64.7	thymidylate synthase	thymidylate synthase	P-thymidylate synthase
+sib1_ms_5_52				unknown						G-unknown
+sib1_ms_5_53				unknown						G-unknown
+sib1_ms_5_54	ligase25			unknown	VOG0018	1.6e-39	132.2	DNA ligase	DNA ligase	P-DNA ligase
+sib1_ms_5_55	gene23	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
+sib1_ms_5_56	primase	DnaG family primase	replication	putative DnaG family primase	VOG4551	0.0011	15.3	DNA primase	DNA primase	G-putative DnaG family primase
+sib1_ms_5_57	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+sib1_ms_5_58	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
+sib1_ms_5_59	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	3.8e-05	19.5	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+sib1_ms_5_60	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif	VOG4548	2e-19	66.0	helicase	helicase	G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
+sib1_ms_5_61				unknown						G-unknown
+sib1_ms_5_62				unknown						G-unknown
+sib1_ms_5_63	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	7.4999999999999996e-34	113.6	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+sib1_ms_5_64	UDG	UDG	replication	putative Uracyl-DNA glycosylase	VOG0668	4.7e-05	18.8	DNA polymerase I	putative DNA polymerase I	G-putative Uracyl-DNA glycosylase
+sib1_ms_5_65	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	1.9999999999999997e-72	240.9	DNA helicase	DNA helicase	G-putative SF1 helicase
+sib1_ms_5_66				unknown						G-unknown
+sib1_ms_5_67				unknown						G-unknown
+sib1_ms_5_68				unknown						G-unknown
+sib1_ms_5_69				unknown						G-unknown
+sib1_ms_5_70				unknown						G-unknown
+sib1_ms_5_71				unknown						G-unknown
+sib1_ms_5_72				unknown	VOG8117	0.0084	11.7	unknown	hypothetical protein	P-unknown
+sib1_ms_5_73				unknown						G-unknown
+sib1_ms_5_74				unknown	VOG10144	0.0076	12.6	unknown	hypothetical protein	P-unknown
+sib1_ms_5_75				unknown	VOG9968	0.024	11.0	unknown	hypothetical protein	P-unknown
+sib1_ms_5_76				unknown						G-unknown
+sib1_ms_5_77				unknown						G-unknown
+sib1_ms_5_78				unknown						G-unknown
+sib1_ms_5_79				unknown	VOG0285	0.0019	14.4	Kil	Kil	P-Kil
+sib1_ms_5_80				unknown						G-unknown
+sib1_ms_5_81				unknown	VOG9239	0.018000000000000002	10.8	unknown	hypothetical protein	P-unknown
+sib1_ms_5_82				unknown	VOG7714	0.00036	17.2	unknown	hypothetical protein	P-unknown
+sib1_ms_5_83				unknown						G-unknown
+sib1_ms_5_84				unknown	VOG6291	5e-05	18.9	unknown	hypothetical protein	P-unknown

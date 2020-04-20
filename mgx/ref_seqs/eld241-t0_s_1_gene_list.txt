@@ -1,166 +1,92 @@
-gene	gene_fam	region	annotation
-eld241-t0_s_1_1			unknown function
-eld241-t0_s_1_2			unknown function
-eld241-t0_s_1_3			unknown function
-eld241-t0_s_1_4			unknown function
-eld241-t0_s_1_5			unknown function
-eld241-t0_s_1_6			unknown function
-eld241-t0_s_1_7			unknown function
-eld241-t0_s_1_8			unknown function
-eld241-t0_s_1_9			unknown function
-eld241-t0_s_1_10			unknown function
-eld241-t0_s_1_11			unknown function
-eld241-t0_s_1_12			unknown function
-eld241-t0_s_1_13			unknown function
-eld241-t0_s_1_14			unknown function
-eld241-t0_s_1_15			unknown function
-eld241-t0_s_1_16			unknown function
-eld241-t0_s_1_17			unknown function
-eld241-t0_s_1_18			unknown function
-eld241-t0_s_1_19			unknown function
-eld241-t0_s_1_20			unknown function
-eld241-t0_s_1_21			unknown function
-eld241-t0_s_1_22			unknown function
-eld241-t0_s_1_23			unknown function
-eld241-t0_s_1_24			unknown function
-eld241-t0_s_1_25			unknown function
-eld241-t0_s_1_26			unknown function
-eld241-t0_s_1_27			unknown function
-eld241-t0_s_1_28			unknown function
-eld241-t0_s_1_29			unknown function
-eld241-t0_s_1_30			unknown function
-eld241-t0_s_1_31			unknown function
-eld241-t0_s_1_32			unknown function
-eld241-t0_s_1_33			unknown function
-eld241-t0_s_1_34			unknown function
-eld241-t0_s_1_35			unknown function
-eld241-t0_s_1_36			unknown function
-eld241-t0_s_1_37			unknown function
-eld241-t0_s_1_38			unknown function
-eld241-t0_s_1_39			unknown function
-eld241-t0_s_1_40			unknown function
-eld241-t0_s_1_41			unknown function
-eld241-t0_s_1_42			unknown function
-eld241-t0_s_1_43			unknown function
-eld241-t0_s_1_44			unknown function
-eld241-t0_s_1_45			unknown function
-eld241-t0_s_1_46			unknown function
-eld241-t0_s_1_47			unknown function
-eld241-t0_s_1_48			unknown function
-eld241-t0_s_1_49			unknown function
-eld241-t0_s_1_50			unknown function
-eld241-t0_s_1_51			unknown function
-eld241-t0_s_1_52			unknown function
-eld241-t0_s_1_53			unknown function
-eld241-t0_s_1_54			unknown function
-eld241-t0_s_1_55			unknown function
-eld241-t0_s_1_56			unknown function
-eld241-t0_s_1_57			unknown function
-eld241-t0_s_1_58			unknown function
-eld241-t0_s_1_59			unknown function
-eld241-t0_s_1_60			unknown function
-eld241-t0_s_1_61			unknown function
-eld241-t0_s_1_62			unknown function
-eld241-t0_s_1_63			unknown function
-eld241-t0_s_1_64			unknown function
-eld241-t0_s_1_65			unknown function
-eld241-t0_s_1_66			unknown function
-eld241-t0_s_1_67			unknown function
-eld241-t0_s_1_68			unknown function
-eld241-t0_s_1_69			unknown function
-eld241-t0_s_1_70	gene73	assembly	putative Tail sheath protein
-eld241-t0_s_1_71			unknown function
-eld241-t0_s_1_72			unknown function
-eld241-t0_s_1_73			unknown function
-eld241-t0_s_1_74			unknown function
-eld241-t0_s_1_75			unknown function
-eld241-t0_s_1_76			unknown function
-eld241-t0_s_1_77			unknown function
-eld241-t0_s_1_78	gene75	assembly.capsid	hypothetical protein
-eld241-t0_s_1_79			unknown function
-eld241-t0_s_1_80	MCP	assembly.capsid	putative Major capsid protein
-eld241-t0_s_1_81	gene77	assembly.capsid	hypothetical protein
-eld241-t0_s_1_82			unknown function
-eld241-t0_s_1_83			unknown function
-eld241-t0_s_1_84			unknown function
-eld241-t0_s_1_85			unknown function
-eld241-t0_s_1_86			unknown function
-eld241-t0_s_1_87	portal	assembly.capsid	putative Portal protein
-eld241-t0_s_1_88			unknown function
-eld241-t0_s_1_89	portal	assembly.capsid	putative Portal protein
-eld241-t0_s_1_90			unknown function
-eld241-t0_s_1_91	terminase	assembly.capsid	putative Terminase large subunit
-eld241-t0_s_1_92	terminase	assembly.capsid	putative Terminase large subunit
-eld241-t0_s_1_93			unknown function
-eld241-t0_s_1_94			unknown function
-eld241-t0_s_1_95			unknown function
-eld241-t0_s_1_96			unknown function
-eld241-t0_s_1_97			unknown function
-eld241-t0_s_1_98			unknown function
-eld241-t0_s_1_99			unknown function
-eld241-t0_s_1_100			unknown function
-eld241-t0_s_1_101	dUTP		unknown function
-eld241-t0_s_1_102			unknown function
-eld241-t0_s_1_103			unknown function
-eld241-t0_s_1_104			unknown function
-eld241-t0_s_1_105			unknown function
-eld241-t0_s_1_106			unknown function
-eld241-t0_s_1_107			unknown function
-eld241-t0_s_1_108			unknown function
-eld241-t0_s_1_109			unknown function
-eld241-t0_s_1_110			unknown function
-eld241-t0_s_1_111			unknown function
-eld241-t0_s_1_112			unknown function
-eld241-t0_s_1_113			unknown function
-eld241-t0_s_1_114			unknown function
-eld241-t0_s_1_115			unknown function
-eld241-t0_s_1_116			unknown function
-eld241-t0_s_1_117			unknown function
-eld241-t0_s_1_118			unknown function
-eld241-t0_s_1_119			unknown function
-eld241-t0_s_1_120			unknown function
-eld241-t0_s_1_121			unknown function
-eld241-t0_s_1_122			unknown function
-eld241-t0_s_1_123			unknown function
-eld241-t0_s_1_124			unknown function
-eld241-t0_s_1_125			unknown function
-eld241-t0_s_1_126			unknown function
-eld241-t0_s_1_127			unknown function
-eld241-t0_s_1_128			unknown function
-eld241-t0_s_1_129			unknown function
-eld241-t0_s_1_130			unknown function
-eld241-t0_s_1_131			unknown function
-eld241-t0_s_1_132			unknown function
-eld241-t0_s_1_133			unknown function
-eld241-t0_s_1_134			unknown function
-eld241-t0_s_1_135			unknown function
-eld241-t0_s_1_136			unknown function
-eld241-t0_s_1_137			unknown function
-eld241-t0_s_1_138			unknown function
-eld241-t0_s_1_139			unknown function
-eld241-t0_s_1_140			unknown function
-eld241-t0_s_1_141			unknown function
-eld241-t0_s_1_142			unknown function
-eld241-t0_s_1_143	PolB	replication	putative DNA polymerase family B
-eld241-t0_s_1_144	gene40b		unknown function
-eld241-t0_s_1_145	gene41b		unknown function
-eld241-t0_s_1_146			unknown function
-eld241-t0_s_1_147	gene43b		unknown function
-eld241-t0_s_1_148			unknown function
-eld241-t0_s_1_149	primase	replication	putative DnaG family primase
-eld241-t0_s_1_150			unknown function
-eld241-t0_s_1_151	gene48b		unknown function
-eld241-t0_s_1_152			unknown function
-eld241-t0_s_1_153	gene85		putative PD-(D/E)XK superfamily nuclease
-eld241-t0_s_1_154			unknown function
-eld241-t0_s_1_155			unknown function
-eld241-t0_s_1_156			unknown function
-eld241-t0_s_1_157			unknown function
-eld241-t0_s_1_158			unknown function
-eld241-t0_s_1_159			unknown function
-eld241-t0_s_1_160			unknown function
-eld241-t0_s_1_161			unknown function
-eld241-t0_s_1_162			unknown function
-eld241-t0_s_1_163			unknown function
-eld241-t0_s_1_164			unknown function
-eld241-t0_s_1_165			unknown function
+gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
+eld241-t0_s_1_1				unknown	VOG0154	0.00037999999999999997	16.7	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_2	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG9316	0.0065	12.2	unknown	hypothetical protein	G-putative SF1 helicase
+eld241-t0_s_1_3				unknown						G-unknown
+eld241-t0_s_1_4				unknown	VOG5879	0.0009	15.4	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_5				unknown	VOG0377	0.00062	15.3	DNA helicase	DNA helicase	P-DNA helicase
+eld241-t0_s_1_6	gene51	Tail stabilization protein (P22 gp10-like)	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog	VOG8094	0.0041	13.5	unknown	hypothetical protein	G-putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+eld241-t0_s_1_7	gene52	Tail tubular protein (P22 gp4-like)	assembly	putative Tail tubular protein, P22_gp4						G-putative Tail tubular protein, P22_gp4
+eld241-t0_s_1_8				unknown						G-unknown
+eld241-t0_s_1_9				unknown						G-unknown
+eld241-t0_s_1_10				unknown						G-unknown
+eld241-t0_s_1_11				unknown	VOG5247	8.400000000000001e-06	22.3	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_12				unknown						G-unknown
+eld241-t0_s_1_13				unknown						G-unknown
+eld241-t0_s_1_14				unknown						G-unknown
+eld241-t0_s_1_15				unknown						G-unknown
+eld241-t0_s_1_16	gene73	putative structural protein	assembly	putative Tail sheath protein						G-putative Tail sheath protein
+eld241-t0_s_1_17	gene74	putative structural protein	assembly	unknown	VOG6092	0.00031	17.3	unknown	hypothetical protein	Y-putative structural protein
+eld241-t0_s_1_18				unknown						G-unknown
+eld241-t0_s_1_19				unknown						G-unknown
+eld241-t0_s_1_20	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
+eld241-t0_s_1_21	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+eld241-t0_s_1_22	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
+eld241-t0_s_1_23				unknown						G-unknown
+eld241-t0_s_1_24				unknown						G-unknown
+eld241-t0_s_1_25	portal	Portal	assembly.capsid	putative Portal protein						G-putative Portal protein
+eld241-t0_s_1_26	terminase	Terminase	assembly.capsid	putative Terminase large subunit						G-putative Terminase large subunit
+eld241-t0_s_1_27	gene86	Uncharacterized protein		unknown						Y-Uncharacterized protein
+eld241-t0_s_1_28				unknown						G-unknown
+eld241-t0_s_1_29				unknown						G-unknown
+eld241-t0_s_1_30				unknown						G-unknown
+eld241-t0_s_1_31	dUTP			unknown						G-unknown
+eld241-t0_s_1_32				unknown						G-unknown
+eld241-t0_s_1_33				unknown						G-unknown
+eld241-t0_s_1_34				unknown	VOG5049	0.0096	12.3	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_35				unknown						G-unknown
+eld241-t0_s_1_36				unknown	VOG2115	0.0053	13.1	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_37				unknown						G-unknown
+eld241-t0_s_1_38				unknown						G-unknown
+eld241-t0_s_1_39				unknown						G-unknown
+eld241-t0_s_1_40				unknown						G-unknown
+eld241-t0_s_1_41				unknown						G-unknown
+eld241-t0_s_1_42				unknown						G-unknown
+eld241-t0_s_1_43				unknown						G-unknown
+eld241-t0_s_1_44				unknown						G-unknown
+eld241-t0_s_1_45				unknown						G-unknown
+eld241-t0_s_1_46				unknown						G-unknown
+eld241-t0_s_1_47				unknown						G-unknown
+eld241-t0_s_1_48				unknown						G-unknown
+eld241-t0_s_1_49				unknown	VOG1006	0.0018	14.4	sigma factor for late transcription	sigma factor for late transcription	P-sigma factor for late transcription
+eld241-t0_s_1_50				unknown	VOG5787	1.1000000000000001e-16	56.7	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_51				unknown						G-unknown
+eld241-t0_s_1_52				unknown						G-unknown
+eld241-t0_s_1_53				unknown						G-unknown
+eld241-t0_s_1_54				unknown						G-unknown
+eld241-t0_s_1_55				unknown						G-unknown
+eld241-t0_s_1_56				unknown						G-unknown
+eld241-t0_s_1_57				unknown						G-unknown
+eld241-t0_s_1_58				unknown						G-unknown
+eld241-t0_s_1_59				unknown	VOG7061	0.011000000000000001	10.6	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_60				unknown						G-unknown
+eld241-t0_s_1_61				unknown	VOG0753	0.0027	14.1	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_62				unknown						G-unknown
+eld241-t0_s_1_63				unknown	VOG7839	0.0037	13.7	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_64				unknown						G-unknown
+eld241-t0_s_1_65				unknown						G-unknown
+eld241-t0_s_1_66				unknown						G-unknown
+eld241-t0_s_1_67				unknown						G-unknown
+eld241-t0_s_1_68				unknown						G-unknown
+eld241-t0_s_1_69				unknown						G-unknown
+eld241-t0_s_1_70				unknown						G-unknown
+eld241-t0_s_1_71				unknown						G-unknown
+eld241-t0_s_1_72				unknown						G-unknown
+eld241-t0_s_1_73				unknown						G-unknown
+eld241-t0_s_1_74				unknown						G-unknown
+eld241-t0_s_1_75				unknown	VOG5824	0.00055	16.5	unknown	hypothetical protein	P-unknown
+eld241-t0_s_1_76				unknown						G-unknown
+eld241-t0_s_1_77				unknown						G-unknown
+eld241-t0_s_1_78				unknown						G-unknown
+eld241-t0_s_1_79	PolB	PolB	replication	putative DNA polymerase family B						G-putative DNA polymerase family B
+eld241-t0_s_1_80	gene40b	Rep_Org , putative replisome organizer protein 		unknown	VOG8372	0.0081	12.6	unknown	hypothetical protein	Y-Rep_Org , putative replisome organizer protein 
+eld241-t0_s_1_81	gene41b	phage replicative helicase, DnaB family		unknown	VOG4792	0.0035	13.6	unknown	hypothetical protein	Y-phage replicative helicase, DnaB family
+eld241-t0_s_1_82				unknown	VOG10286	0.0059	11.6	N-acetylneuraminate pyruvate lyase	putative N-acetylneuraminate pyruvate lyase	P-N-acetylneuraminate pyruvate lyase
+eld241-t0_s_1_83	gene43b	AAA domain ATPase		unknown						Y-AAA domain ATPase
+eld241-t0_s_1_84				unknown						G-unknown
+eld241-t0_s_1_85	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
+eld241-t0_s_1_86				unknown						G-unknown
+eld241-t0_s_1_87	gene48b	Uncharacterized protein 48b		unknown						Y-Uncharacterized protein 48b
+eld241-t0_s_1_88				unknown						G-unknown
+eld241-t0_s_1_89	gene85	PD-(D E)XK family nuclease		putative PD-(D/E)XK superfamily nuclease						G-putative PD-(D/E)XK superfamily nuclease
+eld241-t0_s_1_90				unknown						G-unknown
+eld241-t0_s_1_91				unknown	VOG7068	0.0012	13.1	unknown	hypothetical protein	P-unknown

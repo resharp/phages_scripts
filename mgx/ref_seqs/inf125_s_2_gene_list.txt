@@ -1,177 +1,97 @@
-gene	gene_fam	region	annotation
-inf125_s_2_1			unknown function
-inf125_s_2_2			unknown function
-inf125_s_2_3			unknown function
-inf125_s_2_4			unknown function
-inf125_s_2_5			unknown function
-inf125_s_2_6			unknown function
-inf125_s_2_7			unknown function
-inf125_s_2_8			unknown function
-inf125_s_2_9			unknown function
-inf125_s_2_10			unknown function
-inf125_s_2_11			unknown function
-inf125_s_2_12			unknown function
-inf125_s_2_13			unknown function
-inf125_s_2_14			unknown function
-inf125_s_2_15			unknown function
-inf125_s_2_16			unknown function
-inf125_s_2_17			unknown function
-inf125_s_2_18			unknown function
-inf125_s_2_19			unknown function
-inf125_s_2_20			unknown function
-inf125_s_2_21			unknown function
-inf125_s_2_22			unknown function
-inf125_s_2_23			unknown function
-inf125_s_2_24			unknown function
-inf125_s_2_25			unknown function
-inf125_s_2_26			unknown function
-inf125_s_2_27			unknown function
-inf125_s_2_28			unknown function
-inf125_s_2_29			unknown function
-inf125_s_2_30			unknown function
-inf125_s_2_31			unknown function
-inf125_s_2_32			unknown function
-inf125_s_2_33			unknown function
-inf125_s_2_34	gene75	assembly.capsid	hypothetical protein
-inf125_s_2_35			unknown function
-inf125_s_2_36	MCP	assembly.capsid	putative Major capsid protein
-inf125_s_2_37			unknown function
-inf125_s_2_38	gene77	assembly.capsid	hypothetical protein
-inf125_s_2_39			unknown function
-inf125_s_2_40			unknown function
-inf125_s_2_41			unknown function
-inf125_s_2_42			unknown function
-inf125_s_2_43			unknown function
-inf125_s_2_44	portal	assembly.capsid	putative Portal protein
-inf125_s_2_45	portal	assembly.capsid	putative Portal protein
-inf125_s_2_46	portal	assembly.capsid	putative Portal protein
-inf125_s_2_47			unknown function
-inf125_s_2_48			unknown function
-inf125_s_2_49	terminase	assembly.capsid	putative Terminase large subunit
-inf125_s_2_50			unknown function
-inf125_s_2_51			unknown function
-inf125_s_2_52			unknown function
-inf125_s_2_53			unknown function
-inf125_s_2_54			unknown function
-inf125_s_2_55			unknown function
-inf125_s_2_56			unknown function
-inf125_s_2_57			unknown function
-inf125_s_2_58			unknown function
-inf125_s_2_59			unknown function
-inf125_s_2_60			unknown function
-inf125_s_2_61			unknown function
-inf125_s_2_62			unknown function
-inf125_s_2_63			unknown function
-inf125_s_2_64			unknown function
-inf125_s_2_65			unknown function
-inf125_s_2_66			unknown function
-inf125_s_2_67	ThyX		unknown function
-inf125_s_2_68			unknown function
-inf125_s_2_69			unknown function
-inf125_s_2_70			unknown function
-inf125_s_2_71			unknown function
-inf125_s_2_72			unknown function
-inf125_s_2_73			unknown function
-inf125_s_2_74			unknown function
-inf125_s_2_75			unknown function
-inf125_s_2_76			unknown function
-inf125_s_2_77			unknown function
-inf125_s_2_78			unknown function
-inf125_s_2_79			unknown function
-inf125_s_2_80			unknown function
-inf125_s_2_81			unknown function
-inf125_s_2_82			unknown function
-inf125_s_2_83			unknown function
-inf125_s_2_84			unknown function
-inf125_s_2_85			unknown function
-inf125_s_2_86			unknown function
-inf125_s_2_87			unknown function
-inf125_s_2_88			unknown function
-inf125_s_2_89			unknown function
-inf125_s_2_90			unknown function
-inf125_s_2_91			unknown function
-inf125_s_2_92			unknown function
-inf125_s_2_93			unknown function
-inf125_s_2_94	PolB	replication	putative DNA polymerase family B
-inf125_s_2_95	gene40b		unknown function
-inf125_s_2_96	gene41b		unknown function
-inf125_s_2_97			unknown function
-inf125_s_2_98	gene43b		unknown function
-inf125_s_2_99			unknown function
-inf125_s_2_100			unknown function
-inf125_s_2_101			unknown function
-inf125_s_2_102	primase	replication	putative DnaG family primase
-inf125_s_2_103			unknown function
-inf125_s_2_104			unknown function
-inf125_s_2_105			unknown function
-inf125_s_2_106	gene85		putative PD-(D/E)XK superfamily nuclease
-inf125_s_2_107			unknown function
-inf125_s_2_108			unknown function
-inf125_s_2_109			unknown function
-inf125_s_2_110			unknown function
-inf125_s_2_111			unknown function
-inf125_s_2_112			unknown function
-inf125_s_2_113			unknown function
-inf125_s_2_114			unknown function
-inf125_s_2_115			unknown function
-inf125_s_2_116			unknown function
-inf125_s_2_117			unknown function
-inf125_s_2_118			unknown function
-inf125_s_2_119			unknown function
-inf125_s_2_120			unknown function
-inf125_s_2_121			unknown function
-inf125_s_2_122			unknown function
-inf125_s_2_123			unknown function
-inf125_s_2_124			unknown function
-inf125_s_2_125			unknown function
-inf125_s_2_126			unknown function
-inf125_s_2_127			unknown function
-inf125_s_2_128			unknown function
-inf125_s_2_129			unknown function
-inf125_s_2_130			unknown function
-inf125_s_2_131			unknown function
-inf125_s_2_132			unknown function
-inf125_s_2_133			unknown function
-inf125_s_2_134			unknown function
-inf125_s_2_135			unknown function
-inf125_s_2_136			unknown function
-inf125_s_2_137			unknown function
-inf125_s_2_138			unknown function
-inf125_s_2_139			unknown function
-inf125_s_2_140			unknown function
-inf125_s_2_141			unknown function
-inf125_s_2_142			unknown function
-inf125_s_2_143			unknown function
-inf125_s_2_144			unknown function
-inf125_s_2_145			unknown function
-inf125_s_2_146			unknown function
-inf125_s_2_147			unknown function
-inf125_s_2_148			unknown function
-inf125_s_2_149			unknown function
-inf125_s_2_150			unknown function
-inf125_s_2_151			unknown function
-inf125_s_2_152			unknown function
-inf125_s_2_153			unknown function
-inf125_s_2_154			unknown function
-inf125_s_2_155			unknown function
-inf125_s_2_156			unknown function
-inf125_s_2_157			unknown function
-inf125_s_2_158			unknown function
-inf125_s_2_159			unknown function
-inf125_s_2_160			unknown function
-inf125_s_2_161			unknown function
-inf125_s_2_162			unknown function
-inf125_s_2_163			unknown function
-inf125_s_2_164			unknown function
-inf125_s_2_165			unknown function
-inf125_s_2_166			unknown function
-inf125_s_2_167			unknown function
-inf125_s_2_168			unknown function
-inf125_s_2_169			unknown function
-inf125_s_2_170			unknown function
-inf125_s_2_171			unknown function
-inf125_s_2_172			unknown function
-inf125_s_2_173			unknown function
-inf125_s_2_174			unknown function
-inf125_s_2_175			unknown function
-inf125_s_2_176			unknown function
+gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
+inf125_s_2_1				unknown						G-unknown
+inf125_s_2_2				unknown	VOG5038	0.00057	16.0	unknown	hypothetical protein	P-unknown
+inf125_s_2_3				unknown						G-unknown
+inf125_s_2_4				unknown						G-unknown
+inf125_s_2_5				unknown						G-unknown
+inf125_s_2_6				unknown						G-unknown
+inf125_s_2_7				unknown						G-unknown
+inf125_s_2_8				unknown	VOG5384	6e-06	21.5	virion structural	virion structural protein	P-virion structural
+inf125_s_2_9				unknown	VOG0352	1.1999999999999999e-11	40.8	unknown	hypothetical protein	P-unknown
+inf125_s_2_10				unknown	VOG7809	0.0012	14.9	unknown	hypothetical protein	P-unknown
+inf125_s_2_11				unknown						G-unknown
+inf125_s_2_12				unknown						G-unknown
+inf125_s_2_13				unknown						G-unknown
+inf125_s_2_14				unknown	VOG5007	0.00086	15.4	unknown	hypothetical protein	P-unknown
+inf125_s_2_15	gene75	putative structural protein	assembly.capsid	unknown	VOG10022	0.0005099999999999999	16.3	unknown	unknown	Y-putative structural protein
+inf125_s_2_16				unknown						G-unknown
+inf125_s_2_17	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+inf125_s_2_18	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
+inf125_s_2_19				unknown	VOG5361	2.8000000000000003e-05	19.2	unknown	hypothetical protein	P-unknown
+inf125_s_2_20				unknown						G-unknown
+inf125_s_2_21				unknown						G-unknown
+inf125_s_2_22	portal	Portal	assembly.capsid	putative Portal protein						G-putative Portal protein
+inf125_s_2_23	terminase	Terminase	assembly.capsid	putative Terminase large subunit						G-putative Terminase large subunit
+inf125_s_2_24				unknown	VOG5554	0.004	13.6	unknown	hypothetical protein	P-unknown
+inf125_s_2_25				unknown	VOG9955	8.599999999999999e-14	47.9	unknown	hypothetical protein	P-unknown
+inf125_s_2_26				unknown						G-unknown
+inf125_s_2_27				unknown	VOG3978	0.0047	11.0	tail	tail protein	P-tail
+inf125_s_2_28				unknown	VOG5361	0.0011	13.9	unknown	hypothetical protein	P-unknown
+inf125_s_2_29				unknown						G-unknown
+inf125_s_2_30				unknown	VOG2791	0.00033	15.2	tail sheath	tail sheath protein	P-tail sheath
+inf125_s_2_31				unknown						G-unknown
+inf125_s_2_32				unknown						G-unknown
+inf125_s_2_33				unknown						G-unknown
+inf125_s_2_34				unknown						G-unknown
+inf125_s_2_35				unknown	VOG5047	6.800000000000001e-18	61.3	unknown	hypothetical protein	P-unknown
+inf125_s_2_36				unknown						G-unknown
+inf125_s_2_37	ThyX			unknown						G-unknown
+inf125_s_2_38				unknown	VOG6389	0.033	10.8	conserved phage	conserved phage protein	P-conserved phage
+inf125_s_2_39				unknown						G-unknown
+inf125_s_2_40				unknown						G-unknown
+inf125_s_2_41				unknown						G-unknown
+inf125_s_2_42				unknown						G-unknown
+inf125_s_2_43				unknown	VOG8856	0.13	8.4	unknown	hypothetical protein	P-unknown
+inf125_s_2_44				unknown	VOG2386	0.17	6.5	portal	portal protein	P-portal
+inf125_s_2_45				unknown						G-unknown
+inf125_s_2_46				unknown						G-unknown
+inf125_s_2_47				unknown						G-unknown
+inf125_s_2_48				unknown						G-unknown
+inf125_s_2_49				unknown	VOG6488	0.00095	13.7	terminase large subunit	terminase large subunit	P-terminase large subunit
+inf125_s_2_50				unknown						G-unknown
+inf125_s_2_51				unknown	VOG5101	8e-06	20.1	large terminase	putative large terminase	P-large terminase
+inf125_s_2_52				unknown	VOG5203	9.9e-15	50.0	HNH endonuclease domain	HNH endonuclease domain protein	P-HNH endonuclease domain
+inf125_s_2_53				unknown	VOG5203	0.00014	16.5	HNH endonuclease domain	HNH endonuclease domain protein	P-HNH endonuclease domain
+inf125_s_2_54				unknown						G-unknown
+inf125_s_2_55				unknown						G-unknown
+inf125_s_2_56				unknown						G-unknown
+inf125_s_2_57				unknown						G-unknown
+inf125_s_2_58				unknown	VOG1254	3.8e-28	94.1	unknown	hypothetical protein	P-unknown
+inf125_s_2_59				unknown	VOG3488	1.4e-08	30.8	unknown	hypothetical protein	P-unknown
+inf125_s_2_60				unknown	VOG3851	0.0083	11.9	unknown	hypothetical protein	P-unknown
+inf125_s_2_61				unknown						G-unknown
+inf125_s_2_62				unknown						G-unknown
+inf125_s_2_63				unknown	VOG0760	0.002	14.9	unknown	unknown	P-unknown
+inf125_s_2_64				unknown	VOG6792	5e-05	19.7	unknown	hypothetical protein	P-unknown
+inf125_s_2_65				unknown						G-unknown
+inf125_s_2_66	PolB	PolB	replication	putative DNA polymerase family B						G-putative DNA polymerase family B
+inf125_s_2_67	gene40b	Rep_Org , putative replisome organizer protein 		unknown	VOG4561	4.8e-30	101.1	thymidylate synthase	thymidylate synthase	Y-Rep_Org , putative replisome organizer protein 
+inf125_s_2_68	gene41b	phage replicative helicase, DnaB family		unknown						Y-phage replicative helicase, DnaB family
+inf125_s_2_69				unknown						G-unknown
+inf125_s_2_70	gene43b	AAA domain ATPase		unknown						Y-AAA domain ATPase
+inf125_s_2_71				unknown	VOG10592	0.00032	16.9	unknown	hypothetical protein	P-unknown
+inf125_s_2_72				unknown						G-unknown
+inf125_s_2_73	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
+inf125_s_2_74	gene48b	Uncharacterized protein 48b		unknown						Y-Uncharacterized protein 48b
+inf125_s_2_75				unknown						G-unknown
+inf125_s_2_76				unknown	VOG4813	2.4e-05	20.3	HNH endonuclease	hypothetical protein	P-HNH endonuclease
+inf125_s_2_77	gene85	PD-(D E)XK family nuclease		putative PD-(D/E)XK superfamily nuclease	VOG7742	0.01	12.3	unknown	hypothetical protein	G-putative PD-(D/E)XK superfamily nuclease
+inf125_s_2_78				unknown						G-unknown
+inf125_s_2_79				unknown						G-unknown
+inf125_s_2_80				unknown						G-unknown
+inf125_s_2_81				unknown						G-unknown
+inf125_s_2_82				unknown						G-unknown
+inf125_s_2_83				unknown						G-unknown
+inf125_s_2_84	gene51	Tail stabilization protein (P22 gp10-like)	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog						G-putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+inf125_s_2_85	gene52	Tail tubular protein (P22 gp4-like)	assembly	putative Tail tubular protein, P22_gp4	VOG8506	6.500000000000001e-13	45.3	similar to RNA polymerase ECF-type sigma factor	similar to RNA polymerase ECF-type sigma factor	G-putative Tail tubular protein, P22_gp4
+inf125_s_2_86				unknown	VOG6837	0.057	9.9	unknown	hypothetical protein	P-unknown
+inf125_s_2_87				unknown						G-unknown
+inf125_s_2_88	gene54	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein	VOG2680	0.0029	13.8	unknown	hypothetical protein	G-putative Integration host factor IHF subunit, histone-like protein
+inf125_s_2_89				unknown						G-unknown
+inf125_s_2_90				unknown						G-unknown
+inf125_s_2_91				unknown						G-unknown
+inf125_s_2_92				unknown	VOG0566	0.001	14.9	capsid-scaffolding	capsid-scaffolding protein	P-capsid-scaffolding
+inf125_s_2_93				unknown	VOG11085	3.2e-08	30.0	unknown	hypothetical protein	P-unknown
+inf125_s_2_94				unknown	VOG4577	2.9999999999999996e-39	131.4	DNA polymerase	DNA polymerase	P-DNA polymerase
+inf125_s_2_95				unknown						G-unknown
+inf125_s_2_96				unknown	VOG0025	7.299999999999999e-24	81.5	DNA helicase	putative DNA helicase	P-DNA helicase

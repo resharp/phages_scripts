@@ -1,89 +1,89 @@
-gene	gene_fam	region	annotation
-KP06_gp01			hypothetical protein
-KP06_gp02			putative ssb single stranded DNA-binding protein
-KP06_gp03			hypothetical protein
-KP06_gp04			hypothetical protein
-KP06_gp05			hypothetical protein
-KP06_gp06			hypothetical protein
-KP06_gp07			hypothetical protein
-KP06_gp08			hypothetical protein
-KP06_gp09			hypothetical protein
-KP06_gp10			hypothetical protein
-KP06_gp11			hypothetical protein
-KP06_gp12			hypothetical protein
-KP06_gp13			hypothetical protein
-KP06_gp14	SF1_helicase15		putative SF1 helicase
-KP06_gp15	UDG	replication	putative Uracyl-DNA glycosylase
-KP06_gp16	PolB	replication	putative DNA polymerase family B
-KP06_gp17	SNF2_helic18	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif
-KP06_gp18	gene19	replication	putative RecT, phage RecT recombinase
-KP06_gp19	gene20	replication	hypothetical protein
-KP06_gp20	gene21	replication	putative ssb single stranded DNA-binding protein
-KP06_gp21	primase	replication	putative DnaG family primase
-KP06_gp22	gene23	replication	hypothetical protein
-KP06_gp23		replication	hypothetical protein
-KP06_gp24	ligase25	replication	putative ATP-dependent DNA ligase
-KP06_gp25		replication	hypothetical protein
-KP06_gp26		replication	putative Deoxynucleoside monophosphate kinase
-KP06_gp27		replication	putative C4-type zinc finger protein
-KP06_gp28	ThyX	replication	putative flavin-dependent thymidylate synthase
-KP06_gp29		replication	hypothetical protein
-KP06_gp30		replication	hypothetical protein
-KP06_gp31	gene32	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
-KP06_gp32		replication	hypothetical protein
-KP06_gp33	gene34	replication	putative Protein of unknown function (DUF932)
-KP06_gp34	dUTP	replication	putative Dut dUTPase (with intron insertion)
-KP06_gp35		replication	putative Intron-encoded HNH endonuclease
-KP06_gp36		replication	putative Uncharacterized DUF1653 family protein
-KP06_gp37		replication	putative Truncated thioredoxin
-KP06_gp38		replication	hypothetical protein
-KP06_gp39		replication	putative Thioredoxin
-KP06_gp40		replication	hypothetical protein
-KP06_gp41		replication	putative Phage protein of N4_gp49/Sf6_gp66 (pfam13876) family
-KP06_gp42		replication	membrane protein
-KP06_gp43		replication	putative Plasmid replication initiation protein RepL
-KP06_gp44		transcription	putative RNAP catalytic subunit fused to unknown RNAP subunit
-KP06_gp45		transcription	putative RNAP associated protein fused to zincin protease
-KP06_gp46			hypothetical protein
-KP06_gp47	gene49		hypothetical protein
-KP06_gp48			hypothetical protein
-KP06_gp49	gene51	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog
-KP06_gp50	gene52	assembly	putative Tail tubular protein, P22_gp4
-KP06_gp51	gene53	assembly	putative Integration host factor IHF subunit, histone-like protein
-KP06_gp52	gene54	assembly	putative Integration host factor IHF subunit, histone-like protein
-KP06_gp53		assembly	hypothetical protein
-KP06_gp54		assembly.tail	putative Phage tail-collar fibre protein (DUF3751)
-KP06_gp55		assembly.tail	putative Tail needle protein, P22_gp26-like
-KP06_gp56		assembly.tail	putative Zincin superfamily protease
-KP06_gp57		assembly.tail	membrane protein
-KP06_gp58		assembly.tail	hypothetical protein
-KP06_gp59		assembly.tail	hypothetical protein
-KP06_gp60		assembly.tail	hypothetical protein
-KP06_gp61		assembly.tail	putative tail protein
-KP06_gp62		assembly.tail	putative tail protein
-KP06_gp63		assembly.tail	putative tail protein, similar to UGP_077
-KP06_gp64		assembly.tail	putativeBacon (Bacteroidetes-Associated Carbohydrate-binding) domain containing protein
-KP06_gp65		assembly.tail	putative tail protein
-KP06_gp66		assembly.tail	putative Tail fiber protein
-KP06_gp67		assembly.tail	putative tail protein, similar to UGP_073
-KP06_gp68		assembly	hypothetical protein
-KP06_gp69		assembly	hypothetical protein
-KP06_gp70		assembly	hypothetical protein
-KP06_gp71	gene73	assembly	putative Tail sheath protein
-KP06_gp72	gene74	assembly	hypothetical protein
-KP06_gp73	gene75	assembly.capsid	hypothetical protein
-KP06_gp74	MCP	assembly.capsid	putative Major capsid protein
-KP06_gp75	gene77	assembly.capsid	hypothetical protein
-KP06_gp76	portal	assembly.capsid	putative Portal protein
-KP06_gp77	terminase	assembly.capsid	putative Terminase large subunit
-KP06_gp78			hypothetical protein
-KP06_gp79			hypothetical protein
-KP06_gp80			putative Lysozyme
-KP06_gp81			hypothetical protein
-KP06_gp82			putative Membrane protein, contains peptidoglycan-binding domain
-KP06_gp83	gene85		putative PD-(D/E)XK superfamily nuclease
-KP06_gp84	gene86		hypothetical protein
-KP06_gp85			hypothetical protein
-KP06_gp86			hypothetical protein
-KP06_gp87			hypothetical protein
-KP06_gp88			putative Plasmid replication initiation protein RepL
+gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
+KP06_gp01				unknown	VOG6560	0.15	6.5	von Willebrand factor domain	von Willebrand factor domain protein	P-von Willebrand factor domain
+KP06_gp02				putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+KP06_gp03				unknown						G-unknown
+KP06_gp04				unknown						G-unknown
+KP06_gp05				unknown						G-unknown
+KP06_gp06				unknown						G-unknown
+KP06_gp07				unknown						G-unknown
+KP06_gp08				unknown						G-unknown
+KP06_gp09				unknown						G-unknown
+KP06_gp10				unknown						G-unknown
+KP06_gp11				unknown	VOG1637	0.00086	15.5	unknown	hypothetical protein	P-unknown
+KP06_gp12				unknown	VOG5226	0.004	13.9	unknown	hypothetical protein	P-unknown
+KP06_gp13				unknown	VOG9110	0.0055	13.0	unknown	hypothetical protein	P-unknown
+KP06_gp14	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	2.1999999999999997e-76	254.0	DNA helicase	DNA helicase	G-putative SF1 helicase
+KP06_gp15	UDG	UDG	replication	putative Uracyl-DNA glycosylase						G-putative Uracyl-DNA glycosylase
+KP06_gp16	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	1.4999999999999997e-45	152.3	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+KP06_gp17	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif						G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
+KP06_gp18	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	5.5e-08	28.8	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+KP06_gp19	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
+KP06_gp20	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein	VOG8687	0.0067	11.5	virion structural	possible virion structural protein	G-putative ssb single stranded DNA-binding protein
+KP06_gp21	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
+KP06_gp22	gene23	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
+KP06_gp23			replication	unknown						G-unknown
+KP06_gp24	ligase25		replication	putative ATP-dependent DNA ligase	VOG0018	1.6999999999999998e-31	105.8	DNA ligase	DNA ligase	G-putative ATP-dependent DNA ligase
+KP06_gp25			replication	unknown						G-unknown
+KP06_gp26			replication	putative Deoxynucleoside monophosphate kinase	VOG0020	5.999999999999999e-34	114.0	unknown	hypothetical protein	G-putative Deoxynucleoside monophosphate kinase
+KP06_gp27			replication	putative C4-type zinc finger protein						G-putative C4-type zinc finger protein
+KP06_gp28	ThyX		replication	putative flavin-dependent thymidylate synthase	VOG4561	2e-17	59.9	thymidylate synthase	thymidylate synthase	G-putative flavin-dependent thymidylate synthase
+KP06_gp29			replication	unknown						G-unknown
+KP06_gp30			replication	unknown						G-unknown
+KP06_gp31	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor	VOG0321	2.9e-15	52.6	unknown	hypothetical protein	G-putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
+KP06_gp32			replication	unknown	VOG10674	0.0036	13.4	terminase large subunit	terminase large subunit	P-terminase large subunit
+KP06_gp33	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	5.299999999999999e-80	265.3	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)
+KP06_gp34	dUTP		replication	putative Dut dUTPase (with intron insertion)	VOG0085	2.0000000000000002e-21	72.6	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	G-putative Dut dUTPase (with intron insertion)
+KP06_gp35			replication	putative Intron-encoded HNH endonuclease	VOG7416	1.3e-15	54.0	HNH endonuclease inducing intron mobility	putative HNH endonuclease inducing intron mobility	G-putative Intron-encoded HNH endonuclease
+KP06_gp36			replication	putative Uncharacterized DUF1653 family protein	VOG6786	8e-07	25.4	unknown	hypothetical protein	G-putative Uncharacterized DUF1653 family protein
+KP06_gp37			replication	putative Truncated thioredoxin						G-putative Truncated thioredoxin
+KP06_gp38			replication	unknown						G-unknown
+KP06_gp39			replication	putative Thioredoxin	VOG4549	0.00041	17.1	glutaredoxin	glutaredoxin	G-putative Thioredoxin
+KP06_gp40			replication	unknown	VOG3412	2.1e-08	30.6	unknown	hypothetical protein	P-unknown
+KP06_gp41			replication	putative Phage protein of N4_gp49/Sf6_gp66 (pfam13876) family	VOG4731	3e-17	58.8	unknown	hypothetical protein	G-putative Phage protein of N4_gp49/Sf6_gp66 (pfam13876) family
+KP06_gp42			replication	membrane protein	VOG9233	0.0008900000000000001	14.9	unknown	hypothetical protein	G-membrane protein
+KP06_gp43			replication	putative Plasmid replication initiation protein RepL	VOG4566	0.004	13.2	unknown	hypothetical protein	G-putative Plasmid replication initiation protein RepL
+KP06_gp44			transcription	putative RNAP catalytic subunit fused to unknown RNAP subunit						G-putative RNAP catalytic subunit fused to unknown RNAP subunit
+KP06_gp45			transcription	putative RNAP associated protein fused to zincin protease	VOG1241	0.0072	13.0	unknown	hypothetical protein	G-putative RNAP associated protein fused to zincin protease
+KP06_gp46				unknown						G-unknown
+KP06_gp47	gene49	Uncharacterized protein		unknown						Y-Uncharacterized protein
+KP06_gp48				unknown	VOG1400	0.00021	15.0	unknown	hypothetical protein	P-unknown
+KP06_gp49	gene51	Tail stabilization protein (P22 gp10-like)	assembly	putative Phage stabilization protein (pfam11134), P22_gp10 homolog						G-putative Phage stabilization protein (pfam11134), P22_gp10 homolog
+KP06_gp50	gene52	Tail tubular protein (P22 gp4-like)	assembly	putative Tail tubular protein, P22_gp4						G-putative Tail tubular protein, P22_gp4
+KP06_gp51	gene53	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein						G-putative Integration host factor IHF subunit, histone-like protein
+KP06_gp52	gene54	IHF subunit	assembly	putative Integration host factor IHF subunit, histone-like protein						G-putative Integration host factor IHF subunit, histone-like protein
+KP06_gp53			assembly	unknown	VOG5763	0.00027	17.5	unknown	hypothetical protein	P-unknown
+KP06_gp54			assembly.tail	putative Phage tail-collar fibre protein (DUF3751)						G-putative Phage tail-collar fibre protein (DUF3751)
+KP06_gp55			assembly.tail	putative Tail needle protein, P22_gp26-like	VOG5283	0.001	15.1	unknown	hypothetical protein	G-putative Tail needle protein, P22_gp26-like
+KP06_gp56			assembly.tail	putative Zincin superfamily protease						G-putative Zincin superfamily protease
+KP06_gp57			assembly.tail	membrane protein	VOG4897	0.011000000000000001	11.9	unknown	hypothetical protein	G-membrane protein
+KP06_gp58			assembly.tail	unknown	VOG4027	0.0093	8.7	unknown	tail fiber-like protein	P-unknown
+KP06_gp59			assembly.tail	unknown						G-unknown
+KP06_gp60			assembly.tail	unknown						G-unknown
+KP06_gp61			assembly.tail	putative tail protein	VOG1237	0.0053	13.2	unknown	hypothetical protein	G-putative tail protein
+KP06_gp62			assembly.tail	putative tail protein						G-putative tail protein
+KP06_gp63			assembly.tail	putative tail protein, similar to UGP_077	VOG10035	0.0052	12.4	unknown	hypothetical protein	G-putative tail protein, similar to UGP_077
+KP06_gp64			assembly.tail	putativeBacon (Bacteroidetes-Associated Carbohydrate-binding) domain containing protein	VOG6381	0.027999999999999997	10.8	unknown	hypothetical protein	G-putativeBacon (Bacteroidetes-Associated Carbohydrate-binding) domain containing protein
+KP06_gp65			assembly.tail	putative tail protein	VOG1125	0.00033999999999999997	16.7	unknown	hypothetical protein	G-putative tail protein
+KP06_gp66			assembly.tail	putative Tail fiber protein	VOG5612	0.0043	13.2	unknown	hypothetical protein	G-putative Tail fiber protein
+KP06_gp67			assembly.tail	putative tail protein, similar to UGP_073	VOG8134	1.3e-06	23.4	tail fiber  1	putative tail fiber protein 1	G-putative tail protein, similar to UGP_073
+KP06_gp68			assembly	unknown						G-unknown
+KP06_gp69			assembly	unknown						G-unknown
+KP06_gp70			assembly	unknown	VOG6417	0.0073	12.1	unknown	hypothetical protein	P-unknown
+KP06_gp71	gene73	putative structural protein	assembly	putative Tail sheath protein						G-putative Tail sheath protein
+KP06_gp72	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
+KP06_gp73	gene75	putative structural protein	assembly.capsid	unknown	VOG6090	0.0069	12.9	unknown	hypothetical protein	Y-putative structural protein
+KP06_gp74	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+KP06_gp75	gene77	putative structural protein	assembly.capsid	unknown	VOG10320	0.011000000000000001	11.7	unknown	hypothetical protein	Y-putative structural protein
+KP06_gp76	portal	Portal	assembly.capsid	putative Portal protein	VOG2934	0.0085	12.4	unknown	hypothetical protein	G-putative Portal protein
+KP06_gp77	terminase	Terminase	assembly.capsid	putative Terminase large subunit						G-putative Terminase large subunit
+KP06_gp78				unknown						G-unknown
+KP06_gp79				unknown	VOG9608	0.027000000000000003	10.8	unknown	unknown	P-unknown
+KP06_gp80				putative Lysozyme	VOG0992	9.400000000000001e-30	99.7	endolysin	putative endolysin	G-putative Lysozyme
+KP06_gp81				unknown						G-unknown
+KP06_gp82				putative Membrane protein, contains peptidoglycan-binding domain	VOG0992	0.00075	15.4	endolysin	putative endolysin	G-putative Membrane protein, contains peptidoglycan-binding domain
+KP06_gp83	gene85	PD-(D E)XK family nuclease		putative PD-(D/E)XK superfamily nuclease	VOG2848	7.499999999999998e-108	356.2	AddA-like	AddA-like protein	G-putative PD-(D/E)XK superfamily nuclease
+KP06_gp84	gene86	Uncharacterized protein		unknown	VOG8922	0.0075	12.4	unknown	hypothetical protein	P-unknown
+KP06_gp85				unknown	VOG7524	0.002	14.6	unknown	hypothetical protein	P-unknown
+KP06_gp86				unknown						G-unknown
+KP06_gp87				unknown						G-unknown
+KP06_gp88				putative Plasmid replication initiation protein RepL	VOG6153	0.00082	15.5	unknown	hypothetical protein	G-putative Plasmid replication initiation protein RepL
