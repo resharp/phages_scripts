@@ -1,7 +1,7 @@
 gene	gene_fam	annot_yutin_hmm	region	annot_genbank	pvog_x	e_value	score	annot_pvog	annot_pvog_raw	annotation
 srr4295175_ms_5_1	portal	Portal	assembly.capsid	putative Portal protein	VOG11088	0.0033	13.8	unknown	hypothetical protein	G-putative Portal protein
 srr4295175_ms_5_2	gene77	putative structural protein	assembly.capsid	unknown	VOG10355	0.0081	12.5	unknown	hypothetical protein	Y-putative structural protein
-srr4295175_ms_5_3	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+srr4295175_ms_5_3	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 srr4295175_ms_5_4	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
 srr4295175_ms_5_5	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 srr4295175_ms_5_6	gene73	putative structural protein	assembly	putative Tail sheath protein	VOG4365	0.0092	12.1	unknown	hypothetical protein	G-putative Tail sheath protein
@@ -36,7 +36,7 @@ srr4295175_ms_5_34				unknown						G-unknown
 srr4295175_ms_5_35				unknown						G-unknown
 srr4295175_ms_5_36				unknown	VOG0686	3.1000000000000002e-21	71.4	unknown	hypothetical protein	P-unknown
 srr4295175_ms_5_37				unknown	VOG6786	3.2e-07	26.7	unknown	hypothetical protein	P-unknown
-srr4295175_ms_5_38	dUTP			unknown	VOG0085	1.2e-31	105.8	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+srr4295175_ms_5_38	dUTP	dUTP diphosphatase		unknown	VOG0085	1.2e-31	105.8	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	Y-dUTP diphosphatase
 srr4295175_ms_5_39				unknown						G-unknown
 srr4295175_ms_5_40				unknown						G-unknown
 srr4295175_ms_5_41				unknown	VOG5395	0.00045	16.3	unknown	hypothetical protein	P-unknown
@@ -50,17 +50,17 @@ srr4295175_ms_5_48				unknown						G-unknown
 srr4295175_ms_5_49				unknown	VOG10904	2.4e-08	29.4	HNH endonuclease	HNH endonuclease	P-HNH endonuclease
 srr4295175_ms_5_50				unknown						G-unknown
 srr4295175_ms_5_51				unknown	VOG7891	0.0032	13.6	unknown	hypothetical protein	P-unknown
-srr4295175_ms_5_52	ligase25			unknown	VOG0018	2.5000000000000002e-30	102.0	DNA ligase	DNA ligase	P-DNA ligase
+srr4295175_ms_5_52	ligase25	Ligase		unknown	VOG0018	2.5000000000000002e-30	102.0	DNA ligase	DNA ligase	Y-Ligase
 srr4295175_ms_5_53				unknown						G-unknown
 srr4295175_ms_5_54	gene23	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
 srr4295175_ms_5_55	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
-srr4295175_ms_5_56	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+srr4295175_ms_5_56	gene21	single stranded DNA-binding pr.	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
 srr4295175_ms_5_57	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
-srr4295175_ms_5_58	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	0.0011	14.6	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+srr4295175_ms_5_58	gene19	phage RecT recombinase	replication	putative RecT, phage RecT recombinase	VOG4360	0.0011	14.6	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
 srr4295175_ms_5_59	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif						G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
 srr4295175_ms_5_60				unknown						G-unknown
 srr4295175_ms_5_61				unknown						G-unknown
-srr4295175_ms_5_62	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	7.099999999999999e-41	136.8	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+srr4295175_ms_5_62	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4577	7.099999999999999e-41	136.8	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
 srr4295175_ms_5_63	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	4.8e-62	206.7	DNA helicase	DNA helicase	G-putative SF1 helicase
 srr4295175_ms_5_64				unknown						G-unknown
 srr4295175_ms_5_65				unknown						G-unknown

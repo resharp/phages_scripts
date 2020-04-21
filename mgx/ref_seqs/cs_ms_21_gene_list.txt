@@ -4,7 +4,7 @@ cs_ms_21_2				unknown	VOG2767	0.025	10.8	unknown	hypothetical protein	P-unknown
 cs_ms_21_3	gene73	putative structural protein	assembly	putative Tail sheath protein						G-putative Tail sheath protein
 cs_ms_21_4	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 cs_ms_21_5	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
-cs_ms_21_6	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+cs_ms_21_6	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 cs_ms_21_7	gene77	putative structural protein	assembly.capsid	unknown	VOG6423	0.0061	13.0	unknown	hypothetical protein	Y-putative structural protein
 cs_ms_21_8	portal	Portal	assembly.capsid	putative Portal protein						G-putative Portal protein
 cs_ms_21_9	terminase	Terminase	assembly.capsid	putative Terminase large subunit	VOG5203	4.899999999999999e-31	103.8	HNH endonuclease domain	HNH endonuclease domain protein	G-putative Terminase large subunit
@@ -45,25 +45,25 @@ cs_ms_21_43				unknown						G-unknown
 cs_ms_21_44				unknown						G-unknown
 cs_ms_21_45				unknown						G-unknown
 cs_ms_21_46				unknown						G-unknown
-cs_ms_21_47	UDG	UDG	replication	putative Uracyl-DNA glycosylase	VOG1742	0.00095	14.9	unknown	hypothetical protein	G-putative Uracyl-DNA glycosylase
-cs_ms_21_48	PolB	PolB	replication	putative DNA polymerase family B	VOG4670	7.8e-07	23.4	DNA polymerase/primase	DNA polymerase/primase	G-putative DNA polymerase family B
+cs_ms_21_47	UDG	Uracil-DNA glycosylase	replication	putative Uracyl-DNA glycosylase	VOG1742	0.00095	14.9	unknown	hypothetical protein	G-putative Uracyl-DNA glycosylase
+cs_ms_21_48	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4670	7.8e-07	23.4	DNA polymerase/primase	DNA polymerase/primase	G-putative DNA polymerase family B
 cs_ms_21_49				unknown	VOG5047	3.1e-08	29.5	unknown	hypothetical protein	P-unknown
-cs_ms_21_50	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	2.3999999999999998e-28	95.4	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+cs_ms_21_50	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4577	2.3999999999999998e-28	95.4	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
 cs_ms_21_51				unknown						G-unknown
 cs_ms_21_52	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif						G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
-cs_ms_21_53	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	0.002	13.9	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+cs_ms_21_53	gene19	phage RecT recombinase	replication	putative RecT, phage RecT recombinase	VOG4360	0.002	13.9	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
 cs_ms_21_54	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
-cs_ms_21_55	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+cs_ms_21_55	gene21	single stranded DNA-binding pr.	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
 cs_ms_21_56	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
 cs_ms_21_57	gene23	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
-cs_ms_21_58	ligase25			unknown	VOG0018	5.6e-30	100.9	DNA ligase	DNA ligase	P-DNA ligase
+cs_ms_21_58	ligase25	Ligase		unknown	VOG0018	5.6e-30	100.9	DNA ligase	DNA ligase	Y-Ligase
 cs_ms_21_59				unknown						G-unknown
 cs_ms_21_60				unknown	VOG2731	0.0007	15.5	unknown	hypothetical protein	P-unknown
 cs_ms_21_61				unknown	VOG5445	0.0027	12.8	unknown	hypothetical protein	P-unknown
 cs_ms_21_62				unknown	VOG0045	2.7e-07	27.1	unknown	hypothetical protein	P-unknown
 cs_ms_21_63				unknown	VOG5986	5.099999999999999e-20	68.2	MazG	MazG	P-MazG
 cs_ms_21_64				unknown	VOG9112	1.9e-23	79.7	unknown	hypothetical protein	P-unknown
-cs_ms_21_65	ThyX			unknown	VOG4561	6.999999999999999e-13	45.0	thymidylate synthase	thymidylate synthase	P-thymidylate synthase
+cs_ms_21_65	ThyX	Thymidylate synthase		unknown	VOG4561	6.999999999999999e-13	45.0	thymidylate synthase	thymidylate synthase	Y-Thymidylate synthase
 cs_ms_21_66				unknown						G-unknown
 cs_ms_21_67	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor	VOG0321	1.9e-13	46.7	unknown	hypothetical protein	G-putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
 cs_ms_21_68	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	8e-44	146.3	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)

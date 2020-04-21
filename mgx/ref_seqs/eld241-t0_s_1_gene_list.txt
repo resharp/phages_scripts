@@ -19,7 +19,7 @@ eld241-t0_s_1_17	gene74	putative structural protein	assembly	unknown	VOG6092	0.0
 eld241-t0_s_1_18				unknown						G-unknown
 eld241-t0_s_1_19				unknown						G-unknown
 eld241-t0_s_1_20	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
-eld241-t0_s_1_21	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+eld241-t0_s_1_21	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 eld241-t0_s_1_22	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
 eld241-t0_s_1_23				unknown						G-unknown
 eld241-t0_s_1_24				unknown						G-unknown
@@ -29,7 +29,7 @@ eld241-t0_s_1_27	gene86	Uncharacterized protein		unknown						Y-Uncharacterized 
 eld241-t0_s_1_28				unknown						G-unknown
 eld241-t0_s_1_29				unknown						G-unknown
 eld241-t0_s_1_30				unknown						G-unknown
-eld241-t0_s_1_31	dUTP			unknown						G-unknown
+eld241-t0_s_1_31	dUTP	dUTP diphosphatase		unknown						Y-dUTP diphosphatase
 eld241-t0_s_1_32				unknown						G-unknown
 eld241-t0_s_1_33				unknown						G-unknown
 eld241-t0_s_1_34				unknown	VOG5049	0.0096	12.3	unknown	hypothetical protein	P-unknown
@@ -77,7 +77,7 @@ eld241-t0_s_1_75				unknown	VOG5824	0.00055	16.5	unknown	hypothetical protein	P-
 eld241-t0_s_1_76				unknown						G-unknown
 eld241-t0_s_1_77				unknown						G-unknown
 eld241-t0_s_1_78				unknown						G-unknown
-eld241-t0_s_1_79	PolB	PolB	replication	putative DNA polymerase family B						G-putative DNA polymerase family B
+eld241-t0_s_1_79	PolB	Polymerase B	replication	putative DNA polymerase family B						G-putative DNA polymerase family B
 eld241-t0_s_1_80	gene40b	Rep_Org , putative replisome organizer protein 		unknown	VOG8372	0.0081	12.6	unknown	hypothetical protein	Y-Rep_Org , putative replisome organizer protein 
 eld241-t0_s_1_81	gene41b	phage replicative helicase, DnaB family		unknown	VOG4792	0.0035	13.6	unknown	hypothetical protein	Y-phage replicative helicase, DnaB family
 eld241-t0_s_1_82				unknown	VOG10286	0.0059	11.6	N-acetylneuraminate pyruvate lyase	putative N-acetylneuraminate pyruvate lyase	P-N-acetylneuraminate pyruvate lyase

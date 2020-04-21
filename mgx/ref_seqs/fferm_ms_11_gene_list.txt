@@ -8,7 +8,7 @@ fferm_ms_11_6				unknown						G-unknown
 fferm_ms_11_7				unknown						G-unknown
 fferm_ms_11_8	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 fferm_ms_11_9	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
-fferm_ms_11_10	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+fferm_ms_11_10	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 fferm_ms_11_11	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
 fferm_ms_11_12				unknown						G-unknown
 fferm_ms_11_13				unknown						G-unknown
@@ -77,7 +77,7 @@ fferm_ms_11_75				unknown						G-unknown
 fferm_ms_11_76				unknown						G-unknown
 fferm_ms_11_77				unknown						G-unknown
 fferm_ms_11_78				unknown						G-unknown
-fferm_ms_11_79	UDG	UDG	replication	putative Uracyl-DNA glycosylase						G-putative Uracyl-DNA glycosylase
+fferm_ms_11_79	UDG	Uracil-DNA glycosylase	replication	putative Uracyl-DNA glycosylase						G-putative Uracyl-DNA glycosylase
 fferm_ms_11_80				unknown	VOG6936	0.0051	12.8	unknown	hypothetical protein	P-unknown
 fferm_ms_11_81	gene48b	Uncharacterized protein 48b		unknown	VOG0536	1.5e-15	53.7	unknown	hypothetical protein	Y-Uncharacterized protein 48b
 fferm_ms_11_82				unknown	VOG9773	0.0027	14.2	unknown	unknown	P-unknown
@@ -89,13 +89,13 @@ fferm_ms_11_87				unknown	VOG0085	1.7e-21	72.9	deoxyuridine 5'-triphosphate nucl
 fferm_ms_11_88				unknown						G-unknown
 fferm_ms_11_89				unknown						G-unknown
 fferm_ms_11_90	gene9_BCSF01000238			unknown	VOG0026	1.1999999999999998e-74	248.5	DNA polymerase	DNA polymerase	P-DNA polymerase
-fferm_ms_11_90	PolA	PolA		unknown	VOG0026	1.1999999999999998e-74	248.5	DNA polymerase	DNA polymerase	Y-PolA
+fferm_ms_11_90	PolA	Polymerase A		unknown	VOG0026	1.1999999999999998e-74	248.5	DNA polymerase	DNA polymerase	Y-Polymerase A
 fferm_ms_11_91				unknown	VOG7113	1.4999999999999999e-05	21.0	unknown	hypothetical protein	P-unknown
 fferm_ms_11_92				unknown	VOG4966	1.1000000000000001e-30	102.2	unknown	hypothetical protein	P-unknown
 fferm_ms_11_93				unknown	VOG4679	4.5e-12	41.1	unknown	hypothetical protein	P-unknown
 fferm_ms_11_94				unknown						G-unknown
 fferm_ms_11_95				unknown	VOG2545	0.00042	16.4	unknown	hypothetical protein	P-unknown
-fferm_ms_11_96	ThyX			unknown	VOG4561	8.000000000000001e-29	97.1	thymidylate synthase	thymidylate synthase	P-thymidylate synthase
+fferm_ms_11_96	ThyX	Thymidylate synthase		unknown	VOG4561	8.000000000000001e-29	97.1	thymidylate synthase	thymidylate synthase	Y-Thymidylate synthase
 fferm_ms_11_97				unknown	VOG1857	5.5e-05	19.5	unknown	hypothetical protein	P-unknown
 fferm_ms_11_98				unknown						G-unknown
 fferm_ms_11_99				unknown	VOG6524	4.6e-05	19.5	unknown	hypothetical protein	P-unknown

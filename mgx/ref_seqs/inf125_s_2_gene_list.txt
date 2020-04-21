@@ -15,7 +15,7 @@ inf125_s_2_13				unknown						G-unknown
 inf125_s_2_14				unknown	VOG5007	0.00086	15.4	unknown	hypothetical protein	P-unknown
 inf125_s_2_15	gene75	putative structural protein	assembly.capsid	unknown	VOG10022	0.0005099999999999999	16.3	unknown	unknown	Y-putative structural protein
 inf125_s_2_16				unknown						G-unknown
-inf125_s_2_17	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+inf125_s_2_17	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 inf125_s_2_18	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
 inf125_s_2_19				unknown	VOG5361	2.8000000000000003e-05	19.2	unknown	hypothetical protein	P-unknown
 inf125_s_2_20				unknown						G-unknown
@@ -35,7 +35,7 @@ inf125_s_2_33				unknown						G-unknown
 inf125_s_2_34				unknown						G-unknown
 inf125_s_2_35				unknown	VOG5047	6.800000000000001e-18	61.3	unknown	hypothetical protein	P-unknown
 inf125_s_2_36				unknown						G-unknown
-inf125_s_2_37	ThyX			unknown						G-unknown
+inf125_s_2_37	ThyX	Thymidylate synthase		unknown						Y-Thymidylate synthase
 inf125_s_2_38				unknown	VOG6389	0.033	10.8	conserved phage	conserved phage protein	P-conserved phage
 inf125_s_2_39				unknown						G-unknown
 inf125_s_2_40				unknown						G-unknown
@@ -64,7 +64,7 @@ inf125_s_2_62				unknown						G-unknown
 inf125_s_2_63				unknown	VOG0760	0.002	14.9	unknown	unknown	P-unknown
 inf125_s_2_64				unknown	VOG6792	5e-05	19.7	unknown	hypothetical protein	P-unknown
 inf125_s_2_65				unknown						G-unknown
-inf125_s_2_66	PolB	PolB	replication	putative DNA polymerase family B						G-putative DNA polymerase family B
+inf125_s_2_66	PolB	Polymerase B	replication	putative DNA polymerase family B						G-putative DNA polymerase family B
 inf125_s_2_67	gene40b	Rep_Org , putative replisome organizer protein 		unknown	VOG4561	4.8e-30	101.1	thymidylate synthase	thymidylate synthase	Y-Rep_Org , putative replisome organizer protein 
 inf125_s_2_68	gene41b	phage replicative helicase, DnaB family		unknown						Y-phage replicative helicase, DnaB family
 inf125_s_2_69				unknown						G-unknown

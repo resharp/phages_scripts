@@ -13,26 +13,26 @@ KP06_gp11				unknown	VOG1637	0.00086	15.5	unknown	hypothetical protein	P-unknown
 KP06_gp12				unknown	VOG5226	0.004	13.9	unknown	hypothetical protein	P-unknown
 KP06_gp13				unknown	VOG9110	0.0055	13.0	unknown	hypothetical protein	P-unknown
 KP06_gp14	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	2.1999999999999997e-76	254.0	DNA helicase	DNA helicase	G-putative SF1 helicase
-KP06_gp15	UDG	UDG	replication	putative Uracyl-DNA glycosylase						G-putative Uracyl-DNA glycosylase
-KP06_gp16	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	1.4999999999999997e-45	152.3	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+KP06_gp15	UDG	Uracil-DNA glycosylase	replication	putative Uracyl-DNA glycosylase						G-putative Uracyl-DNA glycosylase
+KP06_gp16	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4577	1.4999999999999997e-45	152.3	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
 KP06_gp17	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif						G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
-KP06_gp18	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	5.5e-08	28.8	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+KP06_gp18	gene19	phage RecT recombinase	replication	putative RecT, phage RecT recombinase	VOG4360	5.5e-08	28.8	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
 KP06_gp19	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
-KP06_gp20	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein	VOG8687	0.0067	11.5	virion structural	possible virion structural protein	G-putative ssb single stranded DNA-binding protein
+KP06_gp20	gene21	single stranded DNA-binding pr.	replication	putative ssb single stranded DNA-binding protein	VOG8687	0.0067	11.5	virion structural	possible virion structural protein	G-putative ssb single stranded DNA-binding protein
 KP06_gp21	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
 KP06_gp22	gene23	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
 KP06_gp23			replication	unknown						G-unknown
-KP06_gp24	ligase25		replication	putative ATP-dependent DNA ligase	VOG0018	1.6999999999999998e-31	105.8	DNA ligase	DNA ligase	G-putative ATP-dependent DNA ligase
+KP06_gp24	ligase25	Ligase	replication	putative ATP-dependent DNA ligase	VOG0018	1.6999999999999998e-31	105.8	DNA ligase	DNA ligase	G-putative ATP-dependent DNA ligase
 KP06_gp25			replication	unknown						G-unknown
 KP06_gp26			replication	putative Deoxynucleoside monophosphate kinase	VOG0020	5.999999999999999e-34	114.0	unknown	hypothetical protein	G-putative Deoxynucleoside monophosphate kinase
 KP06_gp27			replication	putative C4-type zinc finger protein						G-putative C4-type zinc finger protein
-KP06_gp28	ThyX		replication	putative flavin-dependent thymidylate synthase	VOG4561	2e-17	59.9	thymidylate synthase	thymidylate synthase	G-putative flavin-dependent thymidylate synthase
+KP06_gp28	ThyX	Thymidylate synthase	replication	putative flavin-dependent thymidylate synthase	VOG4561	2e-17	59.9	thymidylate synthase	thymidylate synthase	G-putative flavin-dependent thymidylate synthase
 KP06_gp29			replication	unknown						G-unknown
 KP06_gp30			replication	unknown						G-unknown
 KP06_gp31	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor	VOG0321	2.9e-15	52.6	unknown	hypothetical protein	G-putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
 KP06_gp32			replication	unknown	VOG10674	0.0036	13.4	terminase large subunit	terminase large subunit	P-terminase large subunit
 KP06_gp33	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	5.299999999999999e-80	265.3	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)
-KP06_gp34	dUTP		replication	putative Dut dUTPase (with intron insertion)	VOG0085	2.0000000000000002e-21	72.6	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	G-putative Dut dUTPase (with intron insertion)
+KP06_gp34	dUTP	dUTP diphosphatase	replication	putative Dut dUTPase (with intron insertion)	VOG0085	2.0000000000000002e-21	72.6	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	G-putative Dut dUTPase (with intron insertion)
 KP06_gp35			replication	putative Intron-encoded HNH endonuclease	VOG7416	1.3e-15	54.0	HNH endonuclease inducing intron mobility	putative HNH endonuclease inducing intron mobility	G-putative Intron-encoded HNH endonuclease
 KP06_gp36			replication	putative Uncharacterized DUF1653 family protein	VOG6786	8e-07	25.4	unknown	hypothetical protein	G-putative Uncharacterized DUF1653 family protein
 KP06_gp37			replication	putative Truncated thioredoxin						G-putative Truncated thioredoxin
@@ -72,7 +72,7 @@ KP06_gp70			assembly	unknown	VOG6417	0.0073	12.1	unknown	hypothetical protein	P-
 KP06_gp71	gene73	putative structural protein	assembly	putative Tail sheath protein						G-putative Tail sheath protein
 KP06_gp72	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 KP06_gp73	gene75	putative structural protein	assembly.capsid	unknown	VOG6090	0.0069	12.9	unknown	hypothetical protein	Y-putative structural protein
-KP06_gp74	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+KP06_gp74	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 KP06_gp75	gene77	putative structural protein	assembly.capsid	unknown	VOG10320	0.011000000000000001	11.7	unknown	hypothetical protein	Y-putative structural protein
 KP06_gp76	portal	Portal	assembly.capsid	putative Portal protein	VOG2934	0.0085	12.4	unknown	hypothetical protein	G-putative Portal protein
 KP06_gp77	terminase	Terminase	assembly.capsid	putative Terminase large subunit						G-putative Terminase large subunit

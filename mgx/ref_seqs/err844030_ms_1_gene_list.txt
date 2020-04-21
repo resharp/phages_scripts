@@ -29,7 +29,7 @@ err844030_ms_1_27	gene74	putative structural protein	assembly	unknown						Y-put
 err844030_ms_1_28				unknown						G-unknown
 err844030_ms_1_29	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 err844030_ms_1_30	gene75	putative structural protein	assembly.capsid	unknown	VOG1080	0.0038	12.9	internal virion  B	hypothetical protein	Y-putative structural protein
-err844030_ms_1_31	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+err844030_ms_1_31	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 err844030_ms_1_32	gene77	putative structural protein	assembly.capsid	unknown	VOG2379	0.17	4.5	virion RNA polymerase	virion RNA polymerase	Y-putative structural protein
 err844030_ms_1_33				unknown						G-unknown
 err844030_ms_1_34				unknown						G-unknown
@@ -39,7 +39,7 @@ err844030_ms_1_37				unknown	VOG2166	0.0017	14.3	unknown	hypothetical protein	P-
 err844030_ms_1_38				unknown						G-unknown
 err844030_ms_1_39				unknown						G-unknown
 err844030_ms_1_40				unknown	VOG0281	0.0013	15.2	Abc2	Abc2 protein	P-Abc2
-err844030_ms_1_41	dUTP			unknown	VOG0085	3.8999999999999996e-32	107.4	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+err844030_ms_1_41	dUTP	dUTP diphosphatase		unknown	VOG0085	3.8999999999999996e-32	107.4	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	Y-dUTP diphosphatase
 err844030_ms_1_42				unknown	VOG1254	7.2e-25	83.5	unknown	hypothetical protein	P-unknown
 err844030_ms_1_43				unknown	VOG3488	2.3e-10	36.6	unknown	hypothetical protein	P-unknown
 err844030_ms_1_44				unknown						G-unknown
@@ -83,7 +83,7 @@ err844030_ms_1_81				unknown						G-unknown
 err844030_ms_1_82				unknown	VOG9199	0.00016999999999999999	17.8	unknown	hypothetical protein	P-unknown
 err844030_ms_1_83				unknown	VOG5262	0.0025	14.2	unknown	hypothetical protein	P-unknown
 err844030_ms_1_84				unknown						G-unknown
-err844030_ms_1_85	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	3.9e-34	114.5	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+err844030_ms_1_85	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4577	3.9e-34	114.5	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
 err844030_ms_1_86	gene40b	Rep_Org , putative replisome organizer protein 		unknown						Y-Rep_Org , putative replisome organizer protein 
 err844030_ms_1_87	gene41b	phage replicative helicase, DnaB family		unknown	VOG0025	5.4000000000000005e-18	62.2	DNA helicase	putative DNA helicase	Y-phage replicative helicase, DnaB family
 err844030_ms_1_88				unknown						G-unknown

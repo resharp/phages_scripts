@@ -25,7 +25,7 @@ hvcf_a6_ms_4_23				unknown	VOG3531	0.0049	13.6	unknown	hypothetical protein	P-un
 hvcf_a6_ms_4_24	gene73	putative structural protein	assembly	putative Tail sheath protein	VOG9313	0.0034	13.7	unknown	hypothetical protein	G-putative Tail sheath protein
 hvcf_a6_ms_4_25	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 hvcf_a6_ms_4_26	gene75	putative structural protein	assembly.capsid	unknown	VOG7962	0.0062	13.0	holin	putative holin	Y-putative structural protein
-hvcf_a6_ms_4_27	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+hvcf_a6_ms_4_27	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 hvcf_a6_ms_4_28	gene77	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
 hvcf_a6_ms_4_29	portal	Portal	assembly.capsid	putative Portal protein						G-putative Portal protein
 hvcf_a6_ms_4_30	terminase	Terminase	assembly.capsid	putative Terminase large subunit						G-putative Terminase large subunit
@@ -57,28 +57,28 @@ hvcf_a6_ms_4_55				unknown	VOG1456	6.9e-05	18.6	unknown	hypothetical protein	P-u
 hvcf_a6_ms_4_56				unknown	VOG6868	0.049	10.1	unknown	hypothetical protein	P-unknown
 hvcf_a6_ms_4_57	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	1.1999999999999998e-72	241.6	DNA helicase	DNA helicase	G-putative SF1 helicase
 hvcf_a6_ms_4_58				unknown						G-unknown
-hvcf_a6_ms_4_59	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	3.3e-34	114.8	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+hvcf_a6_ms_4_59	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4577	3.3e-34	114.8	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
 hvcf_a6_ms_4_60	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif						G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
-hvcf_a6_ms_4_61	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	4.4000000000000004e-08	29.2	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+hvcf_a6_ms_4_61	gene19	phage RecT recombinase	replication	putative RecT, phage RecT recombinase	VOG4360	4.4000000000000004e-08	29.2	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
 hvcf_a6_ms_4_62	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
-hvcf_a6_ms_4_63	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+hvcf_a6_ms_4_63	gene21	single stranded DNA-binding pr.	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
 hvcf_a6_ms_4_64	primase	DnaG family primase	replication	putative DnaG family primase						G-putative DnaG family primase
 hvcf_a6_ms_4_65				unknown	VOG7611	0.0014	14.8	unknown	hypothetical protein	P-unknown
 hvcf_a6_ms_4_66				unknown						G-unknown
 hvcf_a6_ms_4_67				unknown	VOG5329	0.098	9.4	unknown	TreB	P-unknown
-hvcf_a6_ms_4_68	ligase25			unknown	VOG0018	2.2e-31	105.5	DNA ligase	DNA ligase	P-DNA ligase
+hvcf_a6_ms_4_68	ligase25	Ligase		unknown	VOG0018	2.2e-31	105.5	DNA ligase	DNA ligase	Y-Ligase
 hvcf_a6_ms_4_69				unknown						G-unknown
 hvcf_a6_ms_4_70				unknown						G-unknown
 hvcf_a6_ms_4_71				unknown	VOG0020	5.2e-32	107.7	unknown	hypothetical protein	P-unknown
 hvcf_a6_ms_4_72				unknown	VOG8207	2.0999999999999998e-09	33.5	unknown	hypothetical protein	P-unknown
-hvcf_a6_ms_4_73	ThyX			unknown	VOG4561	1.3e-21	73.6	thymidylate synthase	thymidylate synthase	P-thymidylate synthase
+hvcf_a6_ms_4_73	ThyX	Thymidylate synthase		unknown	VOG4561	1.3e-21	73.6	thymidylate synthase	thymidylate synthase	Y-Thymidylate synthase
 hvcf_a6_ms_4_74				unknown						G-unknown
 hvcf_a6_ms_4_75				unknown						G-unknown
 hvcf_a6_ms_4_76				unknown	VOG2775	0.0086	12.0	unknown	hypothetical protein	P-unknown
 hvcf_a6_ms_4_77	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor	VOG0321	7.8e-14	48.0	unknown	hypothetical protein	G-putative siphovirus Gp157 family protein, GAM-like host nuclease inhibitor
 hvcf_a6_ms_4_78				unknown	VOG5924	0.0061	13.0	unknown	hypothetical protein	P-unknown
 hvcf_a6_ms_4_79	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	2.5e-61	203.9	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)
-hvcf_a6_ms_4_80	dUTP			unknown	VOG0085	8.8e-31	103.0	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+hvcf_a6_ms_4_80	dUTP	dUTP diphosphatase		unknown	VOG0085	8.8e-31	103.0	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	Y-dUTP diphosphatase
 hvcf_a6_ms_4_81				unknown	VOG3631	0.0094	12.3	unknown	hypothetical protein	P-unknown
 hvcf_a6_ms_4_82				unknown						G-unknown
 hvcf_a6_ms_4_83				unknown	VOG8753	0.00084	15.2	unknown	hypothetical protein	P-unknown

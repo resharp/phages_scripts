@@ -10,7 +10,7 @@ sib1_ms_5_8	gene86	Uncharacterized protein		unknown	VOG7635	0.0018	14.6	unknown	
 sib1_ms_5_9	terminase	Terminase	assembly.capsid	putative Terminase large subunit	VOG5203	2.7999999999999998e-36	121.1	HNH endonuclease domain	HNH endonuclease domain protein	G-putative Terminase large subunit
 sib1_ms_5_10	portal	Portal	assembly.capsid	putative Portal protein	VOG3129	0.025	10.5	unknown	hypothetical protein	G-putative Portal protein
 sib1_ms_5_11	gene77	putative structural protein	assembly.capsid	unknown	VOG9272	0.0059	13.1	unknown	hypothetical protein	Y-putative structural protein
-sib1_ms_5_12	MCP	MCP	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
+sib1_ms_5_12	MCP	Major Capsid Protein	assembly.capsid	putative Major capsid protein						G-putative Major capsid protein
 sib1_ms_5_13	gene75	putative structural protein	assembly.capsid	unknown						Y-putative structural protein
 sib1_ms_5_14	gene74	putative structural protein	assembly	unknown						Y-putative structural protein
 sib1_ms_5_15	gene73	putative structural protein	assembly	putative Tail sheath protein						G-putative Tail sheath protein
@@ -41,7 +41,7 @@ sib1_ms_5_39				unknown	VOG6140	0.003	13.9	unknown	hypothetical protein	P-unknow
 sib1_ms_5_40				unknown						G-unknown
 sib1_ms_5_41				unknown	VOG1183	7.499999999999999e-06	22.9	unknown	hypothetical protein	P-unknown
 sib1_ms_5_42				unknown	VOG4731	2.9e-13	46.0	unknown	hypothetical protein	P-unknown
-sib1_ms_5_43	dUTP			unknown	VOG0085	9.099999999999999e-29	96.4	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	P-deoxyuridine 5'-triphosphate nucleotidohydrolase
+sib1_ms_5_43	dUTP	dUTP diphosphatase		unknown	VOG0085	9.099999999999999e-29	96.4	deoxyuridine 5'-triphosphate nucleotidohydrolase	deoxyuridine 5'-triphosphate nucleotidohydrolase	Y-dUTP diphosphatase
 sib1_ms_5_44				unknown						G-unknown
 sib1_ms_5_45	gene34	Uncharacterized protein	replication	putative Protein of unknown function (DUF932)	VOG2486	5.4999999999999997e-45	150.1	unknown	hypothetical protein	G-putative Protein of unknown function (DUF932)
 sib1_ms_5_46				unknown						G-unknown
@@ -49,20 +49,20 @@ sib1_ms_5_47	gene32	Siphovirus Gp157 homolog	replication	putative siphovirus Gp1
 sib1_ms_5_48				unknown	VOG0020	1.3e-16	57.4	unknown	hypothetical protein	P-unknown
 sib1_ms_5_49				unknown						G-unknown
 sib1_ms_5_50				unknown						G-unknown
-sib1_ms_5_51	ThyX			unknown	VOG4561	6.6e-19	64.7	thymidylate synthase	thymidylate synthase	P-thymidylate synthase
+sib1_ms_5_51	ThyX	Thymidylate synthase		unknown	VOG4561	6.6e-19	64.7	thymidylate synthase	thymidylate synthase	Y-Thymidylate synthase
 sib1_ms_5_52				unknown						G-unknown
 sib1_ms_5_53				unknown						G-unknown
-sib1_ms_5_54	ligase25			unknown	VOG0018	1.6e-39	132.2	DNA ligase	DNA ligase	P-DNA ligase
+sib1_ms_5_54	ligase25	Ligase		unknown	VOG0018	1.6e-39	132.2	DNA ligase	DNA ligase	Y-Ligase
 sib1_ms_5_55	gene23	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
 sib1_ms_5_56	primase	DnaG family primase	replication	putative DnaG family primase	VOG4551	0.0011	15.3	DNA primase	DNA primase	G-putative DnaG family primase
-sib1_ms_5_57	gene21	ssb 	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
+sib1_ms_5_57	gene21	single stranded DNA-binding pr.	replication	putative ssb single stranded DNA-binding protein						G-putative ssb single stranded DNA-binding protein
 sib1_ms_5_58	gene20	Uncharacterized protein	replication	unknown						Y-Uncharacterized protein
-sib1_ms_5_59	gene19	RecT	replication	putative RecT, phage RecT recombinase	VOG4360	3.8e-05	19.5	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
+sib1_ms_5_59	gene19	phage RecT recombinase	replication	putative RecT, phage RecT recombinase	VOG4360	3.8e-05	19.5	unknown	hypothetical protein	G-putative RecT, phage RecT recombinase
 sib1_ms_5_60	SNF2_helic18	SNF2 helicase	replication	putative SWI2/SNF2 ATPase, non-canonical Walker A motif	VOG4548	2e-19	66.0	helicase	helicase	G-putative SWI2/SNF2 ATPase, non-canonical Walker A motif
 sib1_ms_5_61				unknown						G-unknown
 sib1_ms_5_62				unknown						G-unknown
-sib1_ms_5_63	PolB	PolB	replication	putative DNA polymerase family B	VOG4577	7.4999999999999996e-34	113.6	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
-sib1_ms_5_64	UDG	UDG	replication	putative Uracyl-DNA glycosylase	VOG0668	4.7e-05	18.8	DNA polymerase I	putative DNA polymerase I	G-putative Uracyl-DNA glycosylase
+sib1_ms_5_63	PolB	Polymerase B	replication	putative DNA polymerase family B	VOG4577	7.4999999999999996e-34	113.6	DNA polymerase	DNA polymerase	G-putative DNA polymerase family B
+sib1_ms_5_64	UDG	Uracil-DNA glycosylase	replication	putative Uracyl-DNA glycosylase	VOG0668	4.7e-05	18.8	DNA polymerase I	putative DNA polymerase I	G-putative Uracyl-DNA glycosylase
 sib1_ms_5_65	SF1_helicase15	SF1 helicase		putative SF1 helicase	VOG0377	1.9999999999999997e-72	240.9	DNA helicase	DNA helicase	G-putative SF1 helicase
 sib1_ms_5_66				unknown						G-unknown
 sib1_ms_5_67				unknown						G-unknown
