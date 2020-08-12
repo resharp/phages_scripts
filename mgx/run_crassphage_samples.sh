@@ -1,6 +1,6 @@
 #
 # run_crassphage_samples
-#
+# obsolete code, only used for pilot!
 #---------------
 admin_dir=/hosts/linuxhome/mgx/DB/MGXDB
 source_dir=/hosts/linuxhome/mgx/DB/MGXDB/MGXDB

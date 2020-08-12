@@ -1,11 +1,15 @@
 
-# first cd to
-# /hosts/linuxhome/chaperone/tmp/richard/guerin_data
-# sample_dir=/hosts/linuxhome/chaperone/tmp/richard/guerin_data
+# first cd to /hosts/linuxhome/chaperone/richard/guerin_data
+# sample_dir=/hosts/linuxhome/chaperone/richard/guerin_data
 # ref_file=~/scripts/mgx/ref_seqs/ids_ref_genomes.txt
 
 # cd $sample_dir
 
+
+# Guerin.fna downloaded from https://github.com/linsalrob/crAssphage/blob/master/Guerin_Phages/Guerin.fna
+# 
+# split Guerin.fna in different fasta files in different subdirectories for all reference genomes
+#
 function split_fasta_by_ids {
 
 	ref_file=$1

@@ -1,5 +1,5 @@
 #
-# /hosts/linuxhome/chaperone/tmp/richard/guerin_data/all_refs.proteins.faa
+# /hosts/linuxhome/chaperone/richard/guerin_data/all_refs.proteins.faa
 #
 # annotation in tabular form:
 #

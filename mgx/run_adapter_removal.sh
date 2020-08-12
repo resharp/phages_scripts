@@ -1,10 +1,11 @@
 
-# AdapterRemoval on all paired files in a certain directory?
+# AdapterRemoval on all paired files in a certain directory
 # the directory is
 
 project_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
 
 # for each file in project_dir
+# Adapter removal and quality filtering of the paired-end fastq files was done with AdapterRemoval v2
 function run_adapter_removal_on_project {
 	project_dir=$1
 

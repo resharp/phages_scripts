@@ -2,11 +2,6 @@
 
 # e.g. run_all_samples $source_dir $sample_dir 10
 
-# this contains one sample that definitily should have reads that are supposed to map against the CRassphage because it does
-# when processing the files from our MGXDB database earlier
-source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/PRJEB11532
-sample_dir=/hosts/linuxhome/mutant25/tmp/richard/PRJEB11532
-
 # make list of samples
 
 # run complete pipeline on those samples

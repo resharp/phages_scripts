@@ -1,16 +1,13 @@
 # run complete pipeline on one SRA project
 # for more than one reference genome
-# e.g.
+# e.g. run_all_samples $source_dir $sample_dir 10 $ref_file
 
-# e.g. run_all_samples $source_dir $sample_dir 10
+# ref_genomes.txt contains mapping from name reference genome to genus
+# ref_file=~/scripts/mgx/ref_seqs/ids_ref_genomes.txt
+
 #source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/ERP005989
 #sample_dir=/hosts/linuxhome/mutant26/tmp/richard/ERP005989
 
-
-# this contains one sample that definitily should have reads that are supposed to map against the CRassphage because it does
-# when processing the files from our MGXDB database earlier
-#source_dir=/hosts/linuxhome/mutant14/tmp/richard/sra/PRJEB11532
-#sample_dir=/hosts/linuxhome/mutant26/tmp/richard/PRJEB11532
 
 # run complete pipeline on those samples
 function run_all_samples {

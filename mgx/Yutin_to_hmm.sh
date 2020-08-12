@@ -66,6 +66,7 @@ function convert_crassphage_to_proteins_faa {
 	echo 'results in' ${ref_dir}/${ref}/${ref}.proteins.faa
 }
 
+# search all reference genomes with HMM profiles
 function search_genomes {
 
 	conda deactivate

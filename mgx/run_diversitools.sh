@@ -1,3 +1,4 @@
+# obsolete code, only used for pilot!
 #
 # DiversiTools
 # http://josephhughes.github.io/DiversiTools/tutorial.html
