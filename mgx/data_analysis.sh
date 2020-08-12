@@ -1,5 +1,7 @@
 #ref_file=/hosts/linuxhome/mutant6/tmp/richard/ERP005989/ref_genome_ids.txt
 #sample_dir=/hosts/linuxhome/mutant6/tmp/richard/ERP005989
+#codon_table=source/phages/input_files/codon_syn_non_syn_probabilities.txt
+
 
 function rerun_all_calc_measures {
 
@@ -53,8 +55,7 @@ function run_all_gene_plots {
 	for ref in $refs
 	do
 		echo $ref
-		run_gene_plots_for_ref $sample_dir $ref 10 0.20
-		run_gene_plots_for_ref $sample_dir $ref 10 0.80
+		run_gene_plots_for_ref $sample_dir $ref 10 0.50
 		run_gene_plots_for_ref $sample_dir $ref 10 0.95
 	done
 }
@@ -89,7 +90,7 @@ function run_family_gene_plots {
 
 	# depth=10
 	# breadth=0.20
-	time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 1 -tb $breadth
+	# time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 1 -tb $breadth
 	time python source/phages/MakeGenePlots.py -d $sample_dir -f -rd $ref_seqs -td 10 -tb $breadth
 }
 
@@ -98,6 +99,7 @@ function run_all_codon_measures {
 
 	sample_dir=$1
 	ref_file=$2
+	codon_table=$3
 
 	refs=$(cat ${ref_file} | grep -v "#" | cut -f1)
 
@@ -106,7 +108,7 @@ function run_all_codon_measures {
 
 	for ref in $refs
 	do
-		python source/phages/CalcCodonMeasures.py -d $sample_dir -r $ref
+		python source/phages/CalcCodonMeasures.py -d $sample_dir -r $ref -c $codon_table
 	done
 
 }
