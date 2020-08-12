@@ -1,17 +1,29 @@
 # functional and ecological determinants of evolutionary dynamics in crAss-like phages
 
-contains bash scripts for 
+the mgx folder contains bash scripts for 
 * running annotation pipeline 
 * main pipeline: determining selective pressure and micro diversity for genes
-** metagenomic read mapping 
-** data analysis
+	* metagenomic read mapping 
+	* data analysis
 
-NB: when in doubt, consider using subversion commit history with commit messages part of the documentation
+tip: consider using subversion commit messages as part of the documentation
 
-## examples ##
+## Summary
+This pipeline calculates selective pressure and micro diversity measures of genes of reference genomes. Variation of genes is found by mapping metagenomic reads of samples against these reference genomes. Reference genomes, paired-end fastq files of samples and gene annotation information should be provided. This project also contains a specific gene annotation pipeline, which can be replaced by any other method.
+The main pipeline uses DiversiTools to calculate measures on codon level, which are then further aggregated on gene and gene family level.
+
+## dependencies
+
 Accompanying Python scripts are here:
-https://github.com/resharp/phages
+https://github.com/resharp/phages (to be installed in source/phages directory)
 
+- conda, python37
+- AdapterRemoval v2, samtools, bwa mem
+- DiversiTools (http://josephhughes.github.io/DiversiTools)
+- hmmsearch, hmmbuild, blastp, makeblastdb, seqtk, prodigal
+
+to do 
+- all Conda dependencies (refer to generated file by Conda?)
 
 ## annotation pipeline ##
 
@@ -92,8 +104,6 @@ Samples were selected from a local database MGXDB
 
 
 # old scripts of the phage clustering pipeline internship Bas Dutilh
-
-
 
 ## extracting phages ##
 Phages were extracted using VirSorter from a selection of 34590 bacterial genomes from PATRIC.
